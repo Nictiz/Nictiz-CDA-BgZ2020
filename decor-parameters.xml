@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decor-parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://art-decor.org/ADAR/rv/assets/../decor-parameters.xsd"><!-- create Schematron1 or not (Schematron0) -->
+   <switchCreateSchematron1/>
+   <!-- create WithWrapperIncludes1 or not (WithWrapperIncludes0) -->
+   <switchCreateSchematronWithWrapperIncludes0/>
+   <switchCreateSchematronWithWarningsOnOpen0/>
+   <switchCreateSchematronClosed0/>
+   <switchCreateSchematronWithExplicitIncludes0/>
+   <!-- create DocHTML1 or not (DocHTML0) -->
+   <switchCreateDocHTML1/>
+   <!-- create SVG1 or not (SVG0) -->
+   <switchCreateDocSVG1/>
+   <!-- create DocBook1 or not (DocBook0) -->
+   <switchCreateDocDocbook0/>
+   <!-- create PDF1 or not (PDF0) -->
+   <switchCreateDocPDF0/>
+   <!-- use local assets dir ../assets instead of online version -->
+   <useLocalAssets0/>
+   <!-- use local logos dir ../pfx-logos instead of online version -->
+   <useLocalLogos0/>
+   <!-- useCustomLogo -->
+   <useCustomLogo0 src="" href=""/>
+   <useLatestDecorVersion0/>
+   <!-- create artefacts without timestamp directories as we are in development -->
+   <inDevelopment1/>
+   <!-- override /decor/project/@language default language, or set if not given there -->
+   <!-- <defaultLanguage>nl-NL<defaultLanguage> -->
+   <!-- need to keep those off for big projects due to memory constraints, but active otherwise -->
+   <switchCreateDatatypeChecks1/>
+   <!-- create instances that mimic the specification -->
+   <createDefaultInstancesForRepresentingTemplates0/>
+   <!-- log at level (ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF) -->
+   <logLevel>INFO</logLevel>
+   <!-- determine binding behavior -->
+   <bindingBehavior valueSets="freeze"/>
+   <!-- Relevant for HTML only. Implements treetable.js based table views if 'switchCreateTreeTableHtml1' or traditional tables otherwise -->
+   <switchCreateTreeTableHtml1/>
+</decor-parameters>

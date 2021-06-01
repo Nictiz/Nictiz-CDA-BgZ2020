@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:hl7:lab" xmlns:lab="urn:hl7:lab" elementFormDefault="qualified" xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3">
+
+
+    <xs:import namespace="urn:hl7-org:v3" schemaLocation="../coreschemas/infrastructureRoot.xsd"/>
+
+
+    <xs:element name="observationEvent" type="lab:POLB_MT004000NL.ObservationEvent"/>
+
+
+    <xs:complexType name="POLB_MT004000NL.ObservationEvent">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CD" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="derivationExpr" type="ST" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="text" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="statusCode" type="CS" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="effectiveTime" type="SXCM_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="priorityCode" type="CE" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="confidentialityCode" type="CE" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="reasonCode" type="CE" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="value" type="ANY" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="interpretationCode" type="CE" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="methodCode" type="CE" minOccurs="0" maxOccurs="unbounded"/>
+            <!--
+            <xs:element name="specimen" type="POLB_MT004000NL.Specimen" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="device" type="POLB_MT004000NL.Device" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="consumable1" type="POLB_MT004000NL.Consumable" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="consumable2" type="POLB_MT004000NL.Consumable2" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="recordTarget" type="POLB_MT004000NL.RecordTarget" minOccurs="0"
+                maxOccurs="1"/>
+            <xs:element name="performer" type="POLB_MT004000NL.Performer" minOccurs="0"
+                maxOccurs="unbounded"/>
+                -->
+            <xs:element name="author" type="lab:POLB_MT004000NL.Author1" minOccurs="0" maxOccurs="unbounded"/>
+            <!--
+            <xs:element name="transcriber" type="POLB_MT004000NL.DataEnterer1" minOccurs="0"
+                maxOccurs="1"/>
+            <xs:element name="informationRecipient" type="POLB_MT004000NL.InformationRecipient1"
+                minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="verifier" type="POLB_MT004000NL.Verifier" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="inFulfillmentOf" type="POLB_MT004000NL.InFulfillmentOf2" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="definition" type="POLB_MT004000NL.Definition" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="reason" type="POLB_MT004000NL.Reason" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="derivedFrom1" type="POLB_MT004000NL.DerivedFrom1" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="derivedFrom2" type="POLB_MT004000NL.DerivedFrom2" minOccurs="0"
+                maxOccurs="unbounded"/>
+                -->
+            <xs:element name="referenceRange" type="lab:POLB_MT004000NL.ReferenceRange" minOccurs="0" maxOccurs="unbounded"/>
+            <!--
+            <xs:element name="pertinentInformation" type="POLB_MT004000NL.PertinentInformation"
+                minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="component1" type="POLB_MT004000NL.Component2" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="component2" type="POLB_MT004000NL.Component3" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="subjectOf1" type="POLB_MT004000NL.Subject1" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="subjectOf2" type="POLB_MT004000NL.Subject2" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element name="componentOf" type="POLB_MT004000NL.Component1" minOccurs="0"
+                maxOccurs="1"/>
+                -->
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="ActClassObservation" use="required"/>
+        <xs:attribute name="moodCode" type="ActMoodEventOccurrence" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="POLB_MT004000NL.Author1">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="sequenceNumber" type="INT" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="noteText" type="ST" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="time" type="TS" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="modeCode" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="signatureCode" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="signatureText" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="assignedEntity" type="lab:COCT_MT090000NL.AssignedEntity" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ParticipationAuthorOriginator" use="required"/>
+        <xs:attribute name="contextControlCode" type="ContextControl" use="optional" default="OP"/>
+    </xs:complexType>
+    <xs:complexType name="POLB_MT004000NL.ReferenceRange">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="sequenceNumber" type="INT" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="interpretationRange" type="lab:POLB_MT004000NL.InterpretationRange" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ActRelationshipHasReferenceValues" use="required"/>
+        <xs:attribute name="contextControlCode" type="ContextControl" use="optional" default="ON"/>
+        <xs:attribute name="contextConductionInd" type="bl" use="optional" default="false"/>
+    </xs:complexType>
+    <xs:complexType name="POLB_MT004000NL.InterpretationRange">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="value" type="ANY" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="interpretationCode" type="CE" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="precondition" type="lab:POLB_MT004000NL.Precondition" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="ActClassObservation" use="required"/>
+        <xs:attribute name="moodCode" type="ActMoodEventCriterion" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="POLB_MT004000NL.Precondition">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="sequenceNumber" type="INT" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="conjunctionCode" type="CS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="criterion" type="lab:POLB_MT004000NL.Criterion" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ActRelationshipHasPre-condition" use="required"/>
+        <xs:attribute name="contextControlCode" type="ContextControl" use="optional" default="ON"/>
+        <xs:attribute name="contextConductionInd" type="bl" use="optional" default="true"/>
+    </xs:complexType>
+    <xs:complexType name="POLB_MT004000NL.Criterion">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="code" type="CE" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="value" type="ANY" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="interpretationCode" type="CE" minOccurs="0" maxOccurs="unbounded"/>
+            <!--
+            <xs:element name="device" type="POLB_MT004000NL.Device" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="consumable1" type="POLB_MT004000NL.Consumable2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="consumable2" type="POLB_MT004000NL.Consumable" minOccurs="0" maxOccurs="unbounded"/>
+            -->
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="ActClassObservation" use="required"/>
+        <xs:attribute name="moodCode" type="ActMoodEventCriterion" use="required"/>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="COCT_MT090000NL.AssignedEntity">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="effectiveTime" type="IVL_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="certificateText" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:choice>
+                <xs:element name="assignedPerson" type="lab:COCT_MT090000NL.Person" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="assignedDevice" type="lab:COCT_MT090000NL.Device" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="assignedOrganization" type="lab:COCT_MT090000NL.Organization" minOccurs="0" maxOccurs="1"/>
+            </xs:choice>
+            <xs:element name="representedOrganization" type="lab:COCT_MT150000NL.Organization" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassAssignedEntity" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090000NL.Device">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="manufacturerModelName" type="SC" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="softwareName" type="SC" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="asLicensedEntity" type="lab:COCT_MT090000NL.LicensedEntity" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asMember" type="lab:COCT_MT090000NL.Member" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asRoleOther" type="lab:COCT_MT090000NL.RoleOther" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asLocatedEntity" type="lab:COCT_MT070000NL.LocatedEntity" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="languageCommunication" type="lab:COCT_MT090000NL.LanguageCommunication" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassDevice" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090000NL.Group">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CD" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="name" type="EN" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="desc" type="ED" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassGroup" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090000NL.LanguageCommunication">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="languageCode" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="modeCode" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="proficiencyLevelCode" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="preferenceInd" type="BL" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090000NL.LicensedEntity">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="effectiveTime" type="IVL_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="issuingOrganization" type="lab:COCT_MT150003NL.Organization" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassLicensedEntity" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090000NL.Member">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="statusCode" type="CS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="effectiveTime" type="IVL_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="group" type="lab:COCT_MT090000NL.Group" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassMember" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090000NL.Organization">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="name" type="EN" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asLicensedEntity" type="lab:COCT_MT090000NL.LicensedEntity" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asMember" type="lab:COCT_MT090000NL.Member" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asRoleOther" type="lab:COCT_MT090000NL.RoleOther" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asLocatedEntity" type="lab:COCT_MT070000NL.LocatedEntity" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="languageCommunication" type="lab:COCT_MT090000NL.LanguageCommunication" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassOrganization" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090000NL.Person">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="name" type="EN" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="asLicensedEntity" type="lab:COCT_MT090000NL.LicensedEntity" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asMember" type="lab:COCT_MT090000NL.Member" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asRoleOther" type="lab:COCT_MT090000NL.RoleOther" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asLocatedEntity" type="lab:COCT_MT070000NL.LocatedEntity" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="languageCommunication" type="lab:COCT_MT090000NL.LanguageCommunication" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassPerson" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090000NL.RoleOther">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="scopingOrganization" type="lab:COCT_MT150000NL.Organization" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassRoot" use="required"/>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="COCT_MT150000NL.ContactParty">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="effectiveTime" type="SXCM_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactPerson" type="lab:COCT_MT150000NL.Person" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassContact" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT150000NL.Organization">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CD" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="name" type="ON" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="desc" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="statusCode" type="CS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="standardIndustryClassCode" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="asOrganizationPartOf" type="lab:COCT_MT150000NL.OrganizationPartOf" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="contactParty" type="lab:COCT_MT150000NL.ContactParty" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="organizationContains" type="lab:COCT_MT150000NL.OrganizationContains" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassOrganization" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT150000NL.OrganizationContains">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="statusCode" type="CS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="effectiveTime" type="IVL_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="partOrganization" type="lab:COCT_MT150000NL.Organization" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassPart" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT150000NL.OrganizationPartOf">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="statusCode" type="CS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="effectiveTime" type="IVL_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="wholeOrganization" type="lab:COCT_MT150000NL.Organization" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassPart" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT150000NL.Person">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="name" type="EN" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="asLocatedEntity" type="lab:COCT_MT070000NL.LocatedEntity" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassPerson" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+
+
+
+
+    <xs:complexType name="COCT_MT070000NL.LocatedEntity">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="statusCode" type="CS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="effectiveTime" type="IVL_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="location" type="lab:COCT_MT710000NL.Place" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassLocatedEntity" use="required"/>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="COCT_MT710000NL.LocatedEntity">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="subjectOf" type="lab:COCT_MT710000NL.Subject7" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassLocatedEntity" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT710000NL.LocatedEntityHasParts">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="locatedPlace" type="lab:COCT_MT710000NL.Place" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassLocatedEntity" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT710000NL.LocatedEntityPartOf">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="location" type="lab:COCT_MT710000NL.Place" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassLocatedEntity" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT710000NL.Place">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CD" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="name" type="EN" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="desc" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="directionsText" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="positionText" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="asLocatedEntityPartOf" type="lab:COCT_MT710000NL.LocatedEntityPartOf" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="locatedEntity" type="lab:COCT_MT710000NL.LocatedEntity" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="locatedEntityHasParts" type="lab:COCT_MT710000NL.LocatedEntityHasParts" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassPlace" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT710000NL.Subject7">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="position" type="lab:COCT_MT960000NL.Position" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ParticipationTargetSubject" use="required"/>
+    </xs:complexType>
+
+
+
+
+    <xs:complexType name="COCT_MT960000NL.Author">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="assignedPerson" type="lab:COCT_MT090108NL.AssignedPerson" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ParticipationAuthorOriginator" use="required"/>
+        <xs:attribute name="contextControlCode" type="ContextControl" use="optional" default="OP"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT960000NL.Component1">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="sequenceNumber" type="INT" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="positionCoordinate" type="lab:COCT_MT960000NL.PositionCoordinate" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ActRelationshipHasComponent" use="required"/>
+        <xs:attribute name="contextControlCode" type="ContextControl" use="optional" default="AN"/>
+        <xs:attribute name="contextConductionInd" type="bl" use="optional" default="true"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT960000NL.Component2">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="positionAccuracy" type="lab:COCT_MT960000NL.PositionAccuracy" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ActRelationshipHasComponent" use="required"/>
+        <xs:attribute name="contextControlCode" type="ContextControl" use="optional" default="AP"/>
+        <xs:attribute name="contextConductionInd" type="bl" use="optional" default="true"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT960000NL.Device1">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="assignedDevice" type="lab:COCT_MT090303NL.AssignedDevice" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ParticipationTargetDevice" use="required"/>
+        <xs:attribute name="contextControlCode" type="ContextControl" use="optional" default="ON"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT960000NL.Device2">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="assignedDevice" type="lab:COCT_MT090303NL.AssignedDevice" nillable="true" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="typeCode" type="ParticipationTargetDevice" use="required"/>
+        <xs:attribute name="contextControlCode" type="ContextControl" use="optional" default="ON"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT960000NL.Position">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CD" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="text" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="effectiveTime" type="IVL_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="activityTime" type="IVL_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="value" type="ST" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="device" type="lab:COCT_MT960000NL.Device2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="author" type="lab:COCT_MT960000NL.Author" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="component1" type="lab:COCT_MT960000NL.Component1" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="component2" type="lab:COCT_MT960000NL.Component2" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="ActClassPosition" use="required"/>
+        <xs:attribute name="moodCode" type="ActMoodEventOccurrence" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT960000NL.PositionAccuracy">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="code" type="CD" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="value" type="CD" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="ActClassPositionAccuracy" use="required"/>
+        <xs:attribute name="moodCode" type="ActMoodEventOccurrence" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT960000NL.PositionCoordinate">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="code" type="CD" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="text" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="value" type="ANY" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="methodCode" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="device" type="lab:COCT_MT960000NL.Device1" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="ActClassPositionCoordinate" use="required"/>
+        <xs:attribute name="moodCode" type="ActMoodEventOccurrence" use="required"/>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="COCT_MT090303NL.AssignedDevice">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:choice>
+                <xs:element name="assignedDevice" type="lab:COCT_MT090303NL.Device" minOccurs="0" maxOccurs="1"/>
+            </xs:choice>
+            <xs:element name="representedOrganization" type="lab:COCT_MT150003NL.Organization"
+                minOccurs="0"
+                maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassAssignedEntity" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090303NL.Device">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="manufacturerModelName" type="SC" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="softwareName" type="SC" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassDevice" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+
+
+
+
+    <xs:complexType name="COCT_MT150003NL.ContactParty">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="effectiveTime" type="SXCM_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactPerson" type="lab:COCT_MT150003NL.Person" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassContact" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT150003NL.Organization">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CD" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="name" type="ON" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="contactParty" type="lab:COCT_MT150003NL.ContactParty" nillable="true"
+                minOccurs="1"
+                maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassOrganization" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT150003NL.Person">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="name" type="EN" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassPerson" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    
+    
+    
+    <xs:complexType name="COCT_MT090108NL.AssignedPerson">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:choice>
+                <xs:element name="assignedPerson" type="lab:COCT_MT090108NL.Person" minOccurs="0" maxOccurs="1"/>
+            </xs:choice>
+            <xs:element name="representedOrganization" type="lab:COCT_MT150007NL.Organization"
+                minOccurs="0"
+                maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassAssignedEntity" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT090108NL.Person">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="name" type="PN" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassPerson" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    
+    
+    
+    <xs:complexType name="COCT_MT150007NL.ContactParty">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CE" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="effectiveTime" type="SXCM_TS" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactPerson" type="lab:COCT_MT150007NL.Person" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="RoleClassContact" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT150007NL.Organization">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="code" type="CD" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="name" type="ON" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="contactParty" type="lab:COCT_MT150007NL.ContactParty" nillable="true"
+                minOccurs="1"
+                maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassOrganization" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT150007NL.Person">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElements"/>
+            <xs:element name="name" type="PN" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute name="classCode" type="EntityClassPerson" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminerSpecific" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

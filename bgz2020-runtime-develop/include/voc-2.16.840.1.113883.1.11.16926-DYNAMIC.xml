@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:cda="urn:hl7-org:v3"
+             xmlns:hl7="urn:hl7-org:v3"
+             xmlns:sdtc="urn:hl7-org:sdtc"
+             xmlns:hl7nl="urn:hl7-nl:v3"
+             xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:pharm="urn:ihe:pharm:medication"
+             id="2.16.840.1.113883.1.11.16926"
+             name="HL7BasicConfidentialityKind"
+             displayName="HL7 BasicConfidentialityKind"
+             effectiveDate="2014-06-09T00:00:00"
+             statusCode="final"
+             ident="ccda-"
+             url="http://art-decor.org/decor/services/"
+             referencedFrom="bgz2020-">
+      <sourceCodeSystem id="2.16.840.1.113883.5.25"
+                        identifierName="Confidentiality"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/Confidentiality"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/Confidentiality"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+      <publishingAuthority name="Nictiz">
+         <addrLine type="uri">http://www.nictiz.nl</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="N"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  displayName="normal"
+                  level="0"
+                  type="L"/>
+         <concept code="R"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  displayName="restricted"
+                  level="0"
+                  type="L"/>
+         <concept code="V"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  displayName="very restricted"
+                  level="0"
+                  type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

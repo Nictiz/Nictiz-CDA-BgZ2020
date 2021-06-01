@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:ihe:pharm:medication" xmlns:pharm="urn:ihe:pharm:medication" elementFormDefault="qualified" xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3">
+
+
+    <xs:import namespace="urn:hl7-org:v3" schemaLocation="../coreschemas/infrastructureRoot.xsd"/>
+    
+    
+    <xs:element name="desc" type="hl7:ED"/>
+    <xs:element name="formCode" type="hl7:CE"/>
+    
+    <xs:element name="activeIngredient" type="pharm:COCT_MT720000NL_extension.ActiveIngredient"/>
+    <xs:element name="otherIngredient" type="pharm:COCT_MT720000NL_extension.OtherIngredient"/>
+    
+    <xs:complexType name="COCT_MT720000NL_extension.ActiveIngredient">
+        <xs:sequence>
+            <xs:element name="quantity" type="RTO_QTY_QTY" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="pharm:COCT_MT720000NL_extension.MaterialKind" minOccurs="0" maxOccurs="1" name="activeIngredientMaterialKind"/>
+            <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="Classes" default="RoleHeir"/>
+        <xs:attribute name="classCode" type="RoleClass" use="optional" default="ACTI"/>
+        <xs:attribute name="typeID" use="optional">
+            <xs:simpleType>
+                <xs:list itemType="oid"/>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="realmCode" use="optional">
+            <xs:simpleType>
+                <xs:list itemType="cs"/>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="nullFlavor" type="cs" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT720000NL_extension.MaterialKind">
+        <xs:sequence>
+            <xs:element name="code" type="CE" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="desc" type="ED" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="Classes" default="Material"/>
+        <xs:attribute name="classCode" type="EntityClass" use="optional" default="MAT"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminer" use="optional" default="KIND"/>
+        <xs:attribute name="typeID" use="optional">
+            <xs:simpleType>
+                <xs:list itemType="oid"/>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="realmCode" use="optional">
+            <xs:simpleType>
+                <xs:list itemType="cs"/>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="nullFlavor" type="cs" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_MT720000NL_extension.OtherIngredient">
+        <xs:sequence>
+            <xs:element name="quantity" type="RTO_QTY_QTY" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="pharm:COCT_MT720000NL_extension.MaterialKind" minOccurs="1" maxOccurs="1" name="ingredientMaterialKind"/>
+            <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="Classes" default="RoleHeir"/>
+        <xs:attribute name="classCode" type="RoleClass" use="optional" default="INGR"/>
+        <xs:attribute name="typeID" use="optional">
+            <xs:simpleType>
+                <xs:list itemType="oid"/>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="realmCode" use="optional">
+            <xs:simpleType>
+                <xs:list itemType="cs"/>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="nullFlavor" type="cs" use="optional"/>
+    </xs:complexType>
+    
+</xs:schema>

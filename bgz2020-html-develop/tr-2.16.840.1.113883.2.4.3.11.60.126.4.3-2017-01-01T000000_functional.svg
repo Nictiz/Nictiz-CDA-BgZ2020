@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     id="svg_2.16.840.1.113883.2.4.3.11.60.126.4.3"
+     version="1.1"
+     height="202"
+     width="384"
+     style="fill:white;stroke:black;stroke-width:0;fill-opacity: 1; stroke-opacity: 1;">
+   <defs>
+      <style type="text/css">
+                            .sequenceLine {
+                                fill:none;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;
+                            }
+                            .sequenceBarRect {
+                                fill:AliceBlue;fill-rule:evenodd;stroke:black;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;
+                            }
+                            .actorBox {
+                                fill:AliceBlue;fill-rule:evenodd;stroke:black;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;
+                            }
+                            .actorBox:hover {
+                                fill:LightSkyBlue;
+                            }
+                            .actorBoxText {
+                                fill:black;stroke:none;font-size:10px;font-weight:bold;text-align:middle;line-height:100%;text-anchor:middle;font-family: Verdana, Arial, sans-serif;
+                            }
+                            .transactionLineText {
+                                fill:black;stroke:none;font-size:10px;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family: Verdana, Arial, sans-serif;
+                            }
+                            .Left {
+                                 text-align: left; text-anchor: initial;
+                            }
+                            .Center {
+                                 text-align: center; text-anchor: middle;
+                            }
+                        </style>
+   </defs>
+   <!--Service Name-->
+   <text x="192"
+         y="21"
+         style="font-size:12px;font-weight:bold;text-align:start;line-height:125%;text-anchor:middle;fill:black;stroke:none;font-family: Verdana, Arial, sans-serif;fill-opacity: 1; stroke-opacity: 1;">Transactiegroep - Aanmaken of bijwerken</text>
+   <g id="actorObjects">
+      <!-- Actor box (header) - -->
+      <g id="actor_2.16.840.1.113883.2.4.3.11.60.126.7.1">
+         <rect x="21"
+               y="31"
+               height="50"
+               width="102"
+               class="actorBox"
+               style="fill-opacity: 1; stroke-opacity: 1;"/>
+         <text x="72"
+               y="61"
+               class="actorBoxText"
+               style="fill-opacity: 1; stroke-opacity: 1;">Actor A</text>
+      </g>
+   </g>
+   <g id="sequenceLines">
+      <path class="sequenceLine"
+            style="fill-opacity: 1; stroke-opacity: 1;"
+            d="m 72, 81 v 100"/>
+   </g>
+   <g id="sequenceBars"><!-- sequence bar client -->
+      <rect x="67"
+            y="131"
+            height="40"
+            width="10"
+            class="sequenceBarRect"
+            style="fill-opacity: 1; stroke-opacity: 1;"/>
+      <g id="initiatingTransaction_d10e64633"><!-- Arrow text client to server -->
+         <text x="102"
+               y="156"
+               class="transactionLineText Left"
+               style="fill-opacity: 1; stroke-opacity: 1;">Aanmaken of bijwerken (ClinicalDocument)</text>
+         <!-- Arrow line client to server -->
+         <polyline points="77,141 97,141 97,161 77,161"
+                   style="fill:white; stroke:black; stroke-width:1; fill-opacity: 1; stroke-opacity: 1;"/>
+         <!-- Arrow head client to server -->
+         <polyline points="77,161 82,156 82,166"
+                   style="fill:black; stroke:black; stroke-width:1; fill-opacity: 1; stroke-opacity: 1;"/>
+      </g>
+      <!-- sequence bar server -->
+      <rect x="67"
+            y="131"
+            height="40"
+            width="10"
+            class="sequenceBarRect"
+            style="fill-opacity: 1; stroke-opacity: 1;"/>
+   </g>
+</svg>
