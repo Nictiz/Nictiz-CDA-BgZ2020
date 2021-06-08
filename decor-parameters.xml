@@ -4,8 +4,8 @@
    <switchCreateSchematron1/>
    <!-- create WithWrapperIncludes1 or not (WithWrapperIncludes0) -->
    <switchCreateSchematronWithWrapperIncludes0/>
-   <switchCreateSchematronWithWarningsOnOpen0/>
-   <switchCreateSchematronClosed0/>
+   <switchCreateSchematronWithWarningsOnOpen1/>
+   <switchCreateSchematronClosed1/>
    <switchCreateSchematronWithExplicitIncludes0/>
    <!-- create DocHTML1 or not (DocHTML0) -->
    <switchCreateDocHTML1/>
@@ -16,7 +16,7 @@
    <!-- create PDF1 or not (PDF0) -->
    <switchCreateDocPDF0/>
    <!-- use local assets dir ../assets instead of online version -->
-   <useLocalAssets0/>
+   <useLocalAssets1/>
    <!-- use local logos dir ../pfx-logos instead of online version -->
    <useLocalLogos0/>
    <!-- useCustomLogo -->
@@ -29,11 +29,11 @@
    <!-- need to keep those off for big projects due to memory constraints, but active otherwise -->
    <switchCreateDatatypeChecks1/>
    <!-- create instances that mimic the specification -->
-   <createDefaultInstancesForRepresentingTemplates0/>
+   <createDefaultInstancesForRepresentingTemplates1/>
    <!-- log at level (ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF) -->
    <logLevel>INFO</logLevel>
    <!-- determine binding behavior -->
    <bindingBehavior valueSets="freeze"/>
    <!-- Relevant for HTML only. Implements treetable.js based table views if 'switchCreateTreeTableHtml1' or traditional tables otherwise -->
-   <switchCreateTreeTableHtml1/>
+   <switchCreateTreeTableHtml0/>
 </decor-parameters>

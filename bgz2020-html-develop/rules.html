@@ -5,9 +5,8 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Templates: bgz2020- DECOR-samenvatting (Data Elements, Codes, OID's en Rules)</title>
-      <link href="https://art-decor.org/ADAR/rv/assets/decor.css" rel="stylesheet" type="text/css" />
-      <link href="https://art-decor.org/ADAR/rv/assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-      <link href="https://art-decor.org/ADAR/rv/assets/css/retrieve-template.css" rel="stylesheet" type="text/css" /><script type="text/javascript">window.treeTableCollapsed = true;window.treeTableStringCollapse ='Inklappen';window.treeTableStringExpand = 'Uitklappen';window.treeTableColumn = 1;</script><script src="https://art-decor.org/ADAR/rv/assets/scripts/jquery-1.11.3.min.js" type="text/javascript"></script><script src="https://art-decor.org/ADAR/rv/assets/scripts/jquery.treetable.js" type="text/javascript"></script><script src="https://art-decor.org/ADAR/rv/assets/scripts/retrieve-transaction.js" type="text/javascript"></script></head>
+      <link href="../assets/decor.css" rel="stylesheet" type="text/css" />
+      <link href="../assets/favicon.ico" rel="shortcut icon" type="image/x-icon" /><script src="../assets/motoggle.js" type="text/javascript"></script><script src="../assets/mootools-core.js" type="text/javascript"></script><script src="../assets/mootools-more.js" type="text/javascript"></script><script src="../assets/mootools-TabSwapper.js" type="text/javascript"></script></head>
    <body>
       <table class="title">
          <tr>
@@ -30,7 +29,6 @@
       <div class="TabbedPanelsContent">
          <h2><a id="labelRules"></a> Templates </h2>
          <div class="tabtab">
-            <div><button id="expandAll" type="button">Alles uitklappen</button><button id="collapseAll" type="button">Alles inklappen</button><input id="nameSearch" placeholder="Zoek op naam" /></div>
             <table id="transactionTable" class="treetable highlight" width="100%" border="0" cellspacing="0" cellpadding="5">
                <thead>
                   <tr>
@@ -45,17 +43,62 @@
                      <td class="columnName" style="border-top: 6px solid white;"></td>
                      <td class="columnName" colspan="4" style="border-top: 6px solid white;">Templates met directe koppeling aan een transactie</td>
                   </tr>
+                  <tr data-tt-id="d39e2488-reptemp" data-tt-parent-id="doclevel-templates" class="tmtrline">
+                     <td style="border-top: 6px solid white;"><a id="_2.16.840.1.113883.2.4.3.11.60.126.10.1_20210514133451"></a><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html" onclick="target='_blank';">html</a></td>
+                     <td class="columnName" style="border-top: 6px solid white;">
+                        <table>
+                           <tr>
+                              <td style="vertical-align: top;"><img style=" max-width: 1em; max-height: 1em;" alt="treeblank" src="../assets/treeblank.png" /></td>
+                              <td><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> CDA Basisgegevensset Zorg 2020 (BgZ) 2.16.840.1.113883.2.4.3.11.60.126.10.1</td>
+                           </tr>
+                        </table>
+                     </td>
+                     <td style="border-top: 6px solid white;">2021‑05‑14 13:34:51</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="doclevel-templates-desc" data-tt-parent-id="d39e2488-reptemp">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA ClinicalDocument (prototype, direct afgeleid uit POCD_RM000040 MIF) +
+                        SDTC extensies</td>
+                  </tr>
+                  <tr data-tt-id="d39e2488-reptemp-27" data-tt-parent-id="d39e2488-reptemp">
+                     <td class="columnDescription"></td>
+                     <td class="columnDescription" colspan="4" style="padding-left: 5em;">
+                        <table class="tabtab" cellspacing="2" cellpadding="5">
+                           <tr class="headinglable">
+                              <th>Transactie</th>
+                              <th style="width: 160px;" colspan="2">Richting</th>
+                              <th style="width: 160px;">Onderliggend model</th>
+                              <th>Schematron</th>
+                           </tr>
+                           <tr>
+                              <td><a href="scenarios.html#_2.16.840.1.113883.2.4.3.11.60.126.4.34_20170101000000">Aanmaken of bijwerken</a></td>
+                              <td><img style=" max-width: 1em; max-height: 1em;" alt="rotate" src="../assets/rotate.png" title="registrerend" data-toggle="tooltip" data-placement="right" /></td>
+                              <td>registrerend</td>
+                              <td>ClinicalDocument</td>
+                              <td>bgz2020-BasicHealthDataSet-createUpdate-2020.sch</td>
+                           </tr>
+                           <tr>
+                              <td><a href="scenarios.html#_2.16.840.1.113883.2.4.3.11.60.126.4.37_20200917000000">Beschikbaarstellen BgZ</a></td>
+                              <td><img style=" max-width: 1em; max-height: 1em;" alt="arrowleft" src="../assets/arrowleft.png" title="reagerend" data-toggle="tooltip" data-placement="right" /></td>
+                              <td>reagerend</td>
+                              <td>ClinicalDocument</td>
+                              <td>bgz2020-BasicHealthDataSet-response-2020.sch</td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
                   <tr data-tt-id="type-cdadocumentlevel" class="tmline">
                      <td class="columnName" style="border-top: 6px solid white;"></td>
                      <td class="columnName" style="border-top: 6px solid white;" colspan="3"><a id="cdadocumentlevel"></a>CDA document level template</td>
                   </tr>
-                  <tr data-tt-id="d39e859" class="tmline" data-tt-parent-id="type-cdadocumentlevel">
+                  <tr data-tt-id="d39e2488" class="tmline" data-tt-parent-id="type-cdadocumentlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> CDA Basisgegevensset Zorg 2020 (BgZ) 2.16.840.1.113883.2.4.3.11.60.126.10.1</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> CDA Basisgegevensset Zorg 2020 (BgZ) 2.16.840.1.113883.2.4.3.11.60.126.10.1</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14 13:34:51</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e859-desc" data-tt-parent-id="d39e859">
+                  <tr data-tt-id="d39e2488-desc" data-tt-parent-id="d39e2488">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA ClinicalDocument (prototype, direct afgeleid uit POCD_RM000040 MIF) +
                         SDTC extensies</td>
@@ -64,19 +107,19 @@
                      <td class="columnName" style="border-top: 6px solid white;"></td>
                      <td class="columnName" style="border-top: 6px solid white;" colspan="3"><a id="cdaheaderlevel"></a>CDA header level template</td>
                   </tr>
-                  <tr data-tt-id="d39e1624" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
+                  <tr data-tt-id="d39e3321" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.2-2020-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 component SDTC 2.16.840.1.113883.2.4.3.11.60.126.10.2</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 component SDTC 2.16.840.1.113883.2.4.3.11.60.126.10.2</td>
                      <td style="border-top: 6px solid white;">2020‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1624-desc" data-tt-parent-id="d39e1624">
+                  <tr data-tt-id="d39e3321-desc" data-tt-parent-id="d39e3321">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA component (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
                   <tr data-tt-id="d39e665" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.653-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA AssignedEntity SDTC 2.16.840.1.113883.10.12.653 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA AssignedEntity SDTC 2.16.840.1.113883.10.12.653 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -89,7 +132,7 @@
                   </tr>
                   <tr data-tt-id="d39e129" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.607-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA authenticator SDTC 2.16.840.1.113883.10.12.607 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA authenticator SDTC 2.16.840.1.113883.10.12.607 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -100,33 +143,33 @@
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA authenticator (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC
                         extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e4151" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
+                  <tr data-tt-id="d39e6992" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.7.10.52-2017-08-25T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA author of informant patient 2.16.840.1.113883.2.4.3.11.60.7.10.52 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA author of informant patient 2.16.840.1.113883.2.4.3.11.60.7.10.52 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2017‑08‑25</td>
                      <td style="border-top: 6px solid white;">9</td>
                   </tr>
-                  <tr data-tt-id="d39e4151-desc" data-tt-parent-id="d39e4151">
+                  <tr data-tt-id="d39e6992-desc" data-tt-parent-id="d39e6992">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA author informant patiënt.</td>
                   </tr>
-                  <tr data-tt-id="d39e4065" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
+                  <tr data-tt-id="d39e6906" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.7.10.51-2018-12-18T141008.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA author SDTC NL 2.16.840.1.113883.2.4.3.11.60.7.10.51 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA author SDTC NL 2.16.840.1.113883.2.4.3.11.60.7.10.51 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑12‑18 14:10:08</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e4065-desc" data-tt-parent-id="d39e4065">
+                  <tr data-tt-id="d39e6906-desc" data-tt-parent-id="d39e6906">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA author (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
                   <tr data-tt-id="d39e499" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.614-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Authorization SDTC 2.16.840.1.113883.10.12.614 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Authorization SDTC 2.16.840.1.113883.10.12.614 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -139,7 +182,7 @@
                   </tr>
                   <tr data-tt-id="d39e392" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA componentOf SDTC 2.16.840.1.113883.10.12.613 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA componentOf SDTC 2.16.840.1.113883.10.12.613 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -150,21 +193,21 @@
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA componentOf (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC
                         extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e3949" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
+                  <tr data-tt-id="d39e6790" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA custodian SDTC NL 2.16.840.1.113883.2.4.3.11.60.7.10.50 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA custodian SDTC NL 2.16.840.1.113883.2.4.3.11.60.7.10.50 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑12‑17</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e3949-desc" data-tt-parent-id="d39e3949">
+                  <tr data-tt-id="d39e6790-desc" data-tt-parent-id="d39e6790">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Beherende organisatie</td>
                   </tr>
                   <tr data-tt-id="d39e3" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.603-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA dataEnterer SDTC 2.16.840.1.113883.10.12.603 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA dataEnterer SDTC 2.16.840.1.113883.10.12.603 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -177,7 +220,7 @@
                   </tr>
                   <tr data-tt-id="d39e282" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA documentationOf SDTC 2.16.840.1.113883.10.12.610 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA documentationOf SDTC 2.16.840.1.113883.10.12.610 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -190,7 +233,7 @@
                   </tr>
                   <tr data-tt-id="d39e33" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.605-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA informationRecipient SDTC 2.16.840.1.113883.10.12.605 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA informationRecipient SDTC 2.16.840.1.113883.10.12.605 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -203,7 +246,7 @@
                   </tr>
                   <tr data-tt-id="d39e239" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.609-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA inFulfillmentOf SDTC 2.16.840.1.113883.10.12.609 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA inFulfillmentOf SDTC 2.16.840.1.113883.10.12.609 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -216,7 +259,7 @@
                   </tr>
                   <tr data-tt-id="d39e85" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.606-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA legalAuthenticator SDTC 2.16.840.1.113883.10.12.606 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA legalAuthenticator SDTC 2.16.840.1.113883.10.12.606 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -229,7 +272,7 @@
                   </tr>
                   <tr data-tt-id="d39e540" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.651-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Organization SDTC 2.16.840.1.113883.10.12.651 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Organization SDTC 2.16.840.1.113883.10.12.651 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -242,7 +285,7 @@
                   </tr>
                   <tr data-tt-id="d39e171" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.608-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA participant SDTC 2.16.840.1.113883.10.12.608 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA participant SDTC 2.16.840.1.113883.10.12.608 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -255,7 +298,7 @@
                   </tr>
                   <tr data-tt-id="d39e625" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.652-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Person SDTC 2.16.840.1.113883.10.12.652 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Person SDTC 2.16.840.1.113883.10.12.652 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -265,15 +308,15 @@
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Person (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e2373" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
+                  <tr data-tt-id="d39e4648" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA recordTarget SDTC NL 2.16.840.1.113883.2.4.3.11.60.3.10.1 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA recordTarget SDTC NL 2.16.840.1.113883.2.4.3.11.60.3.10.1 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e2373-desc" data-tt-parent-id="d39e2373">
+                  <tr data-tt-id="d39e4648-desc" data-tt-parent-id="d39e4648">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA recordTarget. Bevat alleen elementen die worden gedekt vanuit de Zorginformatiebouwstenen
                         Patient 3.1 (release 2017), BurgerlijkeStaat 3.0 (release 2017) en Contactpersoon
@@ -281,7 +324,7 @@
                   </tr>
                   <tr data-tt-id="d39e344" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.611-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA relatedDocument SDTC 2.16.840.1.113883.10.12.611 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA relatedDocument SDTC 2.16.840.1.113883.10.12.611 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -292,198 +335,210 @@
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA relatedDocument (prototype, direct afgeleid uit POCD_RM000040 MIF) +
                         SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e3853" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
+                  <tr data-tt-id="d39e6302" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.35-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> contactpersoon (header) 2.16.840.1.113883.2.4.3.11.60.3.10.35 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> contactpersoon (header) 2.16.840.1.113883.2.4.3.11.60.3.10.35 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;">3.1</td>
                   </tr>
-                  <tr data-tt-id="d39e3853-desc" data-tt-parent-id="d39e3853">
+                  <tr data-tt-id="d39e6302-desc" data-tt-parent-id="d39e6302">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van contactpersoon</td>
                   </tr>
-                  <tr data-tt-id="d39e3692" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
+                  <tr data-tt-id="d39e5967" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgverlener (participant header) 2.16.840.1.113883.2.4.3.11.60.3.10.1.34 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgverlener (participant header) 2.16.840.1.113883.2.4.3.11.60.3.10.1.34 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;">3.1</td>
                   </tr>
-                  <tr data-tt-id="d39e3692-desc" data-tt-parent-id="d39e3692">
+                  <tr data-tt-id="d39e5967-desc" data-tt-parent-id="d39e5967">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template Zorgverlener</td>
+                  </tr>
+                  <tr data-tt-id="d39e3981" class="tmline" data-tt-parent-id="type-cdaheaderlevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.26-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgverlener assignedEntity 2.16.840.1.113883.2.4.3.11.60.3.10.0.26 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;">1.2</td>
+                  </tr>
+                  <tr data-tt-id="d39e3981-desc" data-tt-parent-id="d39e3981">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van gegevens van de uitvoerende partij</td>
                   </tr>
                   <tr data-tt-id="type-cdasectionlevel" class="tmline">
                      <td class="columnName" style="border-top: 6px solid white;"></td>
                      <td class="columnName" style="border-top: 6px solid white;" colspan="3"><a id="cdasectionlevel"></a>CDA section level template</td>
                   </tr>
-                  <tr data-tt-id="d39e1873" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3570" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.4-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Allergieën 2.16.840.1.113883.2.4.3.11.60.126.10.4</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Allergieën 2.16.840.1.113883.2.4.3.11.60.126.10.4</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1873-desc" data-tt-parent-id="d39e1873">
+                  <tr data-tt-id="d39e3570-desc" data-tt-parent-id="d39e3570">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1930" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3627" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.5-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Behandelaanwijzingen 2.16.840.1.113883.2.4.3.11.60.126.10.5</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Behandelaanwijzingen 2.16.840.1.113883.2.4.3.11.60.126.10.5</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1930-desc" data-tt-parent-id="d39e1930">
+                  <tr data-tt-id="d39e3627-desc" data-tt-parent-id="d39e3627">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1986" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3682" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.6-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Betaler 2.16.840.1.113883.2.4.3.11.60.126.10.6</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Betaler 2.16.840.1.113883.2.4.3.11.60.126.10.6</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1986-desc" data-tt-parent-id="d39e1986">
+                  <tr data-tt-id="d39e3682-desc" data-tt-parent-id="d39e3682">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e2043" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3739" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.7-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Contacten 2.16.840.1.113883.2.4.3.11.60.126.10.7</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Contacten 2.16.840.1.113883.2.4.3.11.60.126.10.7</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e2043-desc" data-tt-parent-id="d39e2043">
+                  <tr data-tt-id="d39e3739-desc" data-tt-parent-id="d39e3739">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e2098" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3794" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.8-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Functionele of mentale status 2.16.840.1.113883.2.4.3.11.60.126.10.8</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Functionele of mentale status 2.16.840.1.113883.2.4.3.11.60.126.10.8</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e2098-desc" data-tt-parent-id="d39e2098">
+                  <tr data-tt-id="d39e3794-desc" data-tt-parent-id="d39e3794">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e2153" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3849" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.9-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Klachten en diagnoses 2.16.840.1.113883.2.4.3.11.60.126.10.9</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Klachten en diagnoses 2.16.840.1.113883.2.4.3.11.60.126.10.9</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e2153-desc" data-tt-parent-id="d39e2153">
+                  <tr data-tt-id="d39e3849-desc" data-tt-parent-id="d39e3849">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1068" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e2697" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.10-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Medicatie 2.16.840.1.113883.2.4.3.11.60.126.10.10</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Medicatie 2.16.840.1.113883.2.4.3.11.60.126.10.10</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1068-desc" data-tt-parent-id="d39e1068">
+                  <tr data-tt-id="d39e2697-desc" data-tt-parent-id="d39e2697">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1123" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e2752" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.11-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Medische hulpmiddelen 2.16.840.1.113883.2.4.3.11.60.126.10.11</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Medische hulpmiddelen 2.16.840.1.113883.2.4.3.11.60.126.10.11</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1123-desc" data-tt-parent-id="d39e1123">
+                  <tr data-tt-id="d39e2752-desc" data-tt-parent-id="d39e2752">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1178" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e2807" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.12-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Sociale anamnese 2.16.840.1.113883.2.4.3.11.60.126.10.12</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Sociale anamnese 2.16.840.1.113883.2.4.3.11.60.126.10.12</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1178-desc" data-tt-parent-id="d39e1178">
+                  <tr data-tt-id="d39e2807-desc" data-tt-parent-id="d39e2807">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1652" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3349" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.3-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 StructuredBody SDTC 2.16.840.1.113883.2.4.3.11.60.126.10.3</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 StructuredBody SDTC 2.16.840.1.113883.2.4.3.11.60.126.10.3</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1652-desc" data-tt-parent-id="d39e1652">
+                  <tr data-tt-id="d39e3349-desc" data-tt-parent-id="d39e3349">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA StructuredBody (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC
                         extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1234" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e2930" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.13-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Uitslagen 2.16.840.1.113883.2.4.3.11.60.126.10.13</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Uitslagen 2.16.840.1.113883.2.4.3.11.60.126.10.13</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1234-desc" data-tt-parent-id="d39e1234">
+                  <tr data-tt-id="d39e2930-desc" data-tt-parent-id="d39e2930">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1289" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e2985" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.14-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Vaccinaties 2.16.840.1.113883.2.4.3.11.60.126.10.14</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Vaccinaties 2.16.840.1.113883.2.4.3.11.60.126.10.14</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1289-desc" data-tt-parent-id="d39e1289">
+                  <tr data-tt-id="d39e2985-desc" data-tt-parent-id="d39e2985">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1344" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3040" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.15-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Verrichtingen 2.16.840.1.113883.2.4.3.11.60.126.10.15</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Verrichtingen 2.16.840.1.113883.2.4.3.11.60.126.10.15</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1344-desc" data-tt-parent-id="d39e1344">
+                  <tr data-tt-id="d39e3040-desc" data-tt-parent-id="d39e3040">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1399" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3095" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.16-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Vitale functies 2.16.840.1.113883.2.4.3.11.60.126.10.16</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Vitale functies 2.16.840.1.113883.2.4.3.11.60.126.10.16</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1399-desc" data-tt-parent-id="d39e1399">
+                  <tr data-tt-id="d39e3095-desc" data-tt-parent-id="d39e3095">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1454" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3151" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.17-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Waarschuwingen 2.16.840.1.113883.2.4.3.11.60.126.10.17</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Waarschuwingen 2.16.840.1.113883.2.4.3.11.60.126.10.17</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1454-desc" data-tt-parent-id="d39e1454">
+                  <tr data-tt-id="d39e3151-desc" data-tt-parent-id="d39e3151">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1513" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3210" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.18-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Zorgplan 2.16.840.1.113883.2.4.3.11.60.126.10.18</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> BgZ2020 Zorgplan 2.16.840.1.113883.2.4.3.11.60.126.10.18</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1513-desc" data-tt-parent-id="d39e1513">
+                  <tr data-tt-id="d39e3210-desc" data-tt-parent-id="d39e3210">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
                   <tr data-tt-id="d39e708" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.654-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Informant SDTC 2.16.840.1.113883.10.12.654 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Informant SDTC 2.16.840.1.113883.10.12.654 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -493,13 +548,13 @@
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Informant (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
-                  <tr data-tt-id="d39e1570" class="tmline" data-tt-parent-id="type-cdasectionlevel">
+                  <tr data-tt-id="d39e3267" class="tmline" data-tt-parent-id="type-cdasectionlevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.19-2021-05-14T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> Voorgeschiedenis 2020 2.16.840.1.113883.2.4.3.11.60.126.10.19</td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> Voorgeschiedenis 2020 2.16.840.1.113883.2.4.3.11.60.126.10.19</td>
                      <td style="border-top: 6px solid white;">2021‑05‑14</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e1570-desc" data-tt-parent-id="d39e1570">
+                  <tr data-tt-id="d39e3267-desc" data-tt-parent-id="d39e3267">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC extensies</td>
                   </tr>
@@ -507,9 +562,47 @@
                      <td class="columnName" style="border-top: 6px solid white;"></td>
                      <td class="columnName" style="border-top: 6px solid white;" colspan="3"><a id="cdaentrylevel"></a>CDA entry level template</td>
                   </tr>
+                  <tr data-tt-id="d39e952" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> alcoholgebruik 2.16.840.1.113883.2.4.3.11.60.121.10.2 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2020bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2021‑04‑28 15:14:01</td>
+                     <td style="border-top: 6px solid white;">3.2</td>
+                  </tr>
+                  <tr data-tt-id="d39e952-desc" data-tt-parent-id="d39e952">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van alcoholgebruik</td>
+                  </tr>
+                  <tr data-tt-id="d39e859" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.121.10.1-2021-04-28T151242.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> alcoholgebruik status 2.16.840.1.113883.2.4.3.11.60.121.10.1 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2020bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2021‑04‑28 15:12:42</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e859-desc" data-tt-parent-id="d39e859">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van alcoholgebruik</td>
+                  </tr>
+                  <tr data-tt-id="d39e6210" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.3.17-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> auteur 2.16.840.1.113883.2.4.3.11.60.3.10.3.17 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e6210-desc" data-tt-parent-id="d39e6210">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van gegevens van een zorgverlener die de auteur van een
+                        medische bevinding (observatie, diagnose, etc.) is of van een zorgaanbieder waar de
+                        medische bevinding (observatie, di...</td>
+                  </tr>
                   <tr data-tt-id="d39e743" class="tmline" data-tt-parent-id="type-cdaentrylevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.815-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Device SDTC 2.16.840.1.113883.10.12.815 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Device SDTC 2.16.840.1.113883.10.12.815 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -521,7 +614,7 @@
                   </tr>
                   <tr data-tt-id="d39e817" class="tmline" data-tt-parent-id="type-cdaentrylevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.817-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Place SDTC 2.16.840.1.113883.10.12.817 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA Place SDTC 2.16.840.1.113883.10.12.817 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -533,7 +626,7 @@
                   </tr>
                   <tr data-tt-id="d39e775" class="tmline" data-tt-parent-id="type-cdaentrylevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.816-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA RelatedEntity SDTC 2.16.840.1.113883.10.12.816 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> CDA RelatedEntity SDTC 2.16.840.1.113883.10.12.816 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -544,94 +637,255 @@
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template CDA RelatedEntity (prototype, direct afgeleid uit POCD_RM000040 MIF) + SDTC
                         extensies</td>
                   </tr>
-                  <tr data-tt-id="type-datatypelevel" class="tmline">
-                     <td class="columnName" style="border-top: 6px solid white;"></td>
-                     <td class="columnName" style="border-top: 6px solid white;" colspan="3"><a id="datatypelevel"></a>HL7v2/v3 datatype level template</td>
+                  <tr data-tt-id="d39e1599" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.121.10.7-2021-06-08T103100.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> drugsgebruik 2.16.840.1.113883.2.4.3.11.60.121.10.7 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2020bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2021‑06‑08 10:31:00</td>
+                     <td style="border-top: 6px solid white;">3.3</td>
                   </tr>
-                  <tr data-tt-id="d39e3129" class="tmline" data-tt-parent-id="type-datatypelevel">
-                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="review" src="https://art-decor.org/ADAR/rv/assets/korange.png" class="tipsz" title="Wordt gereviewed" data-toggle="tooltip" data-placement="bottom" /> address NL - generic 2.16.840.1.113883.2.4.3.11.60.3.10.1.101 <span xmlns="" class="repobox">
+                  <tr data-tt-id="d39e1599-desc" data-tt-parent-id="d39e1599">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van drugsgebruik</td>
+                  </tr>
+                  <tr data-tt-id="d39e1191" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.121.10.4-2021-05-28T171626.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> drugsgebruik status 2.16.840.1.113883.2.4.3.11.60.121.10.4 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2020bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2021‑05‑28 17:16:26</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e1191-desc" data-tt-parent-id="d39e1191">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van drugsgebruik status</td>
+                  </tr>
+                  <tr data-tt-id="d39e4095" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.30-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> informant 2.16.840.1.113883.2.4.3.11.60.3.10.0.30 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e3129-desc" data-tt-parent-id="d39e3129">
+                  <tr data-tt-id="d39e4095-desc" data-tt-parent-id="d39e4095">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van gegevens over informant</td>
+                  </tr>
+                  <tr data-tt-id="d39e4520" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.8-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> playingEntity 2.16.840.1.113883.2.4.3.11.60.3.10.0.8 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e4520-desc" data-tt-parent-id="d39e4520">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">playingEntity</td>
+                  </tr>
+                  <tr data-tt-id="d39e6398" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.7.10.3.19-2017-10-25T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> problem active 2.16.840.1.113883.2.4.3.11.60.7.10.3.19 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2017‑10‑25</td>
+                     <td style="border-top: 6px solid white;">4.1</td>
+                  </tr>
+                  <tr data-tt-id="d39e6398-desc" data-tt-parent-id="d39e6398">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van observatie van een actieve klacht, symptoom of bevinding.
+                        De niet actieve klachten, symptomen of bevindingen worden geplaatst in de CDA sectie
+                        'Medische voorgeschidenis'....</td>
+                  </tr>
+                  <tr data-tt-id="d39e6681" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.7.10.3.20-2017-10-25T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> problem status active 2.16.840.1.113883.2.4.3.11.60.7.10.3.20 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2017‑10‑25</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e6681-desc" data-tt-parent-id="d39e6681">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor weergave van de status 'active'van een klacht, symptoom of bevinding</td>
+                  </tr>
+                  <tr data-tt-id="d39e7116" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> problem verificationstatus 2.16.840.1.113883.2.4.3.11.60.7.10.54 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2019‑05‑31 12:50:08</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e7116-desc" data-tt-parent-id="d39e7116">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">
+                        Klinische status van het probleem of de diagnose. 
+                        </td>
+                  </tr>
+                  <tr data-tt-id="d39e4578" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.9-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> scoping Entity 2.16.840.1.113883.2.4.3.11.60.3.10.0.9 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e4578-desc" data-tt-parent-id="d39e4578">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">scopingEntity</td>
+                  </tr>
+                  <tr data-tt-id="d39e6128" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.16-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> tabak gebruik status 2.16.840.1.113883.2.4.3.11.60.3.10.16 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e6128-desc" data-tt-parent-id="d39e6128">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van tabak gebruik status</td>
+                  </tr>
+                  <tr data-tt-id="d39e1280" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> tabakgebruik 2.16.840.1.113883.2.4.3.11.60.121.10.6 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2020bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2021‑06‑01 08:20:05</td>
+                     <td style="border-top: 6px solid white;">3.2</td>
+                  </tr>
+                  <tr data-tt-id="d39e1280-desc" data-tt-parent-id="d39e1280">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van gegevens m.b.t. tabak gebruik</td>
+                  </tr>
+                  <tr data-tt-id="d39e4191" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.32-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> toelichting 2.16.840.1.113883.2.4.3.11.60.3.10.0.32 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e4191-desc" data-tt-parent-id="d39e4191">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van toelichting</td>
+                  </tr>
+                  <tr data-tt-id="d39e2158" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> voedingsadvies 2.16.840.1.113883.2.4.3.11.60.121.10.9 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2020bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2021‑06‑08 13:14:33</td>
+                     <td style="border-top: 6px solid white;">3.2</td>
+                  </tr>
+                  <tr data-tt-id="d39e2158-desc" data-tt-parent-id="d39e2158">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van gegevens m.b.t. voedingsadvies</td>
+                  </tr>
+                  <tr data-tt-id="d39e1919" class="tmline" data-tt-parent-id="type-cdaentrylevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.121.10.8-2021-06-08T111316.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> woonsituatie 2.16.840.1.113883.2.4.3.11.60.121.10.8 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2020bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2021‑06‑08 11:13:16</td>
+                     <td style="border-top: 6px solid white;">3.3</td>
+                  </tr>
+                  <tr data-tt-id="d39e1919-desc" data-tt-parent-id="d39e1919">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van gegevens m.b.t. woonsituatie 
+                        </td>
+                  </tr>
+                  <tr data-tt-id="type-datatypelevel" class="tmline">
+                     <td class="columnName" style="border-top: 6px solid white;"></td>
+                     <td class="columnName" style="border-top: 6px solid white;" colspan="3"><a id="datatypelevel"></a>HL7v2/v3 datatype level template</td>
+                  </tr>
+                  <tr data-tt-id="d39e5405" class="tmline" data-tt-parent-id="type-datatypelevel">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="review" src="../assets/korange.png" class="tipsz" title="Wordt gereviewed" data-toggle="tooltip" data-placement="bottom" /> address NL - generic 2.16.840.1.113883.2.4.3.11.60.3.10.1.101 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e5405-desc" data-tt-parent-id="d39e5405">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Gestructureerde adresgegevens. Merk op dat sommige adresdelen een optionele specificatie
                         voor codering hebben. Coderen van adresdelen is mogelijk door een Nederlandse afwijking
                         op de internationale da...</td>
                   </tr>
-                  <tr data-tt-id="d39e3519" class="tmline" data-tt-parent-id="type-datatypelevel">
+                  <tr data-tt-id="d39e5795" class="tmline" data-tt-parent-id="type-datatypelevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.104-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="review" src="https://art-decor.org/ADAR/rv/assets/korange.png" class="tipsz" title="Wordt gereviewed" data-toggle="tooltip" data-placement="bottom" /> email address - generic 2.16.840.1.113883.2.4.3.11.60.3.10.1.104 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="review" src="../assets/korange.png" class="tipsz" title="Wordt gereviewed" data-toggle="tooltip" data-placement="bottom" /> email address - generic 2.16.840.1.113883.2.4.3.11.60.3.10.1.104 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e3519-desc" data-tt-parent-id="d39e3519">
+                  <tr data-tt-id="d39e5795-desc" data-tt-parent-id="d39e5795">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">E-mailadres</td>
                   </tr>
-                  <tr data-tt-id="d39e2544" class="tmline" data-tt-parent-id="type-datatypelevel">
+                  <tr data-tt-id="d39e4820" class="tmline" data-tt-parent-id="type-datatypelevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> name person NL - generic 2.16.840.1.113883.2.4.3.11.60.3.10.1.100 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> name person NL - generic 2.16.840.1.113883.2.4.3.11.60.3.10.1.100 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e2544-desc" data-tt-parent-id="d39e2544">
+                  <tr data-tt-id="d39e4820-desc" data-tt-parent-id="d39e4820">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Persoonsnaam volledig gestructureerd, of volledig ongestructureerd. Bron:  http://www.hl7.nl/wiki/index.php?title=DatatypesR1:PN
                         . De naamcomponenten in het datatype PN moeten in volgorde van weergave...</td>
                   </tr>
-                  <tr data-tt-id="d39e3475" class="tmline" data-tt-parent-id="type-datatypelevel">
+                  <tr data-tt-id="d39e5751" class="tmline" data-tt-parent-id="type-datatypelevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.103-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="review" src="https://art-decor.org/ADAR/rv/assets/korange.png" class="tipsz" title="Wordt gereviewed" data-toggle="tooltip" data-placement="bottom" /> phone number - generic 2.16.840.1.113883.2.4.3.11.60.3.10.1.103 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="review" src="../assets/korange.png" class="tipsz" title="Wordt gereviewed" data-toggle="tooltip" data-placement="bottom" /> phone number - generic 2.16.840.1.113883.2.4.3.11.60.3.10.1.103 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e3475-desc" data-tt-parent-id="d39e3475">
+                  <tr data-tt-id="d39e5751-desc" data-tt-parent-id="d39e5751">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Telefoonnummer</td>
                   </tr>
-                  <tr data-tt-id="d39e3639" class="tmline" data-tt-parent-id="type-datatypelevel">
+                  <tr data-tt-id="d39e5914" class="tmline" data-tt-parent-id="type-datatypelevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.31-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> specialisme zorgverlener 2.16.840.1.113883.2.4.3.11.60.3.10.1.31 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> specialisme zorgverlener 2.16.840.1.113883.2.4.3.11.60.3.10.1.31 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;">1.2</td>
                   </tr>
-                  <tr data-tt-id="d39e3639-desc" data-tt-parent-id="d39e3639">
+                  <tr data-tt-id="d39e5914-desc" data-tt-parent-id="d39e5914">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Bevat specialisme van de zorgverlener</td>
                   </tr>
-                  <tr data-tt-id="d39e4204" class="tmline" data-tt-parent-id="type-datatypelevel">
+                  <tr data-tt-id="d39e7045" class="tmline" data-tt-parent-id="type-datatypelevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgaanbiederidentificatienummer 2.16.840.1.113883.2.4.3.11.60.7.10.53 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgaanbiederidentificatienummer 2.16.840.1.113883.2.4.3.11.60.7.10.53 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2019‑04‑07 14:36:08</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e4204-desc" data-tt-parent-id="d39e4204">
+                  <tr data-tt-id="d39e7045-desc" data-tt-parent-id="d39e7045">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Zorgaanbiederidentificatienummer</td>
                   </tr>
-                  <tr data-tt-id="d39e3553" class="tmline" data-tt-parent-id="type-datatypelevel">
+                  <tr data-tt-id="d39e5828" class="tmline" data-tt-parent-id="type-datatypelevel">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgverleneridentificatienummer 2.16.840.1.113883.2.4.3.11.60.3.10.1.30 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgverleneridentificatienummer 2.16.840.1.113883.2.4.3.11.60.3.10.1.30 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e3553-desc" data-tt-parent-id="d39e3553">
+                  <tr data-tt-id="d39e5828-desc" data-tt-parent-id="d39e5828">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">
                         Bevat zorgverleneridentificatienummer 
@@ -641,21 +895,33 @@
                      <td class="columnName" style="border-top: 6px solid white;"></td>
                      <td class="columnName" style="border-top: 6px solid white;" colspan="3"><a id="notype"></a>Templatetype niet gespecificeerd</td>
                   </tr>
-                  <tr data-tt-id="d39e2208" class="tmline" data-tt-parent-id="type-notype">
+                  <tr data-tt-id="d39e4277" class="tmline" data-tt-parent-id="type-notype">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.4-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> person 2.16.840.1.113883.2.4.3.11.60.3.10.0.4 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> person 2.16.840.1.113883.2.4.3.11.60.3.10.0.4 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;"></td>
                   </tr>
-                  <tr data-tt-id="d39e2208-desc" data-tt-parent-id="d39e2208">
+                  <tr data-tt-id="d39e4277-desc" data-tt-parent-id="d39e4277">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template person</td>
                   </tr>
+                  <tr data-tt-id="d39e3905" class="tmline" data-tt-parent-id="type-notype">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.15-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> relatedEntity 2.16.840.1.113883.2.4.3.11.60.3.10.0.15 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;"></td>
+                  </tr>
+                  <tr data-tt-id="d39e3905-desc" data-tt-parent-id="d39e3905">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template relatedEntity</td>
+                  </tr>
                   <tr data-tt-id="d39e842" class="tmline" data-tt-parent-id="type-notype">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.10.12.902-2005-09-07T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="https://art-decor.org/ADAR/rv/assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> SDTCpatient 2.16.840.1.113883.10.12.902 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="active" src="../assets/kgreen.png" class="tipsz" title="Actief" data-toggle="tooltip" data-placement="bottom" /> SDTCpatient 2.16.840.1.113883.10.12.902 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">ad1bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2005‑09‑07</td>
@@ -665,18 +931,43 @@
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template SDTC Prototype voor patient uit het SDTC.xsd schema</td>
                   </tr>
-                  <tr data-tt-id="d39e2235" class="tmline" data-tt-parent-id="type-notype">
+                  <tr data-tt-id="d39e4304" class="tmline" data-tt-parent-id="type-notype">
                      <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
-                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="https://art-decor.org/ADAR/rv/assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> uitvoerende zorgaanbieder 2.16.840.1.113883.2.4.3.11.60.3.10.0.5 <span xmlns="" class="repobox">
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> uitvoerende zorgaanbieder 2.16.840.1.113883.2.4.3.11.60.3.10.0.5 <span xmlns="" class="repobox">
                            <div class="repo ref sspacing">ref</div>
                            <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
                      <td style="border-top: 6px solid white;">2018‑06‑11</td>
                      <td style="border-top: 6px solid white;">3.1.1</td>
                   </tr>
-                  <tr data-tt-id="d39e2235-desc" data-tt-parent-id="d39e2235">
+                  <tr data-tt-id="d39e4304-desc" data-tt-parent-id="d39e4304">
                      <td class="columnAllView"></td>
                      <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template zorgaanbieder. Deze template beschrijft een deel van de gegevens over de
                         organisatie van de betrokken zorgverlener, die een uitvoerder is</td>
+                  </tr>
+                  <tr data-tt-id="d39e4480" class="tmline" data-tt-parent-id="type-notype">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.7-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgaanbieder 2.16.840.1.113883.2.4.3.11.60.3.10.0.7 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;">3.1.1</td>
+                  </tr>
+                  <tr data-tt-id="d39e4480-desc" data-tt-parent-id="d39e4480">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van gegevens van zorgaanbieder</td>
+                  </tr>
+                  <tr data-tt-id="d39e4442" class="tmline" data-tt-parent-id="type-notype">
+                     <td style="border-top: 6px solid white;" class="columnAllView"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.6-2018-06-11T000000.html" onclick="target='_blank';">html</a></td>
+                     <td style="border-top: 6px solid white;" class="columnName"><img alt="draft" src="../assets/kyellow.png" class="tipsz" title="Ontwerp" data-toggle="tooltip" data-placement="bottom" /> zorgaanbieder entiteit 2.16.840.1.113883.2.4.3.11.60.3.10.0.6 <span xmlns="" class="repobox">
+                           <div class="repo ref sspacing">ref</div>
+                           <div class="non-selectable repo refvalue sspacing">zib2017bbr-</div></span></td>
+                     <td style="border-top: 6px solid white;">2018‑06‑11</td>
+                     <td style="border-top: 6px solid white;">3.1.1</td>
+                  </tr>
+                  <tr data-tt-id="d39e4442-desc" data-tt-parent-id="d39e4442">
+                     <td class="columnAllView"></td>
+                     <td style="'padding-left: 2em;')" class="columnDesc comment" colspan="3">Template voor de weergave van de gegevens over de zorgaanbieder. Deze template beschrijft
+                        de organisatie van de betrokken zorgverlener, die geen uitvoerder is</td>
                   </tr>
                </tbody>
             </table>
@@ -685,11 +976,11 @@
          <table class="tabtab" style="width: 750px;" border="0" cellspacing="3" cellpadding="2">
             <tr style="background-color: #CCFFCC;">
                <td>Templates</td>
-               <td colspan="2">52</td>
+               <td colspan="2">72</td>
             </tr>
          </table>
          <h2><a name="labelRulesPerScenario"></a>Templates per scenario</h2>
-         <h3>Templates voor scenario <a href="scenarios.html#_2.16.840.1.113883.2.4.3.11.60.126.3.2_20200917000000"><i>Basisgegevensset Zorg 2017 (BgZ)</i></a> <span style="color: grey;">bgz2020-scenario-</span>2  van 2020‑09‑17</h3>
+         <h3>Templates voor scenario <a href="scenarios.html#_2.16.840.1.113883.2.4.3.11.60.126.3.2_20200917000000"><i>Basisgegevensset Zorg 2020 (BgZ)</i></a> <span style="color: grey;">bgz2020-scenario-</span>2  van 2020‑09‑17</h3>
          <table class="tabtab" style="width: 750px;" border="0" cellspacing="3" cellpadding="2">
             <tr>
                <th style="width: 200px;">Transactie</th>
@@ -700,14 +991,14 @@
             <tr>
                <td style="text-align: left;"><a href="scenarios.html#_2.16.840.1.113883.2.4.3.11.60.126.4.34_20170101000000">Aanmaken of bijwerken</a></td>
                <td style="text-align: left;"><span style="color: grey;">bgz2020-template-</span>1</td>
-               <td style="text-align: left;"><a href="tmp-2017-10-24T180540.html" onclick="target='_blank';"></a></td>
-               <td style="text-align: left;"></td>
+               <td style="text-align: left;"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html" onclick="target='_blank';">CDA Basisgegevensset Zorg 2020 (BgZ)</a></td>
+               <td style="text-align: left;">2021‑05‑14 13:34:51</td>
             </tr>
             <tr>
                <td style="text-align: left;"><a href="scenarios.html#_2.16.840.1.113883.2.4.3.11.60.126.4.37_20200917000000">Beschikbaarstellen BgZ</a></td>
                <td style="text-align: left;"><span style="color: grey;">bgz2020-template-</span>1</td>
-               <td style="text-align: left;"><a href="tmp-2017-10-24T180540.html" onclick="target='_blank';"></a></td>
-               <td style="text-align: left;"></td>
+               <td style="text-align: left;"><a href="tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html" onclick="target='_blank';">CDA Basisgegevensset Zorg 2020 (BgZ)</a></td>
+               <td style="text-align: left;">2021‑05‑14 13:34:51</td>
             </tr>
          </table>
          <h2>Itemlabels per template</h2>
@@ -722,6 +1013,42 @@
          </table>
       </div>
       <p>Datasets, codes, OID's en Regels: deze informatie wordt gebruikt voor weergave- en
-         validatiedoeleinden.</p>
-   </body>
+         validatiedoeleinden.</p><script type="text/javascript">
+                function RefreshAccordion (theAccId) {
+                    new Fx.Accordion($(theAccId), '#' + theAccId + ' .AccordionPanelTab', '#' + theAccId + ' .AccordionPanelContent', {
+                        display: -1,
+                        alwaysHide: true
+                    });
+                };
+                window.addEvent('domready', function(){
+                    // init accordions
+                    /* Accordionds Accordionsi Accordionsc Accordionvs Accordionid Accordionrl Accordionis Accordionce */
+                    
+                    RefreshAccordion('Accordionds');
+                    RefreshAccordion('Accordionsi');
+                    RefreshAccordion('Accordionsc');
+                    RefreshAccordion('Accordionvs');
+                    RefreshAccordion('Accordionid');
+                    RefreshAccordion('Accordionrl');
+                    RefreshAccordion('Accordionis');
+                    RefreshAccordion('Accordionce');
+                    //2DO: schematron zip met xhr HEAD
+                });
+                </script><script type="text/javascript">
+                /* init all tooltips */
+                //store titles and text
+                $$('a.tipz').each(function(element,index) {
+                    var content = element.get('title').split('::');
+                    element.store('tip:title', content[0]);
+                    element.store('tip:text', content[1]);
+                });
+                
+                //create the tooltips
+                var tipz = new Tips('.tipz',{
+                    className: 'tip',
+                    fixed: true,
+                    hideDelay: 50,
+                    showDelay: 50
+                });
+                </script></body>
 </html>

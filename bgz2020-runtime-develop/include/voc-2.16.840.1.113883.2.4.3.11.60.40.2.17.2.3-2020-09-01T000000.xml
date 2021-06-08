@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <sourceCodeSystem id="2.16.840.1.113883.2.4.15.1060"
                         identifierName="RoleCodeNL - zorgaanbiedertype (organisaties)"
                         canonicalUri="http://nictiz.nl/fhir/NamingSystem/organization-type"

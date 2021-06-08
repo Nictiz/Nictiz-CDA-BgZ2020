@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:cda="urn:hl7-org:v3"
+             xmlns:hl7="urn:hl7-org:v3"
+             xmlns:sdtc="urn:hl7-org:sdtc"
+             xmlns:hl7nl="urn:hl7-nl:v3"
+             xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:pharm="urn:ihe:pharm:medication"
+             id="2.16.840.1.113883.2.4.3.11.60.40.2.12.4.4"
+             name="MeetLocatieCodelijst"
+             displayName="MeetLocatieCodelijst"
+             effectiveDate="2020-09-01T00:00:00"
+             statusCode="final"
+             ident="zib2020bbr-"
+             url="http://decor.nictiz.nl/decor/services/"
+             referencedFrom="bgz2020-">
+      <sourceCodeSystem id="2.16.840.1.113883.6.96"
+                        identifierName="SNOMED Clinical Terms"
+                        canonicalUri="http://snomed.info/sct"
+                        canonicalUriDSTU2="http://snomed.info/sct"
+                        canonicalUriSTU3="http://snomed.info/sct"
+                        canonicalUriR4="http://snomed.info/sct"/>
+      <publishingAuthority name="Nictiz">
+         <addrLine type="uri">http://www.nictiz.nl</addrLine>
+      </publishingAuthority>
+      <copyright language="en-US">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+      <conceptList>
+         <concept code="40983000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Upper arm structure"
+                  level="0"
+                  type="L">
+            <designation language="en-US" type="preferred" displayName="Upper arm structure"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van bovenarm"/>
+            <desc language="nl-NL">Bovenarm</desc>
+         </concept>
+         <concept code="368209003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Right upper arm structure"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Right upper arm structure"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van rechter bovenarm"/>
+            <desc language="nl-NL">Rechter bovenarm</desc>
+         </concept>
+         <concept code="368208006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Left upper arm structure"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Left upper arm structure"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van linker bovenarm"/>
+            <desc language="nl-NL">Linker bovenarm</desc>
+         </concept>
+         <concept code="68367000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Thigh structure"
+                  level="0"
+                  type="L">
+            <designation language="en-US" type="preferred" displayName="Thigh structure"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van bovenbeen"/>
+            <desc language="nl-NL">Bovenbeen</desc>
+         </concept>
+         <concept code="11207009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Structure of right thigh"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Structure of right thigh"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van rechter bovenbeen"/>
+            <desc language="nl-NL">Rechter bovenbeen</desc>
+         </concept>
+         <concept code="61396006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Structure of left thigh"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Structure of left thigh"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van linker bovenbeen"/>
+            <desc language="nl-NL">Linker bovenbeen</desc>
+         </concept>
+         <concept code="8205005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Wrist region structure"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Wrist region structure"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van polsregio"/>
+            <desc language="nl-NL">Pols</desc>
+         </concept>
+         <concept code="9736006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Structure of right wrist"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Structure of right wrist"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van rechter pols"/>
+            <desc language="nl-NL">Rechterpols</desc>
+         </concept>
+         <concept code="5951000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Structure of left wrist"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Structure of left wrist"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van linker pols"/>
+            <desc language="nl-NL">Linkerpols</desc>
+         </concept>
+         <concept code="7569003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Finger structure"
+                  level="0"
+                  type="L">
+            <designation language="en-US" type="preferred" displayName="Finger structure"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van digitus van hand, exclusief digitus I"/>
+            <desc language="nl-NL">Vinger</desc>
+         </concept>
+         <concept code="344001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Ankle region structure"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Ankle region structure"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van regio van enkel"/>
+            <desc language="nl-NL">Enkel</desc>
+         </concept>
+         <concept code="6685009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Structure of right ankle"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Structure of right ankle"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van rechter enkel"/>
+            <desc language="nl-NL">Rechterenkel</desc>
+         </concept>
+         <concept code="51636004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Structure of left ankle"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Structure of left ankle"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Structuur van linker enkel"/>
+            <desc language="nl-NL">Linkerenkel</desc>
+         </concept>
+      </conceptList>
+   </valueSet>
+</valueSets>

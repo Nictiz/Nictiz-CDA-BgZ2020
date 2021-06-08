@@ -21,7 +21,7 @@ Item: (Voorgeschiedenis2020)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]"
-         id="d39e1586-false-d17326e0">
+         id="d39e3283-false-d64188e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.19-2021-05-14T000000.html"
               test="count(hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']) &gt;= 1">(Voorgeschiedenis2020): element hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19'] is mandatory [min 1x].</assert>
@@ -54,7 +54,7 @@ Item: (Voorgeschiedenis2020)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']"
-         id="d39e1591-false-d17395e0">
+         id="d39e3288-false-d64257e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.19-2021-05-14T000000.html"
@@ -70,7 +70,7 @@ Item: (Voorgeschiedenis2020)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]/hl7:code[(@code = '11348-0' and @codeSystem = '2.16.840.1.113883.6.1')]"
-         id="d39e1596-false-d17414e0">
+         id="d39e3293-false-d64276e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.19-2021-05-14T000000.html"
@@ -89,7 +89,7 @@ Item: (Voorgeschiedenis2020)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]/hl7:title[not(@nullFlavor)]"
-         id="d39e1610-false-d17439e0">
+         id="d39e3307-false-d64301e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.19-2021-05-14T000000.html"
@@ -102,7 +102,7 @@ Item: (Voorgeschiedenis2020)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.19']]/hl7:text[not(@nullFlavor)]"
-         id="d39e1616-false-d17452e0">
+         id="d39e3313-false-d64314e0">
       <extends rule="SD.TEXT"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.19-2021-05-14T000000.html"

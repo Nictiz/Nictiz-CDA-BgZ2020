@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <sourceCodeSystem id="2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.999"
                         identifierName="Voorlopige aanvullende informatie toedieningsafspraak"
                         canonicalUri="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.999"

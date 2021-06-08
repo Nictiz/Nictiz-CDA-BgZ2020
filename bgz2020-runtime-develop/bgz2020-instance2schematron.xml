@@ -31,11 +31,74 @@
   Note that the same template may be part of multiple transactions, hence multiple map element could be present for the same template. The attached Schematron
   will have different names, but will have the exact same rules (same template, same rules) hence only the first match is needed for validation.
   
-- As final fallback, when no template-id is found in the instance, code should rely on root element of the instance to determine the Schematron file name ... -->
-    
-    <!-- Chapter 3: Mapping based on representing templates -->
-    <!-- ========= -->
-    <!-- Used to map a representing template to a specific Schematron. How to read:
+- As final fallback, when no template-id is found in the instance, code should rely on root element of the instance to determine the Schematron file name ... --><!-- template name: CDABasisgegevenssetZorg2020 -->
+   <map model="ClinicalDocument"
+        rootelement="ClinicalDocument"
+        namespace="urn:hl7-org:v3"
+        templateRoot="2.16.840.1.113883.2.4.3.11.60.126.10.1"
+        sch="bgz2020-BasicHealthDataSet-createUpdate-2020.sch"
+        schsvrl="bgz2020-BasicHealthDataSet-createUpdate-2020.xsl"
+        xsd="ClinicalDocument.xsd"/>
+   <map model="ClinicalDocument"
+        rootelement="ClinicalDocument"
+        namespace="urn:hl7-org:v3"
+        templateRoot="2.16.840.1.113883.2.4.6.10.100001"
+        sch="bgz2020-BasicHealthDataSet-createUpdate-2020.sch"
+        schsvrl="bgz2020-BasicHealthDataSet-createUpdate-2020.xsl"
+        xsd="ClinicalDocument.xsd"/>
+   <map model="ClinicalDocument"
+        rootelement="ClinicalDocument"
+        namespace="urn:hl7-org:v3"
+        sch="bgz2020-BasicHealthDataSet-createUpdate-2020.sch"
+        schsvrl="bgz2020-BasicHealthDataSet-createUpdate-2020.xsl"
+        xsd="ClinicalDocument.xsd"/>
+   <!-- template name: CDABasisgegevenssetZorg2020 -->
+   <map model="ClinicalDocument"
+        rootelement="ClinicalDocument"
+        namespace="urn:hl7-org:v3"
+        templateRoot="2.16.840.1.113883.2.4.3.11.60.126.10.1"
+        sch="bgz2020-BasicHealthDataSet-response-2020.sch"
+        schsvrl="bgz2020-BasicHealthDataSet-response-2020.xsl"
+        xsd="ClinicalDocument.xsd"/>
+   <map model="ClinicalDocument"
+        rootelement="ClinicalDocument"
+        namespace="urn:hl7-org:v3"
+        templateRoot="2.16.840.1.113883.2.4.6.10.100001"
+        sch="bgz2020-BasicHealthDataSet-response-2020.sch"
+        schsvrl="bgz2020-BasicHealthDataSet-response-2020.xsl"
+        xsd="ClinicalDocument.xsd"/>
+   <map model="ClinicalDocument"
+        rootelement="ClinicalDocument"
+        namespace="urn:hl7-org:v3"
+        sch="bgz2020-BasicHealthDataSet-response-2020.sch"
+        schsvrl="bgz2020-BasicHealthDataSet-response-2020.xsl"
+        xsd="ClinicalDocument.xsd"/>
+   <!-- Chapter 3: Mapping based on representing templates -->
+   <!-- ========= -->
+   <!-- Used to map a representing template to a specific Schematron. How to read:
 - For every representing template the schematron file and sch svrl xsl conversion file is mentioned
 - The corresponding root element plus its namespace is mentioned 
-- Every transaction represented by this template is named--></mappings>
+- Every transaction represented by this template is named-->
+   <template id="2.16.840.1.113883.2.4.3.11.60.126.10.1"
+             effectiveDate="2021-05-14T13:34:51"
+             sch="bgz2020-BasicHealthDataSet-createUpdate-2020.sch"
+             schsvrl="bgz2020-BasicHealthDataSet-createUpdate-2020.xsl">
+      <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
+      <transaction id="2.16.840.1.113883.2.4.3.11.60.126.4.34"
+                   effectiveDate="2017-01-01T00:00:00"
+                   statusCode="draft"
+                   versionLabel="2020"
+                   name="Aanmaken of bijwerken"/>
+   </template>
+   <template id="2.16.840.1.113883.2.4.3.11.60.126.10.1"
+             effectiveDate="2021-05-14T13:34:51"
+             sch="bgz2020-BasicHealthDataSet-response-2020.sch"
+             schsvrl="bgz2020-BasicHealthDataSet-response-2020.xsl">
+      <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
+      <transaction id="2.16.840.1.113883.2.4.3.11.60.126.4.37"
+                   effectiveDate="2020-09-17T00:00:00"
+                   statusCode="draft"
+                   versionLabel="2020"
+                   name="Beschikbaarstellen BgZ"/>
+   </template>
+</mappings>

@@ -16,7 +16,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]"
-         id="d39e879-false-d424e0">
+         id="d39e2508-false-d16212e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
               test="string(@classCode) = ('DOCCLIN') or not(@classCode)">(CDABasisgegevenssetZorg2020): de waarde van classCode MOET 'DOCCLIN' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -125,7 +125,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:realmCode[@code = 'NL' or @nullFlavor]"
-         id="d39e885-false-d965e0">
+         id="d39e2514-false-d16760e0">
       <extends rule="CS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -141,7 +141,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:typeId[@root = '2.16.840.1.113883.1.3'][@extension = 'POCD_HD000040']"
-         id="d39e890-false-d985e0">
+         id="d39e2519-false-d16780e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -163,7 +163,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1']"
-         id="d39e897-false-d1015e0">
+         id="d39e2526-false-d16810e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -179,7 +179,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']"
-         id="d39e903-false-d1034e0">
+         id="d39e2532-false-d16829e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -195,7 +195,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:id"
-         id="d39e911-false-d1053e0">
+         id="d39e2540-false-d16848e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -208,7 +208,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:code[(@code = '60591-5' and @codeSystem = '2.16.840.1.113883.6.1')]"
-         id="d39e913-false-d1066e0">
+         id="d39e2542-false-d16861e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -227,7 +227,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:title"
-         id="d39e927-false-d1091e0">
+         id="d39e2556-false-d16886e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -240,7 +240,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:effectiveTime"
-         id="d39e935-false-d1104e0">
+         id="d39e2564-false-d16899e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -256,7 +256,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:confidentialityCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.16926-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d39e941-false-d1123e0">
+         id="d39e2570-false-d16918e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -274,7 +274,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:languageCode"
-         id="d39e964-false-d1149e0">
+         id="d39e2593-false-d16944e0">
       <extends rule="CS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -287,7 +287,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:setId"
-         id="d39e969-false-d1167e0">
+         id="d39e2598-false-d16962e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -300,7 +300,7 @@ Item: (CDABasisgegevenssetZorg2020)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:versionNumber"
-         id="d39e975-false-d1180e0">
+         id="d39e2604-false-d16975e0">
       <extends rule="INT"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451.html"
@@ -317,7 +317,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]"
-         id="d1191e17-false-d1229e0">
+         id="d16986e17-false-d17024e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
               test="count(hl7:patientRole) &gt;= 1">(CDArecordTargetSDTC-NL): element hl7:patientRole is required [min 1x].</assert>
@@ -332,7 +332,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole"
-         id="d1191e19-false-d1313e0">
+         id="d16986e19-false-d17108e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
               test="count(hl7:id) &gt;= 1">(CDArecordTargetSDTC-NL): element hl7:id is required [min 1x].</assert>
@@ -347,7 +347,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:id"
-         id="d1191e21-false-d1379e0">
+         id="d16986e21-false-d17174e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -369,7 +369,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr"
-         id="d1191e77-false-d1421e0">
+         id="d16986e77-false-d17216e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -417,7 +417,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:streetName"
-         id="d1537e83-false-d1545e0">
+         id="d17332e83-false-d17340e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -430,7 +430,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:houseNumber"
-         id="d1537e97-false-d1558e0">
+         id="d17332e97-false-d17353e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -443,7 +443,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:buildingNumberSuffix"
-         id="d1537e114-false-d1571e0">
+         id="d17332e114-false-d17366e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -456,7 +456,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:additionalLocator"
-         id="d1537e186-false-d1584e0">
+         id="d17332e186-false-d17379e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -472,7 +472,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:postalCode"
-         id="d1537e199-false-d1605e0">
+         id="d17332e199-false-d17400e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -485,7 +485,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:county"
-         id="d1537e230-false-d1620e0">
+         id="d17332e230-false-d17415e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -498,7 +498,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:city"
-         id="d1537e239-false-d1633e0">
+         id="d17332e239-false-d17428e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -511,7 +511,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:country"
-         id="d1537e248-false-d1646e0">
+         id="d17332e248-false-d17441e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -524,7 +524,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:unitID"
-         id="d1537e289-false-d1661e0">
+         id="d17332e289-false-d17456e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -537,7 +537,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:addr/hl7:useablePeriod"
-         id="d1537e306-false-d1674e0">
+         id="d17332e306-false-d17469e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -550,7 +550,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:telecom[starts-with(@value,'tel:')]"
-         id="d1191e82-false-d1685e0">
+         id="d16986e82-false-d17480e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -574,7 +574,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:telecom[starts-with(@value,'mailto:')]"
-         id="d1191e87-false-d1737e0">
+         id="d16986e87-false-d17532e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -598,7 +598,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]"
-         id="d1191e92-false-d1800e0">
+         id="d16986e92-false-d17595e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
               test="count(hl7:name) &gt;= 1">(CDArecordTargetSDTC-NL): element hl7:name is required [min 1x].</assert>
@@ -638,7 +638,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name"
-         id="d1191e94-false-d1920e0">
+         id="d16986e94-false-d17715e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -700,7 +700,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:given[@qualifier='BR']"
-         id="d2044e275-false-d2053e0">
+         id="d17839e275-false-d17848e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -719,7 +719,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:given[@qualifier='CL']"
-         id="d2044e294-false-d2075e0">
+         id="d17839e294-false-d17870e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -738,7 +738,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:given[@qualifier='IN']"
-         id="d2044e313-false-d2097e0">
+         id="d17839e313-false-d17892e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -757,7 +757,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:given[not(@qualifier)]"
-         id="d2044e333-false-d2119e0">
+         id="d17839e333-false-d17914e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -770,7 +770,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:prefix[.[not(@qualifier)] | .[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family]]"
-         id="d2044e342-false-d2130e0">
+         id="d17839e342-false-d17925e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -783,7 +783,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:family[not(@qualifier)]"
-         id="d2044e351-false-d2141e0">
+         id="d17839e351-false-d17936e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -796,7 +796,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:prefix[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family[1][@qualifier='BR']]"
-         id="d2044e360-false-d2152e0">
+         id="d17839e360-false-d17947e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -815,7 +815,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:family[@qualifier='BR']"
-         id="d2044e386-false-d2174e0">
+         id="d17839e386-false-d17969e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -834,7 +834,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:delimiter[not(@nullFlavor)]"
-         id="d2044e405-false-d2198e0">
+         id="d17839e405-false-d17993e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -850,7 +850,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:prefix[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family[1][@qualifier='SP']]"
-         id="d2044e435-false-d2214e0">
+         id="d17839e435-false-d18009e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -869,7 +869,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:family[@qualifier='SP']"
-         id="d2044e461-false-d2236e0">
+         id="d17839e461-false-d18031e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -888,7 +888,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:suffix[not(@nullFlavor)]"
-         id="d2044e480-false-d2260e0">
+         id="d17839e480-false-d18055e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -907,7 +907,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:name/hl7:validTime"
-         id="d2044e520-false-d2284e0">
+         id="d17839e520-false-d18079e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -920,7 +920,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]"
-         id="d1191e99-false-d2299e0">
+         id="d16986e99-false-d18094e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -944,7 +944,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:birthTime"
-         id="d1191e104-false-d2326e0">
+         id="d16986e104-false-d18121e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -960,7 +960,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/sdtc:deceasedInd"
-         id="d1191e106-false-d2343e0">
+         id="d16986e106-false-d18138e0">
       <extends rule="BL"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -973,7 +973,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/sdtc:deceasedTime"
-         id="d1191e108-false-d2356e0">
+         id="d16986e108-false-d18151e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -989,7 +989,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/sdtc:multipleBirthInd"
-         id="d1191e111-false-d2373e0">
+         id="d16986e111-false-d18168e0">
       <extends rule="BL"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -1002,7 +1002,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:maritalStatusCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.7.9.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d1191e113-false-d2388e0">
+         id="d16986e113-false-d18183e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -1020,7 +1020,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian"
-         id="d1191e118-false-d2425e0">
+         id="d16986e118-false-d18220e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
               test="string(@classCode) = ('GUARD') or not(@classCode)">(CDArecordTargetSDTC-NL): de waarde van classCode MOET 'GUARD' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1045,7 +1045,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d1191e122-false-d2502e0">
+         id="d16986e122-false-d18297e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -1063,7 +1063,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr"
-         id="d1191e127-false-d2535e0">
+         id="d16986e127-false-d18330e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -1111,7 +1111,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:streetName"
-         id="d2651e83-false-d2659e0">
+         id="d18446e83-false-d18454e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1124,7 +1124,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:houseNumber"
-         id="d2651e97-false-d2672e0">
+         id="d18446e97-false-d18467e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1137,7 +1137,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:buildingNumberSuffix"
-         id="d2651e114-false-d2685e0">
+         id="d18446e114-false-d18480e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1150,7 +1150,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:additionalLocator"
-         id="d2651e186-false-d2698e0">
+         id="d18446e186-false-d18493e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1166,7 +1166,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:postalCode"
-         id="d2651e199-false-d2719e0">
+         id="d18446e199-false-d18514e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1179,7 +1179,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:county"
-         id="d2651e230-false-d2734e0">
+         id="d18446e230-false-d18529e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1192,7 +1192,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:city"
-         id="d2651e239-false-d2747e0">
+         id="d18446e239-false-d18542e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1205,7 +1205,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:country"
-         id="d2651e248-false-d2760e0">
+         id="d18446e248-false-d18555e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1218,7 +1218,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:unitID"
-         id="d2651e289-false-d2775e0">
+         id="d18446e289-false-d18570e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1231,7 +1231,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:addr/hl7:useablePeriod"
-         id="d2651e306-false-d2788e0">
+         id="d18446e306-false-d18583e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1244,7 +1244,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:telecom[starts-with(@value,'tel:')]"
-         id="d1191e132-false-d2799e0">
+         id="d16986e132-false-d18594e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -1268,7 +1268,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:telecom[starts-with(@value,'mailto:')]"
-         id="d1191e137-false-d2851e0">
+         id="d16986e137-false-d18646e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -1292,7 +1292,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson"
-         id="d1191e145-false-d2897e0">
+         id="d16986e145-false-d18692e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
               test="count(hl7:name) &lt;= 1">(CDArecordTargetSDTC-NL): element hl7:name komt te vaak voor [max 1x].</assert>
@@ -1307,7 +1307,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name"
-         id="d1191e149-false-d2930e0">
+         id="d16986e149-false-d18725e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -1369,7 +1369,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:given[@qualifier='BR']"
-         id="d3054e275-false-d3063e0">
+         id="d18849e275-false-d18858e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1388,7 +1388,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:given[@qualifier='CL']"
-         id="d3054e294-false-d3085e0">
+         id="d18849e294-false-d18880e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1407,7 +1407,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:given[@qualifier='IN']"
-         id="d3054e313-false-d3107e0">
+         id="d18849e313-false-d18902e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1426,7 +1426,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:given[not(@qualifier)]"
-         id="d3054e333-false-d3129e0">
+         id="d18849e333-false-d18924e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1439,7 +1439,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:prefix[.[not(@qualifier)] | .[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family]]"
-         id="d3054e342-false-d3140e0">
+         id="d18849e342-false-d18935e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1452,7 +1452,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:family[not(@qualifier)]"
-         id="d3054e351-false-d3151e0">
+         id="d18849e351-false-d18946e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1465,7 +1465,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:prefix[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family[1][@qualifier='BR']]"
-         id="d3054e360-false-d3162e0">
+         id="d18849e360-false-d18957e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1484,7 +1484,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:family[@qualifier='BR']"
-         id="d3054e386-false-d3184e0">
+         id="d18849e386-false-d18979e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1503,7 +1503,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:delimiter[not(@nullFlavor)]"
-         id="d3054e405-false-d3208e0">
+         id="d18849e405-false-d19003e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1519,7 +1519,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:prefix[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family[1][@qualifier='SP']]"
-         id="d3054e435-false-d3224e0">
+         id="d18849e435-false-d19019e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1538,7 +1538,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:family[@qualifier='SP']"
-         id="d3054e461-false-d3246e0">
+         id="d18849e461-false-d19041e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1557,7 +1557,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:suffix[not(@nullFlavor)]"
-         id="d3054e480-false-d3270e0">
+         id="d18849e480-false-d19065e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1576,7 +1576,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:validTime"
-         id="d3054e520-false-d3294e0">
+         id="d18849e520-false-d19089e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -1589,7 +1589,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/sdtc:asPatientRelationship[sdtc:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]"
-         id="d1191e154-false-d3309e0">
+         id="d16986e154-false-d19104e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
               test="string(@classCode) = ('PRS')">(CDArecordTargetSDTC-NL): de waarde van classCode MOET 'PRS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1611,7 +1611,7 @@ Item: (CDArecordTargetSDTC-NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:recordTarget[hl7:patientRole]/hl7:patientRole/hl7:patient[hl7:administrativeGenderCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/hl7:guardian/hl7:guardianPerson/sdtc:asPatientRelationship[sdtc:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]]/sdtc:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]"
-         id="d1191e158-false-d3351e0">
+         id="d16986e158-false-d19146e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1-2018-06-11T000000.html"
@@ -1635,7 +1635,7 @@ Item: (CDAauthorSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author"
-         id="d3372e18-false-d3404e0">
+         id="d19167e18-false-d19199e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.51-2018-12-18T141008.html"
               test="string(@typeCode) = ('AUT') or not(@typeCode)">(CDAauthorSDTCNL): de waarde van typeCode MOET 'AUT' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -1673,7 +1673,7 @@ Item: (CDAauthorSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:functionCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.10267-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d3372e24-false-d3481e0">
+         id="d19167e24-false-d19276e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.51-2018-12-18T141008.html"
@@ -1691,7 +1691,7 @@ Item: (CDAauthorSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:time"
-         id="d3372e29-false-d3505e0">
+         id="d19167e29-false-d19300e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.51-2018-12-18T141008.html"
@@ -1707,7 +1707,7 @@ Item: (CDAauthorSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]"
-         id="d3372e37-false-d3520e0">
+         id="d19167e37-false-d19315e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.51-2018-12-18T141008.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(CDAauthorSDTCNL): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1760,7 +1760,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:id[@root = '2.16.528.1.1007.3.1']"
-         id="d3683e11-false-d3694e0">
+         id="d19478e11-false-d19489e0">
       <extends rule="II.NL.UZI"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -1782,7 +1782,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:id[@root = '2.16.840.1.113883.2.4.6.1']"
-         id="d3683e30-false-d3723e0">
+         id="d19478e30-false-d19518e0">
       <extends rule="II.NL.AGB"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -1804,7 +1804,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:id[@root = '2.16.528.1.1007.5.1']"
-         id="d3683e49-false-d3752e0">
+         id="d19478e49-false-d19547e0">
       <extends rule="II.NL.BIG"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -1826,7 +1826,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:id[not(@root = ('2.16.528.1.1007.3.1', '2.16.840.1.113883.2.4.6.1', '2.16.528.1.1007.5.1'))]"
-         id="d3683e68-false-d3779e0">
+         id="d19478e68-false-d19574e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -1844,7 +1844,7 @@ Item: (specialisme_zorgverlener)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.1.7-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d3786e15-false-d3799e0">
+         id="d19581e15-false-d19594e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.31-2018-06-11T000000.html"
@@ -1862,7 +1862,7 @@ Item: (specialisme_zorgverlener)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.1.6-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d3786e31-false-d3823e0">
+         id="d19581e31-false-d19618e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.31-2018-06-11T000000.html"
@@ -1880,7 +1880,7 @@ Item: (CDAauthorSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:addr"
-         id="d3372e52-false-d3845e0">
+         id="d19167e52-false-d19640e0">
       <extends rule="AD.NL"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.51-2018-12-18T141008.html"
@@ -1893,7 +1893,7 @@ Item: (CDAauthorSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:telecom"
-         id="d3372e59-false-d3858e0">
+         id="d19167e59-false-d19653e0">
       <extends rule="TEL.NL.EXTENDED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.51-2018-12-18T141008.html"
@@ -2259,7 +2259,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization"
-         id="d4411e39-false-d4433e0">
+         id="d20206e39-false-d20228e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
               test="string(@classCode) = ('ORG') or not(@classCode)">(representedOrganization): de waarde van classCode MOET 'ORG' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -2294,7 +2294,7 @@ Item: (zorgaanbiederidentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:id[@root = '2.16.528.1.1007.3.3']"
-         id="d4533e9-false-d4544e0">
+         id="d20328e9-false-d20339e0">
       <extends rule="II.NL.URA"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html"
@@ -2316,7 +2316,7 @@ Item: (zorgaanbiederidentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:id[@root = '2.16.840.1.113883.2.4.6.1']"
-         id="d4533e27-false-d4573e0">
+         id="d20328e27-false-d20368e0">
       <extends rule="II.NL.AGB"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html"
@@ -2338,7 +2338,7 @@ Item: (zorgaanbiederidentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:id[@root = '2.16.840.1.113883.2.4.6.8']"
-         id="d4533e45-false-d4602e0">
+         id="d20328e45-false-d20397e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html"
@@ -2360,7 +2360,7 @@ Item: (zorgaanbiederidentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:id[not(@root = ('2.16.528.1.1007.3.3', '2.16.840.1.113883.2.4.6.1', '2.16.840.1.113883.2.4.6.8'))]"
-         id="d4533e63-false-d4629e0">
+         id="d20328e63-false-d20424e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html"
@@ -2373,7 +2373,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:name"
-         id="d4411e48-false-d4642e0">
+         id="d20206e48-false-d20437e0">
       <extends rule="ON"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
@@ -2386,7 +2386,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:telecom[starts-with(@value,'tel:')]"
-         id="d4411e64-false-d4653e0">
+         id="d20206e64-false-d20448e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -2410,7 +2410,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:telecom[starts-with(@value,'mailto:')]"
-         id="d4411e73-false-d4705e0">
+         id="d20206e73-false-d20500e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -2434,7 +2434,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr"
-         id="d4411e81-false-d4760e0">
+         id="d20206e81-false-d20555e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -2482,7 +2482,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:streetName"
-         id="d4876e83-false-d4884e0">
+         id="d20671e83-false-d20679e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2495,7 +2495,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:houseNumber"
-         id="d4876e97-false-d4897e0">
+         id="d20671e97-false-d20692e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2508,7 +2508,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:buildingNumberSuffix"
-         id="d4876e114-false-d4910e0">
+         id="d20671e114-false-d20705e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2521,7 +2521,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:additionalLocator"
-         id="d4876e186-false-d4923e0">
+         id="d20671e186-false-d20718e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2537,7 +2537,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:postalCode"
-         id="d4876e199-false-d4944e0">
+         id="d20671e199-false-d20739e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2550,7 +2550,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:county"
-         id="d4876e230-false-d4959e0">
+         id="d20671e230-false-d20754e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2563,7 +2563,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:city"
-         id="d4876e239-false-d4972e0">
+         id="d20671e239-false-d20767e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2576,7 +2576,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:country"
-         id="d4876e248-false-d4985e0">
+         id="d20671e248-false-d20780e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2589,7 +2589,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:unitID"
-         id="d4876e289-false-d5000e0">
+         id="d20671e289-false-d20795e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2602,7 +2602,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:addr/hl7:useablePeriod"
-         id="d4876e306-false-d5013e0">
+         id="d20671e306-false-d20808e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -2615,7 +2615,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:standardIndustryClassCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d4411e86-false-d5028e0">
+         id="d20206e86-false-d20823e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
@@ -2633,7 +2633,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:asOrganizationPartOf"
-         id="d4411e99-false-d5050e0">
+         id="d20206e99-false-d20845e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
               test="count(hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]) &lt;= 1">(representedOrganization): element hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor] komt te vaak voor [max 1x].</assert>
@@ -2648,7 +2648,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:asOrganizationPartOf/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d4411e113-false-d5081e0">
+         id="d20206e113-false-d20876e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
@@ -2666,7 +2666,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:asOrganizationPartOf/hl7:wholeOrganization"
-         id="d4411e118-false-d5103e0">
+         id="d20206e118-false-d20898e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
               test="count(hl7:name) &lt;= 1">(representedOrganization): element hl7:name komt te vaak voor [max 1x].</assert>
@@ -2678,7 +2678,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[not(hl7:code/@code = 'ONESELF')]/hl7:representedOrganization/hl7:asOrganizationPartOf/hl7:wholeOrganization/hl7:name"
-         id="d4411e123-false-d5121e0">
+         id="d20206e123-false-d20916e0">
       <extends rule="ON"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
@@ -2691,7 +2691,7 @@ Item: (CDAauthorSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[hl7:code/@code = 'ONESELF']"
-         id="d3372e75-false-d5132e0">
+         id="d19167e75-false-d20927e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.51-2018-12-18T141008.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(CDAauthorSDTCNL): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -2728,7 +2728,7 @@ Item: (CDAauthInfPat)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[hl7:code/@code = 'ONESELF']/hl7:id[@root='2.16.840.1.113883.2.4.6.3']"
-         id="d5191e20-false-d5200e0">
+         id="d20986e20-false-d20995e0">
       <extends rule="II.NL.BSN"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.52-2017-08-25T000000.html"
@@ -2741,7 +2741,7 @@ Item: (CDAauthInfPat)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[hl7:code/@code = 'ONESELF']/hl7:id[not(@root='2.16.840.1.113883.2.4.6.3')]"
-         id="d5191e26-false-d5211e0">
+         id="d20986e26-false-d21006e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.52-2017-08-25T000000.html"
@@ -2766,7 +2766,7 @@ Item: (CDAauthInfPat)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[hl7:code/@code = 'ONESELF']/hl7:id[@nullFlavor]"
-         id="d5191e36-false-d5242e0">
+         id="d20986e36-false-d21037e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.52-2017-08-25T000000.html"
@@ -2785,7 +2785,7 @@ Item: (CDAauthInfPat)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:author/hl7:assignedAuthor[hl7:code/@code = 'ONESELF']/hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]"
-         id="d5191e47-false-d5265e0">
+         id="d20986e47-false-d21060e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.52-2017-08-25T000000.html"
@@ -2801,7 +2801,7 @@ Item: (CDAdataEntererSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:dataEnterer[hl7:assignedEntity]"
-         id="d5279e16-false-d5294e0">
+         id="d21074e16-false-d21089e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.603-2005-09-07T000000.html"
               test="string(@typeCode) = ('ENT') or not(@typeCode)">(CDAdataEntererSDTC): de waarde van typeCode MOET 'ENT' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -2825,7 +2825,7 @@ Item: (CDAdataEntererSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:dataEnterer[hl7:assignedEntity]/hl7:time"
-         id="d5279e22-false-d5346e0">
+         id="d21074e22-false-d21141e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.603-2005-09-07T000000.html"
@@ -3277,7 +3277,7 @@ Item: (CDAinformantSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:informant"
-         id="d6083e16-false-d6101e0">
+         id="d21878e16-false-d21896e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.654-2005-09-07T000000.html"
               test="string(@typeCode) = ('INF') or not(@typeCode)">(CDAinformantSDTC): de waarde van typeCode MOET 'INF' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -3912,7 +3912,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]"
-         id="d7176e15-false-d7184e0">
+         id="d22971e15-false-d22979e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
               test="string(@typeCode) = ('CST') or not(@typeCode)">(CDAcustodianSDTCNL): de waarde van typeCode MOET 'CST' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -3930,7 +3930,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]"
-         id="d7176e19-false-d7214e0">
+         id="d22971e19-false-d23009e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(CDAcustodianSDTCNL): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -3948,7 +3948,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]/hl7:representedCustodianOrganization"
-         id="d7176e23-false-d7244e0">
+         id="d22971e23-false-d23039e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
               test="string(@classCode) = ('ORG') or not(@classCode)">(CDAcustodianSDTCNL): de waarde van classCode MOET 'ORG' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -3986,7 +3986,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]/hl7:representedCustodianOrganization/hl7:id[@root = '2.16.528.1.1007.3.3']"
-         id="d7176e31-false-d7334e0">
+         id="d22971e31-false-d23129e0">
       <extends rule="II.NL.URA"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
@@ -4008,7 +4008,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]/hl7:representedCustodianOrganization/hl7:id[@root = '2.16.840.1.113883.2.4.6.1']"
-         id="d7176e49-false-d7363e0">
+         id="d22971e49-false-d23158e0">
       <extends rule="II.NL.AGB"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
@@ -4030,7 +4030,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]/hl7:representedCustodianOrganization/hl7:id[@root = '2.16.840.1.113883.2.4.6.8']"
-         id="d7176e67-false-d7392e0">
+         id="d22971e67-false-d23187e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
@@ -4052,7 +4052,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]/hl7:representedCustodianOrganization/hl7:id[@root[not(. = ('2.16.528.1.1007.3.3', '2.16.840.1.113883.2.4.6.1', '2.16.840.1.113883.2.4.6.8'))]]"
-         id="d7176e85-false-d7419e0">
+         id="d22971e85-false-d23214e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
@@ -4065,7 +4065,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]/hl7:representedCustodianOrganization/hl7:name"
-         id="d7176e92-false-d7432e0">
+         id="d22971e92-false-d23227e0">
       <extends rule="ON"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
@@ -4078,7 +4078,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]/hl7:representedCustodianOrganization/hl7:telecom"
-         id="d7176e103-false-d7445e0">
+         id="d22971e103-false-d23240e0">
       <extends rule="TEL.NL.EXTENDED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
@@ -4091,7 +4091,7 @@ Item: (CDAcustodianSDTCNL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:custodian[hl7:assignedCustodian]/hl7:assignedCustodian[hl7:representedCustodianOrganization]/hl7:representedCustodianOrganization/hl7:addr"
-         id="d7176e110-false-d7458e0">
+         id="d22971e110-false-d23253e0">
       <extends rule="AD.NL"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.50-2018-12-17T000000.html"
@@ -4104,7 +4104,7 @@ Item: (CDAinformationRecipientSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:informationRecipient[@typeCode][hl7:intendedRecipient[@classCode]]"
-         id="d7465e16-false-d7475e0">
+         id="d23260e16-false-d23270e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.605-2005-09-07T000000.html"
               test="@typeCode">(CDAinformationRecipientSDTC): attribute @typeCode MOET aanwezig zijn.</assert>
@@ -4127,7 +4127,7 @@ Item: (CDAinformationRecipientSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:informationRecipient[@typeCode][hl7:intendedRecipient[@classCode]]/hl7:intendedRecipient[@classCode]"
-         id="d7465e25-false-d7522e0">
+         id="d23260e25-false-d23317e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.605-2005-09-07T000000.html"
               test="@classCode">(CDAinformationRecipientSDTC): attribute @classCode MOET aanwezig zijn.</assert>
@@ -4150,7 +4150,7 @@ Item: (CDAinformationRecipientSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:informationRecipient[@typeCode][hl7:intendedRecipient[@classCode]]/hl7:intendedRecipient[@classCode]/hl7:id"
-         id="d7465e34-false-d7582e0">
+         id="d23260e34-false-d23377e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.605-2005-09-07T000000.html"
@@ -4163,7 +4163,7 @@ Item: (CDAinformationRecipientSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:informationRecipient[@typeCode][hl7:intendedRecipient[@classCode]]/hl7:intendedRecipient[@classCode]/hl7:addr"
-         id="d7465e36-false-d7595e0">
+         id="d23260e36-false-d23390e0">
       <extends rule="AD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.605-2005-09-07T000000.html"
@@ -4176,7 +4176,7 @@ Item: (CDAinformationRecipientSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:informationRecipient[@typeCode][hl7:intendedRecipient[@classCode]]/hl7:intendedRecipient[@classCode]/hl7:telecom"
-         id="d7465e38-false-d7608e0">
+         id="d23260e38-false-d23403e0">
       <extends rule="TEL"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.605-2005-09-07T000000.html"
@@ -4520,7 +4520,7 @@ Item: (CDAlegalAuthenticatorSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:legalAuthenticator[hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]]"
-         id="d8143e16-false-d8160e0">
+         id="d23938e16-false-d23955e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.606-2005-09-07T000000.html"
               test="string(@typeCode) = ('LA') or not(@typeCode)">(CDAlegalAuthenticatorSDTC): de waarde van typeCode MOET 'LA' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -4556,7 +4556,7 @@ Item: (CDAlegalAuthenticatorSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:legalAuthenticator[hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]]/hl7:time"
-         id="d8143e22-false-d8244e0">
+         id="d23938e22-false-d24039e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.606-2005-09-07T000000.html"
@@ -4572,7 +4572,7 @@ Item: (CDAlegalAuthenticatorSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:legalAuthenticator[hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]]/hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]"
-         id="d8143e24-false-d8263e0">
+         id="d23938e24-false-d24058e0">
       <extends rule="CS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.606-2005-09-07T000000.html"
@@ -4590,7 +4590,7 @@ Item: (CDAlegalAuthenticatorSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:legalAuthenticator[hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]]/sdtc:signatureText"
-         id="d8143e34-false-d8287e0">
+         id="d23938e34-false-d24082e0">
       <extends rule="ED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.606-2005-09-07T000000.html"
@@ -5039,7 +5039,7 @@ Item: (CDAauthenticatorSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authenticator[hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]]"
-         id="d9020e16-false-d9037e0">
+         id="d24815e16-false-d24832e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.607-2005-09-07T000000.html"
               test="string(@typeCode) = ('AUTHEN') or not(@typeCode)">(CDAauthenticatorSDTC): de waarde van typeCode MOET 'AUTHEN' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -5072,7 +5072,7 @@ Item: (CDAauthenticatorSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authenticator[hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]]/hl7:time"
-         id="d9020e20-false-d9115e0">
+         id="d24815e20-false-d24910e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.607-2005-09-07T000000.html"
@@ -5088,7 +5088,7 @@ Item: (CDAauthenticatorSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authenticator[hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]]/hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]"
-         id="d9020e22-false-d9134e0">
+         id="d24815e22-false-d24929e0">
       <extends rule="CS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.607-2005-09-07T000000.html"
@@ -5106,7 +5106,7 @@ Item: (CDAauthenticatorSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authenticator[hl7:signatureCode[@code = doc('include/voc-2.16.840.1.113883.1.11.10282-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]]/sdtc:signatureText"
-         id="d9020e31-false-d9158e0">
+         id="d24815e31-false-d24953e0">
       <extends rule="ED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.607-2005-09-07T000000.html"
@@ -5555,7 +5555,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']"
-         id="d9891e11-false-d9897e0">
+         id="d25686e11-false-d25692e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
               test="@typeCode">(zorgverlener-participant-header): attribute @typeCode MOET aanwezig zijn.</assert>
@@ -5584,7 +5584,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:functionCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.10267-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d9891e28-false-d9979e0">
+         id="d25686e28-false-d25774e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
@@ -5602,7 +5602,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]"
-         id="d9891e39-false-d10020e0">
+         id="d25686e39-false-d25815e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
               test="string(@classCode) = ('CAREGIVER')">(zorgverlener-participant-header): de waarde van classCode MOET 'CAREGIVER' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -5644,7 +5644,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']"
-         id="d9891e43-false-d10156e0">
+         id="d25686e43-false-d25951e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
@@ -5665,7 +5665,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:id[@root = '2.16.528.1.1007.3.1']"
-         id="d10169e11-false-d10180e0">
+         id="d25964e11-false-d25975e0">
       <extends rule="II.NL.UZI"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -5687,7 +5687,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:id[@root = '2.16.840.1.113883.2.4.6.1']"
-         id="d10169e30-false-d10209e0">
+         id="d25964e30-false-d26004e0">
       <extends rule="II.NL.AGB"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -5709,7 +5709,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:id[@root = '2.16.528.1.1007.5.1']"
-         id="d10169e49-false-d10238e0">
+         id="d25964e49-false-d26033e0">
       <extends rule="II.NL.BIG"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -5731,7 +5731,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:id[not(@root = ('2.16.528.1.1007.3.1', '2.16.840.1.113883.2.4.6.1', '2.16.528.1.1007.5.1'))]"
-         id="d10169e68-false-d10265e0">
+         id="d25964e68-false-d26060e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -5744,7 +5744,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.1.7-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.1.6-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d9891e53-false-d10282e0">
+         id="d25686e53-false-d26077e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
@@ -5762,7 +5762,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr"
-         id="d9891e63-false-d10319e0">
+         id="d25686e63-false-d26114e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -5810,7 +5810,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:streetName"
-         id="d10435e83-false-d10443e0">
+         id="d26230e83-false-d26238e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5823,7 +5823,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:houseNumber"
-         id="d10435e97-false-d10456e0">
+         id="d26230e97-false-d26251e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5836,7 +5836,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:buildingNumberSuffix"
-         id="d10435e114-false-d10469e0">
+         id="d26230e114-false-d26264e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5849,7 +5849,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:additionalLocator"
-         id="d10435e186-false-d10482e0">
+         id="d26230e186-false-d26277e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5865,7 +5865,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:postalCode"
-         id="d10435e199-false-d10503e0">
+         id="d26230e199-false-d26298e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5878,7 +5878,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:county"
-         id="d10435e230-false-d10518e0">
+         id="d26230e230-false-d26313e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5891,7 +5891,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:city"
-         id="d10435e239-false-d10531e0">
+         id="d26230e239-false-d26326e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5904,7 +5904,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:country"
-         id="d10435e248-false-d10544e0">
+         id="d26230e248-false-d26339e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5917,7 +5917,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:unitID"
-         id="d10435e289-false-d10559e0">
+         id="d26230e289-false-d26354e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5930,7 +5930,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:addr/hl7:useablePeriod"
-         id="d10435e306-false-d10572e0">
+         id="d26230e306-false-d26367e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -5943,7 +5943,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:telecom[starts-with(@value,'tel:')]"
-         id="d9891e72-false-d10583e0">
+         id="d25686e72-false-d26378e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -5967,7 +5967,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:telecom[starts-with(@value,'mailto:')]"
-         id="d9891e80-false-d10635e0">
+         id="d25686e80-false-d26430e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -6275,7 +6275,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:scopingOrganization"
-         id="d9891e90-false-d11103e0">
+         id="d25686e90-false-d26898e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
               test="string(@classCode) = ('ORG') or not(@classCode)">(zorgverlener-participant-header): de waarde van classCode MOET 'ORG' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -6302,7 +6302,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:scopingOrganization/hl7:id[@root = '2.16.528.1.1007.3.3']"
-         id="d9891e104-false-d11161e0">
+         id="d25686e104-false-d26956e0">
       <extends rule="II.NL.UZI"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
@@ -6324,7 +6324,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:scopingOrganization/hl7:id[@root = '2.16.840.1.113883.2.4.6.1']"
-         id="d9891e118-false-d11190e0">
+         id="d25686e118-false-d26985e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
@@ -6346,7 +6346,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:scopingOrganization/hl7:name"
-         id="d9891e133-false-d11219e0">
+         id="d25686e133-false-d27014e0">
       <extends rule="ON"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
@@ -6359,7 +6359,7 @@ Item: (zorgverlener-participant-header)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:participant[*/hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']/hl7:associatedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.1.34']]/hl7:scopingOrganization/hl7:standardIndustryClassCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d9891e145-false-d11234e0">
+         id="d25686e145-false-d27029e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.34-2018-06-11T000000.html"
@@ -6411,7 +6411,7 @@ Item: (CDAinFulfillmentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:inFulfillmentOf[hl7:order[@moodCode = 'RQO']]"
-         id="d11313e16-false-d11321e0">
+         id="d27108e16-false-d27116e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.609-2005-09-07T000000.html"
               test="string(@typeCode) = ('FLFS') or not(@typeCode)">(CDAinFulfillmentOfSDTC): de waarde van typeCode MOET 'FLFS' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -6429,7 +6429,7 @@ Item: (CDAinFulfillmentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:inFulfillmentOf[hl7:order[@moodCode = 'RQO']]/hl7:order[@moodCode = 'RQO']"
-         id="d11313e20-false-d11351e0">
+         id="d27108e20-false-d27146e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.609-2005-09-07T000000.html"
               test="string(@classCode) = ('ACT') or not(@classCode)">(CDAinFulfillmentOfSDTC): de waarde van classCode MOET 'ACT' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -6453,7 +6453,7 @@ Item: (CDAinFulfillmentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:inFulfillmentOf[hl7:order[@moodCode = 'RQO']]/hl7:order[@moodCode = 'RQO']/hl7:id"
-         id="d11313e26-false-d11402e0">
+         id="d27108e26-false-d27197e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.609-2005-09-07T000000.html"
@@ -6466,7 +6466,7 @@ Item: (CDAinFulfillmentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:inFulfillmentOf[hl7:order[@moodCode = 'RQO']]/hl7:order[@moodCode = 'RQO']/hl7:code"
-         id="d11313e28-false-d11415e0">
+         id="d27108e28-false-d27210e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.609-2005-09-07T000000.html"
@@ -6479,7 +6479,7 @@ Item: (CDAinFulfillmentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:inFulfillmentOf[hl7:order[@moodCode = 'RQO']]/hl7:order[@moodCode = 'RQO']/hl7:priorityCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.16866-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d11313e33-false-d11430e0">
+         id="d27108e33-false-d27225e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.609-2005-09-07T000000.html"
@@ -6497,7 +6497,7 @@ Item: (CDAdocumentationOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:documentationOf[@typeCode = 'DOC'][hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']]"
-         id="d11448e16-false-d11463e0">
+         id="d27243e16-false-d27258e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html"
               test="string(@typeCode) = ('DOC')">(CDAdocumentationOfSDTC): de waarde van typeCode MOET 'DOC' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -6515,7 +6515,7 @@ Item: (CDAdocumentationOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:documentationOf[@typeCode = 'DOC'][hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']]/hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']"
-         id="d11448e20-false-d11507e0">
+         id="d27243e20-false-d27302e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html"
               test="string(@classCode) = ('ACT')">(CDAdocumentationOfSDTC): de waarde van classCode MOET 'ACT' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -6536,7 +6536,7 @@ Item: (CDAdocumentationOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:documentationOf[@typeCode = 'DOC'][hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']]/hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']/hl7:id"
-         id="d11448e26-false-d11561e0">
+         id="d27243e26-false-d27356e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html"
@@ -6549,7 +6549,7 @@ Item: (CDAdocumentationOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:documentationOf[@typeCode = 'DOC'][hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']]/hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']/hl7:code"
-         id="d11448e28-false-d11574e0">
+         id="d27243e28-false-d27369e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html"
@@ -6562,7 +6562,7 @@ Item: (CDAdocumentationOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:documentationOf[@typeCode = 'DOC'][hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']]/hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']/hl7:effectiveTime"
-         id="d11448e33-false-d11587e0">
+         id="d27243e33-false-d27382e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html"
@@ -6575,7 +6575,7 @@ Item: (CDAdocumentationOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:documentationOf[@typeCode = 'DOC'][hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']]/hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']/hl7:performer[@typeCode][hl7:assignedEntity]"
-         id="d11448e36-false-d11607e0">
+         id="d27243e36-false-d27402e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html"
               test="@typeCode">(CDAdocumentationOfSDTC): attribute @typeCode MOET aanwezig zijn.</assert>
@@ -6604,7 +6604,7 @@ Item: (CDAdocumentationOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:documentationOf[@typeCode = 'DOC'][hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']]/hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']/hl7:performer[@typeCode][hl7:assignedEntity]/hl7:functionCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.10267-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d11448e45-false-d11679e0">
+         id="d27243e45-false-d27474e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html"
@@ -6622,7 +6622,7 @@ Item: (CDAdocumentationOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:documentationOf[@typeCode = 'DOC'][hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']]/hl7:serviceEvent[@classCode = 'ACT'][@moodCode = 'EVN']/hl7:performer[@typeCode][hl7:assignedEntity]/hl7:time"
-         id="d11448e52-false-d11703e0">
+         id="d27243e52-false-d27498e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.610-2005-09-07T000000.html"
@@ -7071,7 +7071,7 @@ Item: (CDArelatedDocumentSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:relatedDocument[@typeCode][hl7:parentDocument]"
-         id="d12436e16-false-d12444e0">
+         id="d28231e16-false-d28239e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.611-2005-09-07T000000.html"
               test="@typeCode">(CDArelatedDocumentSDTC): attribute @typeCode MOET aanwezig zijn.</assert>
@@ -7094,7 +7094,7 @@ Item: (CDArelatedDocumentSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:relatedDocument[@typeCode][hl7:parentDocument]/hl7:parentDocument"
-         id="d12436e25-false-d12487e0">
+         id="d28231e25-false-d28282e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.611-2005-09-07T000000.html"
               test="string(@classCode) = ('DOCCLIN') or not(@classCode)">(CDArelatedDocumentSDTC): de waarde van classCode MOET 'DOCCLIN' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -7124,7 +7124,7 @@ Item: (CDArelatedDocumentSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:relatedDocument[@typeCode][hl7:parentDocument]/hl7:parentDocument/hl7:id"
-         id="d12436e31-false-d12554e0">
+         id="d28231e31-false-d28349e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.611-2005-09-07T000000.html"
@@ -7137,7 +7137,7 @@ Item: (CDArelatedDocumentSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:relatedDocument[@typeCode][hl7:parentDocument]/hl7:parentDocument/hl7:code[@codeSystem = '2.16.840.1.113883.6.1' or @nullFlavor]"
-         id="d12436e33-false-d12567e0">
+         id="d28231e33-false-d28362e0">
       <extends rule="CD.SDTC"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.611-2005-09-07T000000.html"
@@ -7153,7 +7153,7 @@ Item: (CDArelatedDocumentSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:relatedDocument[@typeCode][hl7:parentDocument]/hl7:parentDocument/hl7:text"
-         id="d12436e38-false-d12587e0">
+         id="d28231e38-false-d28382e0">
       <extends rule="ED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.611-2005-09-07T000000.html"
@@ -7166,7 +7166,7 @@ Item: (CDArelatedDocumentSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:relatedDocument[@typeCode][hl7:parentDocument]/hl7:parentDocument/hl7:setId"
-         id="d12436e41-false-d12600e0">
+         id="d28231e41-false-d28395e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.611-2005-09-07T000000.html"
@@ -7179,7 +7179,7 @@ Item: (CDArelatedDocumentSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:relatedDocument[@typeCode][hl7:parentDocument]/hl7:parentDocument/hl7:versionNumber"
-         id="d12436e43-false-d12613e0">
+         id="d28231e43-false-d28408e0">
       <extends rule="INT"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.611-2005-09-07T000000.html"
@@ -7196,7 +7196,7 @@ Item: (CDAauthorizationSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authorization[hl7:consent]"
-         id="d12624e16-false-d12632e0">
+         id="d28419e16-false-d28427e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.614-2005-09-07T000000.html"
               test="string(@typeCode) = ('AUTH') or not(@typeCode)">(CDAauthorizationSDTC): de waarde van typeCode MOET 'AUTH' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -7214,7 +7214,7 @@ Item: (CDAauthorizationSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authorization[hl7:consent]/hl7:consent[hl7:statusCode[@code = 'completed' or @nullFlavor]]"
-         id="d12624e20-false-d12662e0">
+         id="d28419e20-false-d28457e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.614-2005-09-07T000000.html"
               test="string(@classCode) = ('CONS') or not(@classCode)">(CDAauthorizationSDTC): de waarde van classCode MOET 'CONS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -7238,7 +7238,7 @@ Item: (CDAauthorizationSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authorization[hl7:consent]/hl7:consent[hl7:statusCode[@code = 'completed' or @nullFlavor]]/hl7:id"
-         id="d12624e26-false-d12711e0">
+         id="d28419e26-false-d28506e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.614-2005-09-07T000000.html"
@@ -7251,7 +7251,7 @@ Item: (CDAauthorizationSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authorization[hl7:consent]/hl7:consent[hl7:statusCode[@code = 'completed' or @nullFlavor]]/hl7:code"
-         id="d12624e28-false-d12724e0">
+         id="d28419e28-false-d28519e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.614-2005-09-07T000000.html"
@@ -7264,7 +7264,7 @@ Item: (CDAauthorizationSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:authorization[hl7:consent]/hl7:consent[hl7:statusCode[@code = 'completed' or @nullFlavor]]/hl7:statusCode[@code = 'completed' or @nullFlavor]"
-         id="d12624e33-false-d12737e0">
+         id="d28419e33-false-d28532e0">
       <extends rule="CS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.614-2005-09-07T000000.html"
@@ -7280,7 +7280,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]"
-         id="d12751e16-false-d12775e0">
+         id="d28546e16-false-d28570e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
               test="string(@typeCode) = ('COMP') or not(@typeCode)">(CDAcomponentOfSDTC): de waarde van typeCode MOET 'COMP' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -7298,7 +7298,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter"
-         id="d12751e20-false-d12837e0">
+         id="d28546e20-false-d28632e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
               test="string(@classCode) = ('ENC') or not(@classCode)">(CDAcomponentOfSDTC): de waarde van classCode MOET 'ENC' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -7334,7 +7334,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:id"
-         id="d12751e26-false-d12944e0">
+         id="d28546e26-false-d28739e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
@@ -7347,7 +7347,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.13955-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d12751e28-false-d12959e0">
+         id="d28546e28-false-d28754e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
@@ -7365,7 +7365,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:effectiveTime"
-         id="d12751e35-false-d12983e0">
+         id="d28546e35-false-d28778e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
@@ -7378,7 +7378,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/sdtc:admissionReferralSourceCode"
-         id="d12751e40-false-d12996e0">
+         id="d28546e40-false-d28791e0">
       <extends rule="CD.SDTC"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
@@ -7391,7 +7391,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:dischargeDispositionCode"
-         id="d12751e47-false-d13009e0">
+         id="d28546e47-false-d28804e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
@@ -7404,7 +7404,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:responsibleParty">
-      <extends rule="d13046e0-false-d13058e0"/>
+      <extends rule="d28841e0-false-d28853e0"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
               test="string(@typeCode) = ('RESP') or not(@typeCode)">(CDAcomponentOfSDTC): de waarde van typeCode MOET 'RESP' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -7414,7 +7414,7 @@ Template derived rules for ID: 2.16.840.1.113883.10.12.653
 Context: //hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:responsibleParty
 Item: (CDAAssignedEntitySDTC)
 -->
-   <rule fpi="RULC-1" id="d13046e0-false-d13058e0" abstract="true">
+   <rule fpi="RULC-1" id="d28841e0-false-d28853e0" abstract="true">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.653-2005-09-07T000000.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(CDAAssignedEntitySDTC): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -7846,7 +7846,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:encounterParticipant[@typeCode][hl7:assignedEntity]"
-         id="d12751e59-false-d13762e0">
+         id="d28546e59-false-d29557e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
               test="@typeCode">(CDAcomponentOfSDTC): attribute @typeCode MOET aanwezig zijn.</assert>
@@ -7872,7 +7872,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:encounterParticipant[@typeCode][hl7:assignedEntity]/hl7:time"
-         id="d12751e68-false-d13821e0">
+         id="d28546e68-false-d29616e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
@@ -8321,7 +8321,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:location[hl7:healthCareFacility]"
-         id="d12751e76-false-d14562e0">
+         id="d28546e76-false-d30357e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
               test="string(@typeCode) = ('LOC') or not(@typeCode)">(CDAcomponentOfSDTC): de waarde van typeCode MOET 'LOC' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -8339,7 +8339,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:location[hl7:healthCareFacility]/hl7:healthCareFacility"
-         id="d12751e80-false-d14596e0">
+         id="d28546e80-false-d30391e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
               test="string(@classCode) = ('SDLOC') or not(@classCode)">(CDAcomponentOfSDTC): de waarde van classCode MOET 'SDLOC' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -8360,7 +8360,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:location[hl7:healthCareFacility]/hl7:healthCareFacility/hl7:id"
-         id="d12751e84-false-d14646e0">
+         id="d28546e84-false-d30441e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
@@ -8373,7 +8373,7 @@ Item: (CDAcomponentOfSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:componentOf[hl7:encompassingEncounter]/hl7:encompassingEncounter/hl7:location[hl7:healthCareFacility]/hl7:healthCareFacility/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.1.11.17660-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d12751e86-false-d14661e0">
+         id="d28546e86-false-d30456e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.10.12.613-2005-09-07T000000.html"
@@ -8678,7 +8678,7 @@ Item: (BgZ2020componentSDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:component[hl7:structuredBody]"
-         id="d15137e18-false-d15177e0">
+         id="d30932e18-false-d30981e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.2-2020-05-14T000000.html"
               test="string(@typeCode) = ('COMP') or not(@typeCode)">(BgZ2020componentSDTC): de waarde van typeCode MOET 'COMP' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -8699,7 +8699,7 @@ Item: (BgZ2020StructuredBodySDTC)
 -->
    <rule fpi="RULC-1"
          context="//hl7:ClinicalDocument[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.1'] and hl7:templateId[@root = '2.16.840.1.113883.2.4.6.10.100001']]/hl7:component[hl7:structuredBody]/hl7:structuredBody"
-         id="d15243e18-false-d15281e0">
+         id="d31089e18-false-d31169e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.3-2021-05-14T000000.html"
               test="count(hl7:component[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.5']]]) &lt;= 1">(BgZ2020StructuredBodySDTC): element hl7:component[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.5']]] komt te vaak voor [max 1x].</assert>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:cda="urn:hl7-org:v3"
+             xmlns:hl7="urn:hl7-org:v3"
+             xmlns:sdtc="urn:hl7-org:sdtc"
+             xmlns:hl7nl="urn:hl7-nl:v3"
+             xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:pharm="urn:ihe:pharm:medication"
+             id="2.16.840.1.113883.2.4.3.11.60.40.2.7.4.2"
+             name="DrugsGebruikStatusCodelijst"
+             displayName="DrugsGebruikStatusCodelijst"
+             effectiveDate="2020-09-01T00:00:00"
+             statusCode="final"
+             ident="zib2020bbr-"
+             url="http://decor.nictiz.nl/decor/services/"
+             referencedFrom="bgz2020-">
+      <sourceCodeSystem id="2.16.840.1.113883.6.96"
+                        identifierName="SNOMED Clinical Terms"
+                        canonicalUri="http://snomed.info/sct"
+                        canonicalUriDSTU2="http://snomed.info/sct"
+                        canonicalUriSTU3="http://snomed.info/sct"
+                        canonicalUriR4="http://snomed.info/sct"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.1008"
+                        identifierName="Null Flavor"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <publishingAuthority name="Nictiz">
+         <addrLine type="uri">http://www.nictiz.nl</addrLine>
+      </publishingAuthority>
+      <copyright language="en-US">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+      <conceptList>
+         <concept code="361055000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Misuses drugs"
+                  level="0"
+                  type="D">
+            <designation language="en-US" type="preferred" displayName="Misuses drugs"/>
+            <designation language="nl-NL" type="preferred" displayName="Misbruikt drugs"/>
+            <desc language="nl-NL">gebruikt drugs [DEPRECATED]</desc>
+         </concept>
+         <concept code="417284009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Current drug user"
+                  level="0"
+                  type="L">
+            <designation language="en-US" type="preferred" displayName="Current drug user"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Huidige drugsgebruiker"/>
+            <desc language="nl-NL">huidige drugsgebruiker</desc>
+         </concept>
+         <concept code="228367002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Does not misuse drugs"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Does not misuse drugs"/>
+            <designation language="nl-NL" type="preferred" displayName="Gebruikt geen drugs"/>
+            <desc language="nl-NL">gebruikt geen drugs</desc>
+         </concept>
+         <concept code="228368007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Has never misused drugs"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Has never misused drugs"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Heeft nooit drugs gebruikt"/>
+            <desc language="nl-NL">heeft nooit drugs gebruikt</desc>
+         </concept>
+         <concept code="44870007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Misused drugs in past (finding)"
+                  level="0"
+                  type="L">
+            <designation language="en-US"
+                         type="preferred"
+                         displayName="Misused drugs in past"/>
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Heeft in het verleden drugs misbruikt"/>
+            <desc language="nl-NL">heeft in het verleden drugs gebruikt</desc>
+         </concept>
+         <exception code="OTH"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Other"
+                    level="0"
+                    type="L">
+            <desc language="nl-NL">anders</desc>
+         </exception>
+      </conceptList>
+   </valueSet>
+</valueSets>

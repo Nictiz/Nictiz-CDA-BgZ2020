@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <desc language="nl-NL">Global Trade Item Number (GTIN) - Alle waarden</desc>
       <sourceCodeSystem id="1.3.160"
                         identifierName="EAN artikelcode (ook bekend als GTIN en UPC)"

@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <desc language="nl-NL">COD016-VEKT (Vektis AGB-medische specialismen) - Alle waarden</desc>
       <sourceCodeSystem id="2.16.840.1.113883.2.4.6.7"
                         identifierName="Vektis AGB-medische specialismen"

@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <sourceCodeSystem id="2.16.840.1.113883.5.1119"
                         identifierName="Address Use"
                         canonicalUri="http://terminology.hl7.org/CodeSystem/v3-AddressUse"

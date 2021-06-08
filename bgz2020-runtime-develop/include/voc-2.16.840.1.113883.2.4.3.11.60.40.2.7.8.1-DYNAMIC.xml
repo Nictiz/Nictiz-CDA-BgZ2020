@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:cda="urn:hl7-org:v3"
+             xmlns:hl7="urn:hl7-org:v3"
+             xmlns:sdtc="urn:hl7-org:sdtc"
+             xmlns:hl7nl="urn:hl7-nl:v3"
+             xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:pharm="urn:ihe:pharm:medication"
+             id="2.16.840.1.113883.2.4.3.11.60.40.2.7.8.1"
+             name="WoningTypeCodelijst"
+             displayName="WoningTypeCodelijst"
+             effectiveDate="2020-09-01T00:00:00"
+             statusCode="final"
+             ident="zib2020bbr-"
+             url="http://decor.nictiz.nl/decor/services/"
+             referencedFrom="bgz2020-">
+      <sourceCodeSystem id="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                        identifierName="WoningType"
+                        canonicalUri="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                        canonicalUriDSTU2="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                        canonicalUriSTU3="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                        canonicalUriR4="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.1008"
+                        identifierName="Null Flavor"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <publishingAuthority name="Nictiz">
+         <addrLine type="uri">http://www.nictiz.nl</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="BOVENW"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Bovenwoning"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Bovenwoning"/>
+            <desc language="nl-NL">Bovenwoning</desc>
+         </concept>
+         <concept code="BENEDENW"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Benedenwoning"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Benedenwoning"/>
+            <desc language="nl-NL">Benedenwoning</desc>
+         </concept>
+         <concept code="EENGEZW"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Eengezinswoning"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Eengezinswoning"/>
+            <desc language="nl-NL">Eengezinswoning</desc>
+         </concept>
+         <concept code="FLATW"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Appartement of flatwoning"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Appartement of flatwoning"/>
+            <desc language="nl-NL">Appartement of flatwoning</desc>
+         </concept>
+         <concept code="AANLW"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Aanleunwoning"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Aanleunwoning"/>
+            <desc language="nl-NL">Aanleunwoning</desc>
+         </concept>
+         <concept code="WOONB"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Woonboot"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Woonboot"/>
+            <desc language="nl-NL">Woonboot</desc>
+         </concept>
+         <concept code="WOONW"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Woonwagen"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Woonwagen"/>
+            <desc language="nl-NL">Woonwagen</desc>
+         </concept>
+         <concept code="AWBZIN"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Instelling AWBZ"
+                  level="0"
+                  type="D">
+            <designation language="nl-NL" type="preferred" displayName="Instelling AWBZ"/>
+            <desc language="nl-NL">Instelling AWBZ</desc>
+         </concept>
+         <concept code="WLZIN"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Instelling WLZ"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Instelling WLZ"/>
+            <desc language="nl-NL">Instelling WLZ</desc>
+         </concept>
+         <concept code="ZVWIN"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Instelling ZVW"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Instelling ZVW"/>
+            <desc language="nl-NL">Instelling ZVW</desc>
+         </concept>
+         <concept code="WMOIN"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Instelling WMO"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Instelling WMO"/>
+            <desc language="nl-NL">Instelling WMO</desc>
+         </concept>
+         <concept code="AZC"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Asielzoekers-centrum"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL"
+                         type="preferred"
+                         displayName="Asielzoekers-centrum"/>
+            <desc language="nl-NL">Asielzoekers-centrum</desc>
+         </concept>
+         <concept code="DAKLOO"
+                  codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"
+                  displayName="Dakloos"
+                  level="0"
+                  type="L">
+            <designation language="nl-NL" type="preferred" displayName="Dakloos"/>
+            <desc language="nl-NL">Dakloos</desc>
+         </concept>
+         <exception code="OTH"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Anders"
+                    level="0"
+                    type="L">
+            <desc language="nl-NL">Anders</desc>
+         </exception>
+      </conceptList>
+   </valueSet>
+</valueSets>

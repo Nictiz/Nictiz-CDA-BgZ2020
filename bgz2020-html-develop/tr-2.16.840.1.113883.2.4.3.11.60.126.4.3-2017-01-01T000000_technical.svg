@@ -43,7 +43,7 @@
       <path style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;fill-opacity: 1; stroke-opacity: 1;"
             d="m 629.5 , 81 v 135"/>
    </g>
-   <g id="d10e64623"><!-- Client bar -->
+   <g id="d10e64626"><!-- Client bar -->
       <rect x="80.5"
             y="131"
             height="75"
@@ -67,8 +67,8 @@
                style="font-size:10px;text-align:center;text-anchor:middle;line-height:125%;fill:black;stroke:none;font-family: Verdana, Arial, sans-serif;fill-opacity: 1; stroke-opacity: 1;">urn:hl7-org:v3/bgz2020-2.16.840.1.113883.2.4.3.11.60.126.4.3_ClinicalDocument</text>
       </g>
       <!-- Arrow, with head, and label -->
-      <g id="clientToServer_d10e64623">
-         <g id="initiatingTransaction_d10e64623"><!-- Arrow text client to server -->
+      <g id="clientToServer_d10e64626">
+         <g id="initiatingTransaction_d10e64626"><!-- Arrow text client to server -->
             <text x="357.5"
                   y="146"
                   style="font-size:10px;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:black;stroke:none;font-family: Verdana, Arial, sans-serif;fill-opacity: 1; stroke-opacity: 1;">Aanmaken of bijwerken (ClinicalDocument)</text>
@@ -79,7 +79,7 @@
             <path d="m 614.5,146 0.2428,9.99706 c 3.8451,-1.75975 7.6902,-3.51949 11.5354,-5.27924 0,-0.002 0,-0.002 0,-0.002 0,0 0,0 -0,-0.002 -3.926,-1.57108 -7.852,-3.14216 -11.7781,-4.71324 z"
                   style="fill:black;fill-rule:evenodd;stroke:none"/>
          </g>
-         <g id="respondingTransaction_d10e64623"><!-- Arrow text server to client -->
+         <g id="respondingTransaction_d10e64626"><!-- Arrow text server to client -->
             <text x="357.5"
                   y="181"
                   style="font-size:10px;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:black;stroke:none;font-family: Verdana, Arial, sans-serif;fill-opacity: 1; stroke-opacity: 1;">Aanmaken of bijwerken (ClinicalDocument)</text>

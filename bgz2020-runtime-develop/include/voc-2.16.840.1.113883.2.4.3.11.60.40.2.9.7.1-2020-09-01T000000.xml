@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <desc language="nl-NL">G-Standaard Artikelen (ook KNMP-nummer, ATKODE) - Alle waarden</desc>
       <sourceCodeSystem id="2.16.840.1.113883.2.4.4.8"
                         identifierName="G-Standaard Artikelen (Bestand 004)"

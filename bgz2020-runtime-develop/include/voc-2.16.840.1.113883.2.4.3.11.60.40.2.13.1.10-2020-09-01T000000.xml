@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <desc language="nl-NL">SNOMED CT - SNOMED CT: ^2581000146104 |simpele referentieset voor micro-organismen (foundation metadata concept)|</desc>
       <sourceCodeSystem id="2.16.840.1.113883.6.96"
                         identifierName="SNOMED Clinical Terms"

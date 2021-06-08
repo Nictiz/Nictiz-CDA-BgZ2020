@@ -80,7 +80,7 @@
             width="10"
             class="sequenceBarRect"
             style="fill-opacity: 1; stroke-opacity: 1;"/>
-      <g id="initiatingTransaction_d10e65014"><!-- Arrow text client to server -->
+      <g id="initiatingTransaction_d10e65017"><!-- Arrow text client to server -->
          <text x="242"
                y="141"
                class="transactionLineText Center"
@@ -99,7 +99,7 @@
             width="10"
             class="sequenceBarRect"
             style="fill-opacity: 1; stroke-opacity: 1;"/>
-      <g id="respondingTransaction_2.16.840.1.113883.2.4.3.11.60.126.7.1_d10e65020"><!-- Arrow text server to client -->
+      <g id="respondingTransaction_2.16.840.1.113883.2.4.3.11.60.126.7.1_d10e65023"><!-- Arrow text server to client -->
          <text x="252"
                y="176"
                class="transactionLineText Center"

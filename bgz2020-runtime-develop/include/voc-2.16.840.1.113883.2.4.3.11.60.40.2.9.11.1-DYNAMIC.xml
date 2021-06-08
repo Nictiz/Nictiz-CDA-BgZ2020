@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <desc language="nl-NL">2021-04-09: Zie <a href="https://bits.nictiz.nl/browse/ZIB-1261">ZIB-1261</a>. <div>Niet bestaande SNOMED CT 112171000146100 | Drug therapy temporarily stopped (finding) | vervangen door SNOMED CT 113381000146106 | tijdelijk gestopt met medicatie (situatie) | en</div>
          <div>niet bestaande SNOMED CT 112161000146106 | Drug therapy definitively stopped (finding) | vervangen door 113371000146109 | definitief gestopt met medicatie (situatie) |</div>
       </desc>

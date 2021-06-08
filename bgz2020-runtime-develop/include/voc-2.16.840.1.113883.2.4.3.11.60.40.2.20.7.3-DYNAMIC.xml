@@ -14,7 +14,7 @@
              statusCode="final"
              ident="zib2020bbr-"
              url="http://decor.nictiz.nl/decor/services/"
-             referencedFrom="mp-">
+             referencedFrom="bgz2020-">
       <desc language="nl-NL">ICD-O-3 - International Classification of Diseases for Oncology, version 3 (Topography codes)</desc>
       <sourceCodeSystem id="2.16.840.1.113883.6.43.1"
                         identifierName="International Classification of Diseases for Oncology, version 3."
