@@ -8,7 +8,7 @@
    <switchCreateSchematronClosed1/>
    <switchCreateSchematronWithExplicitIncludes0/>
    <!-- create DocHTML1 or not (DocHTML0) -->
-   <switchCreateDocHTML1/>
+   <switchCreateDocHTML0/>
    <!-- create SVG1 or not (SVG0) -->
    <switchCreateDocSVG1/>
    <!-- create DocBook1 or not (DocBook0) -->

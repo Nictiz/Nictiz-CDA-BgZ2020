@@ -16,7 +16,7 @@ Item: (BgZ2020Allergies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]]"
-         id="d39e3570-false-d64332e0">
+         id="d39e3955-false-d91812e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.4-2021-05-14T000000.html"
               test="count(hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]) &lt;= 1">(BgZ2020Allergies): element hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']] komt te vaak voor [max 1x].</assert>
@@ -28,7 +28,7 @@ Item: (BgZ2020Allergies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]"
-         id="d39e3587-false-d64349e0">
+         id="d39e3972-false-d91829e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.4-2021-05-14T000000.html"
               test="count(hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']) &gt;= 1">(BgZ2020Allergies): element hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4'] is mandatory [min 1x].</assert>
@@ -61,7 +61,7 @@ Item: (BgZ2020Allergies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']"
-         id="d39e3592-false-d64418e0">
+         id="d39e3977-false-d91898e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.4-2021-05-14T000000.html"
@@ -77,7 +77,7 @@ Item: (BgZ2020Allergies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]/hl7:code[(@code = '48765-2' and @codeSystem = '2.16.840.1.113883.6.1')]"
-         id="d39e3597-false-d64437e0">
+         id="d39e3982-false-d91917e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.4-2021-05-14T000000.html"
@@ -96,7 +96,7 @@ Item: (BgZ2020Allergies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]/hl7:title[not(@nullFlavor)]"
-         id="d39e3611-false-d64462e0">
+         id="d39e3996-false-d91942e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.4-2021-05-14T000000.html"
@@ -109,7 +109,7 @@ Item: (BgZ2020Allergies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.4']]/hl7:text[not(@nullFlavor)]"
-         id="d39e3619-false-d64475e0">
+         id="d39e4004-false-d91955e0">
       <extends rule="SD.TEXT"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.4-2021-05-14T000000.html"

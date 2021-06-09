@@ -23,7 +23,7 @@ Item: (problem_verificationstatus)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]"
-         id="d39e7153-false-d77437e0">
+         id="d39e8475-false-d116559e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html"
               test="string(@classCode) = ('OBS')">(problem_verificationstatus): de waarde van classCode MOET 'OBS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -77,7 +77,7 @@ Item: (problem_verificationstatus)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']"
-         id="d39e7164-false-d77565e0">
+         id="d39e8486-false-d116687e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html"
@@ -93,7 +93,7 @@ Item: (problem_verificationstatus)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]/hl7:id"
-         id="d39e7169-false-d77584e0">
+         id="d39e8491-false-d116706e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html"
@@ -106,7 +106,7 @@ Item: (problem_verificationstatus)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]/hl7:code[(@code = '408729009' and @codeSystem = '2.16.840.1.113883.6.96')]"
-         id="d39e7172-false-d77597e0">
+         id="d39e8494-false-d116719e0">
       <extends rule="CD.SDTC"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html"
@@ -122,7 +122,7 @@ Item: (problem_verificationstatus)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]/hl7:text"
-         id="d39e7177-false-d77617e0">
+         id="d39e8499-false-d116739e0">
       <extends rule="ED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html"
@@ -135,7 +135,7 @@ Item: (problem_verificationstatus)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]/hl7:statusCode[@code = doc('include/voc-2.16.840.1.113883.1.11.15933-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor]"
-         id="d39e7179-false-d77632e0">
+         id="d39e8501-false-d116754e0">
       <extends rule="CS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html"
@@ -153,7 +153,7 @@ Item: (problem_verificationstatus)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]/hl7:effectiveTime"
-         id="d39e7184-false-d77656e0">
+         id="d39e8506-false-d116778e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html"
@@ -166,7 +166,7 @@ Item: (problem_verificationstatus)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.7.10.54']]/hl7:value[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4-DYNAMIC.xml')//valueSet[1]/conceptList/exception/@code]"
-         id="d39e7186-false-d77671e0">
+         id="d39e8508-false-d116793e0">
       <extends rule="CD.SDTC"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.html"

@@ -21,7 +21,7 @@ Item: (BgZ2020VitalSigns)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]"
-         id="d39e3112-false-d63720e0">
+         id="d39e3484-false-d91116e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.16-2021-05-14T000000.html"
               test="count(hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']) &gt;= 1">(BgZ2020VitalSigns): element hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16'] is mandatory [min 1x].</assert>
@@ -54,7 +54,7 @@ Item: (BgZ2020VitalSigns)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']"
-         id="d39e3117-false-d63789e0">
+         id="d39e3489-false-d91215e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.16-2021-05-14T000000.html"
@@ -70,7 +70,7 @@ Item: (BgZ2020VitalSigns)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]/hl7:code[(@code = '8716-3' and @codeSystem = '2.16.840.1.113883.6.1')]"
-         id="d39e3122-false-d63808e0">
+         id="d39e3494-false-d91234e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.16-2021-05-14T000000.html"
@@ -89,7 +89,7 @@ Item: (BgZ2020VitalSigns)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]/hl7:title[not(@nullFlavor)]"
-         id="d39e3136-false-d63833e0">
+         id="d39e3508-false-d91259e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.16-2021-05-14T000000.html"
@@ -102,10 +102,24 @@ Item: (BgZ2020VitalSigns)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]/hl7:text[not(@nullFlavor)]"
-         id="d39e3142-false-d63846e0">
+         id="d39e3514-false-d91272e0">
       <extends rule="SD.TEXT"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.16-2021-05-14T000000.html"
               test="(local-name-from-QName(resolve-QName(@xsi:type,.))='SD.TEXT' and namespace-uri-from-QName(resolve-QName(@xsi:type,.))='urn:hl7-org:v3') or not(@xsi:type)">(BgZ2020VitalSigns): indien er een @xsi:type instructie aanwezig is MOET deze de waarde "{urn:hl7-org:v3}:SD.TEXT" bevatten. Gevonden "{<value-of select="namespace-uri-from-QName(resolve-QName(@xsi:type,.))"/>}:<value-of select="local-name-from-QName(resolve-QName(@xsi:type,.))"/>"</assert>
+   </rule>
+   <!--
+Template derived rules for ID: 2.16.840.1.113883.2.4.3.11.60.126.10.16
+Context: *[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]/hl7:entry[hl7:organizer[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.11']]]
+Item: (BgZ2020VitalSigns)
+-->
+   <rule fpi="RULC-1"
+         context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.16']]/hl7:entry[hl7:organizer[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.11']]]">
+      <assert role="error"
+              see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.16-2021-05-14T000000.html"
+              test="string(@typeCode) = ('DRIV')">(BgZ2020VitalSigns): de waarde van typeCode MOET 'DRIV' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
+      <assert role="error"
+              see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.16-2021-05-14T000000.html"
+              test="string(@contextConductionInd) = ('true') or not(@contextConductionInd)">(BgZ2020VitalSigns): de waarde van contextConductionInd MOET 'true' zijn. Gevonden: "<value-of select="@contextConductionInd"/>"</assert>
    </rule>
 </pattern>

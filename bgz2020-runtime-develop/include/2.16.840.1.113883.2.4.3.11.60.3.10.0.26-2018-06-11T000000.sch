@@ -16,7 +16,7 @@ Item: (zorgverlener-assignedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]"
-         id="d39e3981-false-d65306e0">
+         id="d39e4366-false-d92786e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.26-2018-06-11T000000.html"
               test="count(hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]) &gt;= 1">(zorgverlener-assignedEntity): element hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']] is required [min 1x].</assert>
@@ -31,7 +31,7 @@ Item: (zorgverlener-assignedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]"
-         id="d39e4031-false-d65395e0">
+         id="d39e4416-false-d92875e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.26-2018-06-11T000000.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(zorgverlener-assignedEntity): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -86,7 +86,7 @@ Item: (zorgverlener-assignedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']"
-         id="d39e4044-false-d65587e0">
+         id="d39e4429-false-d93067e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.26-2018-06-11T000000.html"
@@ -107,7 +107,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:id[@root = '2.16.528.1.1007.3.1']"
-         id="d65600e11-false-d65611e0">
+         id="d93080e11-false-d93091e0">
       <extends rule="II.NL.UZI"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -129,7 +129,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:id[@root = '2.16.840.1.113883.2.4.6.1']"
-         id="d65600e30-false-d65640e0">
+         id="d93080e30-false-d93120e0">
       <extends rule="II.NL.AGB"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -151,7 +151,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:id[@root = '2.16.528.1.1007.5.1']"
-         id="d65600e49-false-d65669e0">
+         id="d93080e49-false-d93149e0">
       <extends rule="II.NL.BIG"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -173,7 +173,7 @@ Item: (zorgverleneridentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:id[not(@root = ('2.16.528.1.1007.3.1', '2.16.840.1.113883.2.4.6.1', '2.16.528.1.1007.5.1'))]"
-         id="d65600e68-false-d65696e0">
+         id="d93080e68-false-d93176e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.30-2018-06-11T000000.html"
@@ -191,7 +191,7 @@ Item: (specialisme_zorgverlener)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.1.7-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d65703e15-false-d65716e0">
+         id="d93183e15-false-d93196e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.31-2018-06-11T000000.html"
@@ -209,7 +209,7 @@ Item: (specialisme_zorgverlener)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.1.6-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d65703e31-false-d65740e0">
+         id="d93183e31-false-d93220e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.31-2018-06-11T000000.html"
@@ -227,7 +227,7 @@ Item: (zorgverlener-assignedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr"
-         id="d39e4062-false-d65773e0">
+         id="d39e4447-false-d93253e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -275,7 +275,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:streetName"
-         id="d65889e83-false-d65897e0">
+         id="d93369e83-false-d93377e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -288,7 +288,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:houseNumber"
-         id="d65889e97-false-d65910e0">
+         id="d93369e97-false-d93390e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -301,7 +301,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:buildingNumberSuffix"
-         id="d65889e114-false-d65923e0">
+         id="d93369e114-false-d93403e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -314,7 +314,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:additionalLocator"
-         id="d65889e186-false-d65936e0">
+         id="d93369e186-false-d93416e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -330,7 +330,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:postalCode"
-         id="d65889e199-false-d65957e0">
+         id="d93369e199-false-d93437e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -343,7 +343,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:county"
-         id="d65889e230-false-d65972e0">
+         id="d93369e230-false-d93452e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -356,7 +356,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:city"
-         id="d65889e239-false-d65985e0">
+         id="d93369e239-false-d93465e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -369,7 +369,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:country"
-         id="d65889e248-false-d65998e0">
+         id="d93369e248-false-d93478e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -382,7 +382,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:unitID"
-         id="d65889e289-false-d66013e0">
+         id="d93369e289-false-d93493e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -395,7 +395,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:addr/hl7:useablePeriod"
-         id="d65889e306-false-d66026e0">
+         id="d93369e306-false-d93506e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -408,7 +408,7 @@ Item: (zorgverlener-assignedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:telecom[starts-with(@value,'tel:')]"
-         id="d39e4067-false-d66037e0">
+         id="d39e4452-false-d93517e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -432,7 +432,7 @@ Item: (zorgverlener-assignedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:telecom[starts-with(@value,'mailto:')]"
-         id="d39e4072-false-d66089e0">
+         id="d39e4457-false-d93569e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -456,7 +456,7 @@ Item: (zorgverlener-assignedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson"
-         id="d39e4077-false-d66135e0">
+         id="d39e4462-false-d93615e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.26-2018-06-11T000000.html"
               test="count(hl7:name) &gt;= 1">(zorgverlener-assignedEntity): element hl7:name is required [min 1x].</assert>
@@ -468,7 +468,7 @@ Item: (zorgverlener-assignedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name"
-         id="d39e4082-false-d66158e0">
+         id="d39e4467-false-d93638e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -530,7 +530,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:given[@qualifier='BR']"
-         id="d66282e275-false-d66291e0">
+         id="d93762e275-false-d93771e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -549,7 +549,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:given[@qualifier='CL']"
-         id="d66282e294-false-d66313e0">
+         id="d93762e294-false-d93793e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -568,7 +568,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:given[@qualifier='IN']"
-         id="d66282e313-false-d66335e0">
+         id="d93762e313-false-d93815e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -587,7 +587,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:given[not(@qualifier)]"
-         id="d66282e333-false-d66357e0">
+         id="d93762e333-false-d93837e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -600,7 +600,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:prefix[.[not(@qualifier)] | .[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family]]"
-         id="d66282e342-false-d66368e0">
+         id="d93762e342-false-d93848e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -613,7 +613,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:family[not(@qualifier)]"
-         id="d66282e351-false-d66379e0">
+         id="d93762e351-false-d93859e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -626,7 +626,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:prefix[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family[1][@qualifier='BR']]"
-         id="d66282e360-false-d66390e0">
+         id="d93762e360-false-d93870e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -645,7 +645,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:family[@qualifier='BR']"
-         id="d66282e386-false-d66412e0">
+         id="d93762e386-false-d93892e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -664,7 +664,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:delimiter[not(@nullFlavor)]"
-         id="d66282e405-false-d66436e0">
+         id="d93762e405-false-d93916e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -680,7 +680,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:prefix[tokenize(@qualifier,'\s')='VV'][following-sibling::hl7:family[1][@qualifier='SP']]"
-         id="d66282e435-false-d66452e0">
+         id="d93762e435-false-d93932e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -699,7 +699,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:family[@qualifier='SP']"
-         id="d66282e461-false-d66474e0">
+         id="d93762e461-false-d93954e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -718,7 +718,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:suffix[not(@nullFlavor)]"
-         id="d66282e480-false-d66498e0">
+         id="d93762e480-false-d93978e0">
       <extends rule="ENXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -737,7 +737,7 @@ Item: (PN.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:assignedPerson/hl7:name/hl7:validTime"
-         id="d66282e520-false-d66522e0">
+         id="d93762e520-false-d94002e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.100-2018-06-11T000000.html"
@@ -750,7 +750,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization"
-         id="d66529e39-false-d66551e0">
+         id="d94009e39-false-d94031e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
               test="string(@classCode) = ('ORG') or not(@classCode)">(representedOrganization): de waarde van classCode MOET 'ORG' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -785,7 +785,7 @@ Item: (zorgaanbiederidentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:id[@root = '2.16.528.1.1007.3.3']"
-         id="d66651e9-false-d66662e0">
+         id="d94131e9-false-d94142e0">
       <extends rule="II.NL.URA"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html"
@@ -807,7 +807,7 @@ Item: (zorgaanbiederidentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:id[@root = '2.16.840.1.113883.2.4.6.1']"
-         id="d66651e27-false-d66691e0">
+         id="d94131e27-false-d94171e0">
       <extends rule="II.NL.AGB"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html"
@@ -829,7 +829,7 @@ Item: (zorgaanbiederidentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:id[@root = '2.16.840.1.113883.2.4.6.8']"
-         id="d66651e45-false-d66720e0">
+         id="d94131e45-false-d94200e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html"
@@ -851,7 +851,7 @@ Item: (zorgaanbiederidentificatienummer)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:id[not(@root = ('2.16.528.1.1007.3.3', '2.16.840.1.113883.2.4.6.1', '2.16.840.1.113883.2.4.6.8'))]"
-         id="d66651e63-false-d66747e0">
+         id="d94131e63-false-d94227e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.7.10.53-2019-04-07T143608.html"
@@ -864,7 +864,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:name"
-         id="d66529e48-false-d66760e0">
+         id="d94009e48-false-d94240e0">
       <extends rule="ON"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
@@ -877,7 +877,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:telecom[starts-with(@value,'tel:')]"
-         id="d66529e64-false-d66771e0">
+         id="d94009e64-false-d94251e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -901,7 +901,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:telecom[starts-with(@value,'mailto:')]"
-         id="d66529e73-false-d66823e0">
+         id="d94009e73-false-d94303e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -925,7 +925,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr"
-         id="d66529e81-false-d66878e0">
+         id="d94009e81-false-d94358e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -973,7 +973,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:streetName"
-         id="d66994e83-false-d67002e0">
+         id="d94474e83-false-d94482e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -986,7 +986,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:houseNumber"
-         id="d66994e97-false-d67015e0">
+         id="d94474e97-false-d94495e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -999,7 +999,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:buildingNumberSuffix"
-         id="d66994e114-false-d67028e0">
+         id="d94474e114-false-d94508e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1012,7 +1012,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:additionalLocator"
-         id="d66994e186-false-d67041e0">
+         id="d94474e186-false-d94521e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1028,7 +1028,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:postalCode"
-         id="d66994e199-false-d67062e0">
+         id="d94474e199-false-d94542e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1041,7 +1041,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:county"
-         id="d66994e230-false-d67077e0">
+         id="d94474e230-false-d94557e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1054,7 +1054,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:city"
-         id="d66994e239-false-d67090e0">
+         id="d94474e239-false-d94570e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1067,7 +1067,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:country"
-         id="d66994e248-false-d67103e0">
+         id="d94474e248-false-d94583e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1080,7 +1080,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:unitID"
-         id="d66994e289-false-d67118e0">
+         id="d94474e289-false-d94598e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1093,7 +1093,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:addr/hl7:useablePeriod"
-         id="d66994e306-false-d67131e0">
+         id="d94474e306-false-d94611e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -1106,7 +1106,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:standardIndustryClassCode[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d66529e86-false-d67146e0">
+         id="d94009e86-false-d94626e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
@@ -1124,7 +1124,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:asOrganizationPartOf"
-         id="d66529e99-false-d67168e0">
+         id="d94009e99-false-d94648e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
               test="count(hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]) &lt;= 1">(representedOrganization): element hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor] komt te vaak voor [max 1x].</assert>
@@ -1139,7 +1139,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:asOrganizationPartOf/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor]"
-         id="d66529e113-false-d67199e0">
+         id="d94009e113-false-d94679e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
@@ -1157,7 +1157,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:asOrganizationPartOf/hl7:wholeOrganization"
-         id="d66529e118-false-d67221e0">
+         id="d94009e118-false-d94701e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"
               test="count(hl7:name) &lt;= 1">(representedOrganization): element hl7:name komt te vaak voor [max 1x].</assert>
@@ -1169,7 +1169,7 @@ Item: (representedOrganization)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]]/hl7:assignedEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.26']]/hl7:representedOrganization/hl7:asOrganizationPartOf/hl7:wholeOrganization/hl7:name"
-         id="d66529e123-false-d67239e0">
+         id="d94009e123-false-d94719e0">
       <extends rule="ON"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.5-2018-06-11T000000.html"

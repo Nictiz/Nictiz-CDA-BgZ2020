@@ -21,7 +21,7 @@ Item: (toelichting)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']]"
-         id="d39e4216-false-d68203e0">
+         id="d39e4601-false-d95683e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.32-2018-06-11T000000.html"
               test="string(@classCode) = ('ACT')">(toelichting): de waarde van classCode MOET 'ACT' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -54,7 +54,7 @@ Item: (toelichting)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']"
-         id="d39e4236-false-d68269e0">
+         id="d39e4621-false-d95749e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.32-2018-06-11T000000.html"
@@ -70,7 +70,7 @@ Item: (toelichting)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']]/hl7:code[(@code = '48767-8' and @codeSystem = '2.16.840.1.113883.6.1')]"
-         id="d39e4250-false-d68288e0">
+         id="d39e4635-false-d95768e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.32-2018-06-11T000000.html"
@@ -89,7 +89,7 @@ Item: (toelichting)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.32']]/hl7:text[not(@nullFlavor)]"
-         id="d39e4264-false-d68313e0">
+         id="d39e4649-false-d95793e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.32-2018-06-11T000000.html"

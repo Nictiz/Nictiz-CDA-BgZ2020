@@ -16,7 +16,7 @@ Item: (playingEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']]]"
-         id="d39e4520-false-d69061e0">
+         id="d39e4906-false-d96541e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.8-2018-06-11T000000.html"
               test="count(hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']]) &lt;= 1">(playingEntity): element hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']] komt te vaak voor [max 1x].</assert>
@@ -28,7 +28,7 @@ Item: (playingEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']]]/hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']]"
-         id="d39e4542-false-d69078e0">
+         id="d39e4928-false-d96558e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@classCode),'\s'))"/>
       <assert role="error"
@@ -54,7 +54,7 @@ Item: (playingEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']]]/hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']"
-         id="d39e4555-false-d69138e0">
+         id="d39e4941-false-d96618e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.8-2018-06-11T000000.html"
@@ -70,7 +70,7 @@ Item: (playingEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']]]/hl7:playingEntity[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.8']]/hl7:name"
-         id="d39e4565-false-d69157e0">
+         id="d39e4951-false-d96637e0">
       <extends rule="TN"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.8-2018-06-11T000000.html"

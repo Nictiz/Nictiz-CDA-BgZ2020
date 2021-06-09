@@ -305,6 +305,190 @@
             <!-- **************************************************** -->
             <!--    Vitale functies -->
             <!-- **************************************************** -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.2.4.3.11.60.126.10.16"/>
+                    <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+                    <title>Vitale functies</title>
+                    <text>Tekstuele informatie</text>
+                    <entry typeCode="DRIV">
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.11"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime>
+                                <low value="20170816175957"/>
+                                <high value="20180130171717"/>
+                            </effectiveTime>
+                            <component>
+                                <organizer classCode="CLUSTER" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.10"/>
+                                    <code code="55284-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Blood pressure systolic and diastolic"/>
+                                    <statusCode code="completed"/>
+                                    <component>
+                                        <!-- template 2.16.840.1.113883.2.4.3.11.60.7.10.36 'bloeddruk' -->
+                                        <!-- Bloeddruk -->
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <id root="1.2.3.999" extension="--example only--"/>
+                                            <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diastolic blood pressure"/>
+                                            <text>Tekstuele informatie</text>
+                                            <!-- BloeddrukDatumTijd -->
+                                            <effectiveTime value="20180130170641"/>
+                                            <!-- DiastolischeBloeddruk / SystolischeBloeddruk -->
+                                            <value xsi:type="PQ" value="1"/>
+                                            <!-- Meetmethode -->
+                                            <methodCode code="371911009" codeSystem="2.16.840.1.113883.6.96" displayName="Measurement of blood pressure using cuff method"/>
+                                            <!-- MeetLocatie -->
+                                            <targetSiteCode code="40983000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Upper arm structure"/>
+                                            <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                                <!-- template 2.16.840.1.113883.2.4.3.11.60.7.10.39 'manchet type' -->
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <id root="1.2.3.999" extension="--example only--"/>
+                                                    <code code="70665002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Blood pressure cuff"/>
+                                                    <text>Tekstuele informatie</text>
+                                                    <!-- ManchetType -->
+                                                    <value xsi:type="CD" code="STD" codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.15.1" displayName="Standaard"/>
+                                                </observation>
+                                            </entryRelationship>
+                                            <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                                <!-- template 2.16.840.1.113883.2.4.3.11.60.7.10.38 'houding' -->
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <id root="1.2.3.999" extension="--example only--"/>
+                                                    <code code="424724000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Body position for blood pressure measurement"/>
+                                                    <text>Tekstuele informatie</text>
+                                                    <!-- Houding -->
+                                                    <value xsi:type="CD" code="10904000" codeSystem="2.16.840.1.113883.6.96" displayName="Orthostatic body position"/>
+                                                </observation>
+                                            </entryRelationship>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <!-- template 'diastolisch eindpunt' -->
+                                        <!-- DiastolischEindpunt -->
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <id root="1.2.3.999" extension="--example only--"/>
+                                            <code code="85549003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Korotkoff sound"/>
+                                            <text>Tekstuele informatie</text>
+                                            <!-- BloeddrukDatumTijd -->
+                                            <effectiveTime value="20180130171717"/>
+                                            <!-- DiastolischEindpunt -->
+                                            <value xsi:type="CD" code="255271000" codeSystem="2.16.840.1.113883.6.96" displayName="Phase 4"/>
+                                            <!-- Meetmethode -->
+                                            <methodCode code="22762002" codeSystem="2.16.840.1.113883.6.96" displayName="Non-invasive"/>
+                                            <!-- MeetLocatie -->
+                                            <targetSiteCode code="40983000" codeSystem="2.16.840.1.113883.6.96" displayName="Upper arm structure"/>
+                                            <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                                <!-- template 2.16.840.1.113883.2.4.3.11.60.7.10.39 'manchet type' -->
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <id root="1.2.3.999" extension="--example only--"/>
+                                                    <code code="70665002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Blood pressure cuff"/>
+                                                    <text>Tekstuele informatie</text>
+                                                    <!-- ManchetType -->
+                                                    <value xsi:type="CD" code="STD" codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.15.1" displayName="Standaard"/>
+                                                </observation>
+                                            </entryRelationship>
+                                            <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                                <!-- template 2.16.840.1.113883.2.4.3.11.60.7.10.38 'houding' -->
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <id root="1.2.3.999" extension="--example only--"/>
+                                                    <code code="424724000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Body position for blood pressure measurement"/>
+                                                    <text>Tekstuele informatie</text>
+                                                    <!-- Houding -->
+                                                    <value xsi:type="CD" code="10904000" codeSystem="2.16.840.1.113883.6.96" displayName="Orthostatic body position"/>
+                                                </observation>
+                                            </entryRelationship>
+                                        </observation>
+                                    </component>
+                                </organizer>
+                            </component>
+                            <component>
+                                <!-- Lichaamsgewicht -->
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.7.10.28"/>
+                                    <id root="1.2.3.999" extension="--example only--"/>
+                                    <code code="29463-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight"/>
+                                    <text>Tekstuele informatie</text>
+                                    <!-- GewichtDatumTijd  -->
+                                    <effectiveTime value="20171020022303"/>
+                                    <!-- GewichtWaarde  -->
+                                    <value xsi:type="PQ" value="75" unit="kg"/>
+                                    <!-- auteur van de gegevens -->
+                                    <author typeCode="AUT">
+                                        <time value="20171023"/>
+                                        <assignedAuthor>
+                                            <id extension="129854656" root="2.16.528.1.1007.3.1"/>
+                                            <assignedPerson>
+                                                <name>
+                                                    <given qualifier="BR">Maria</given>
+                                                    <prefix qualifier="VV">de </prefix>
+                                                    <family qualifier="BR">Winter</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                    <!-- bron van gegevens -->
+                                    <informant typeCode="INF">
+                                        <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.30"/>
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.26"/>
+                                            <id extension="06020806" root="2.16.840.1.113883.2.4.6.1"/>
+                                            <code code="0303" codeSystem="2.16.840.1.113883.2.4.6.7" codeSystemName="Vektis AGB-medische specialismen" displayName="Chirurg"/>
+                                        </assignedEntity>
+                                    </informant>
+                                    <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.29"/>
+                                            <id root="1.2.3.999" extension="--example only--"/>
+                                            <code code="301306007" codeSystem="2.16.840.1.113883.6.96" displayName="Dressed - appearance (finding)"/>
+                                            <text>Tekstuele informatie</text>
+                                            <!-- Kleding -->
+                                            <value xsi:type="CD" code="FULL" displayName="Fully dressed" codeSystem="2.16.840.1.113883.2.4.3.11.60.40.4.8.1" codeSystemName="ContextKleding"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                        <act classCode="ACT" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.32"/>
+                                            <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                                            <!-- Toelichting -->
+                                            <text>Toelichting</text>
+                                        </act>
+                                    </entryRelationship>
+                                </observation>
+                            </component>
+                            <!-- Lichaamslengte -->
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.7.10.30"/>
+                                    <id root="1.2.3.999" extension="--example only--"/>
+                                    <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body height"/>
+                                    <text>Tekstuele informatie</text>
+                                    <!-- LengteDatumTijd -->
+                                    <effectiveTime value="20170816175957"/>
+                                    <!-- LengteWaarde  -->
+                                    <value xsi:type="PQ" value="177" unit="cm"/>
+                                    <entryRelationship typeCode="REFR">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.31"/>
+                                            <id root="1.2.3.999" extension="--example only--"/>
+                                            <code code="9851009" codeSystem="2.16.840.1.113883.6.96" displayName="Body position finding (finding)" codeSystemName="SNOMED CT"/>
+                                            <text>Additionele informatie</text>
+                                            <!-- Positie -->
+                                            <value xsi:type="CD" code="10904000" codeSystem="2.16.840.1.113883.6.96" displayName="Staande positie"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                        <act classCode="ACT" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.32"/>
+                                            <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                                            <!-- Toelichting -->
+                                            <text>Toelichting</text>
+                                        </act>
+                                    </entryRelationship>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
             <!-- **************************************************** -->
             <!--    Verrichtingen -->
             <!-- **************************************************** -->

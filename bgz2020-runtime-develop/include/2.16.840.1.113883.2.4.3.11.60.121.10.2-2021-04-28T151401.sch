@@ -16,7 +16,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]"
-         id="d39e952-false-d587e0">
+         id="d39e1123-false-d8143e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
               test="count(hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]) &lt;= 1">(alcoholGebruik): element hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']] komt te vaak voor [max 1x].</assert>
@@ -28,7 +28,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]"
-         id="d39e1042-false-d752e0">
+         id="d39e1213-false-d8308e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
               test="string(@classCode) = ('OBS')">(alcoholGebruik): de waarde van classCode MOET 'OBS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -81,7 +81,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']"
-         id="d39e1048-false-d946e0">
+         id="d39e1219-false-d8502e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
@@ -97,7 +97,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:id"
-         id="d39e1053-false-d965e0">
+         id="d39e1224-false-d8521e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
@@ -114,7 +114,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:code[(@code = '160573003' and @codeSystem = '2.16.840.1.113883.6.96')]"
-         id="d39e1071-false-d978e0">
+         id="d39e1242-false-d8534e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
@@ -133,7 +133,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:text"
-         id="d39e1086-false-d1003e0">
+         id="d39e1257-false-d8559e0">
       <extends rule="ED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
@@ -146,7 +146,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:effectiveTime"
-         id="d39e1092-false-d1016e0">
+         id="d39e1263-false-d8572e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
@@ -159,7 +159,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:value"
-         id="d39e1108-false-d1029e0">
+         id="d39e1279-false-d8585e0">
       <extends rule="PQ"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
@@ -1326,7 +1326,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]"
-         id="d39e1130-false-d3112e0">
+         id="d39e1301-false-d10668e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
               test="count(hl7:time) &lt;= 1">(alcoholGebruik): element hl7:time komt te vaak voor [max 1x].</assert>
@@ -1341,7 +1341,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:time"
-         id="d39e1135-false-d3139e0">
+         id="d39e1306-false-d10695e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
@@ -1357,7 +1357,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]"
-         id="d39e1137-false-d3156e0">
+         id="d39e1308-false-d10712e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(alcoholGebruik): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1375,7 +1375,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]/hl7:id"
-         id="d39e1144-false-d3190e0">
+         id="d39e1315-false-d10746e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"
@@ -1388,7 +1388,7 @@ Item: (alcoholGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.2']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]/hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]"
-         id="d39e1150-false-d3203e0">
+         id="d39e1321-false-d10759e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.html"

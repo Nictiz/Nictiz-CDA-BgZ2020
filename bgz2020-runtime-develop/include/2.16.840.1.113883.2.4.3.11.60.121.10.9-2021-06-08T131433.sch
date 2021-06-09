@@ -16,7 +16,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]"
-         id="d39e2158-false-d12817e0">
+         id="d39e2529-false-d23387e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
               test="count(hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]) &gt;= 1">(voedingsadvies): element hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']] is required [min 1x].</assert>
@@ -31,7 +31,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]"
-         id="d39e2232-false-d13058e0">
+         id="d39e2603-false-d23628e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
               test="string(@classCode) = ('ACT')">(voedingsadvies): de waarde van classCode MOET 'ACT' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -81,7 +81,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']"
-         id="d39e2238-false-d13285e0">
+         id="d39e2609-false-d23855e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -97,7 +97,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:id"
-         id="d39e2243-false-d13304e0">
+         id="d39e2614-false-d23874e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -110,7 +110,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:code[(@code = '11816003' and @codeSystem = '2.16.840.1.113883.6.96')]"
-         id="d39e2254-false-d13317e0">
+         id="d39e2625-false-d23887e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -129,7 +129,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:text"
-         id="d39e2272-false-d13342e0">
+         id="d39e2643-false-d23912e0">
       <extends rule="ED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -142,7 +142,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:effectiveTime"
-         id="d39e2283-false-d13355e0">
+         id="d39e2654-false-d23925e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1302,7 +1302,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]"
-         id="d39e2305-false-d15435e0">
+         id="d39e2676-false-d26005e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
               test="count(hl7:time) &lt;= 1">(voedingsadvies): element hl7:time komt te vaak voor [max 1x].</assert>
@@ -1317,7 +1317,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:time"
-         id="d39e2310-false-d15462e0">
+         id="d39e2681-false-d26032e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1333,7 +1333,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]"
-         id="d39e2312-false-d15479e0">
+         id="d39e2683-false-d26049e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(voedingsadvies): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1351,7 +1351,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]/hl7:id"
-         id="d39e2319-false-d15513e0">
+         id="d39e2690-false-d26083e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1364,7 +1364,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]/hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]"
-         id="d39e2325-false-d15526e0">
+         id="d39e2696-false-d26096e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1380,7 +1380,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]]"
-         id="d39e2335-false-d15548e0">
+         id="d39e2706-false-d26118e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
               test="string(@typeCode) = ('REFR')">(voedingsadvies): de waarde van typeCode MOET 'REFR' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -1401,7 +1401,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]"
-         id="d39e2344-false-d15584e0">
+         id="d39e2715-false-d26154e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
               test="string(@classCode) = ('OBS')">(voedingsadvies): de waarde van classCode MOET 'OBS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1428,7 +1428,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]/hl7:id"
-         id="d39e2350-false-d15642e0">
+         id="d39e2721-false-d26212e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1441,7 +1441,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]/hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]"
-         id="d39e2361-false-d15655e0">
+         id="d39e2732-false-d26225e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1460,7 +1460,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]/hl7:effectiveTime"
-         id="d39e2379-false-d15680e0">
+         id="d39e2750-false-d26250e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1476,7 +1476,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '41829006' and @codeSystem = '2.16.840.1.113883.6.96')]]/hl7:value"
-         id="d39e2391-false-d15697e0">
+         id="d39e2762-false-d26267e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1489,7 +1489,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]]"
-         id="d39e2405-false-d15710e0">
+         id="d39e2776-false-d26280e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
               test="string(@typeCode) = ('REFR')">(voedingsadvies): de waarde van typeCode MOET 'REFR' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -1510,7 +1510,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]"
-         id="d39e2414-false-d15746e0">
+         id="d39e2785-false-d26316e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
               test="string(@classCode) = ('OBS')">(voedingsadvies): de waarde van classCode MOET 'OBS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1543,7 +1543,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']"
-         id="d39e2420-false-d15819e0">
+         id="d39e2791-false-d26389e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1559,7 +1559,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]/hl7:id"
-         id="d39e2425-false-d15838e0">
+         id="d39e2796-false-d26408e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1572,7 +1572,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]/hl7:code[(@code = '229961002' and @codeSystem = '2.16.840.1.113883.6.96')]"
-         id="d39e2427-false-d15851e0">
+         id="d39e2798-false-d26421e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1591,7 +1591,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]/hl7:text"
-         id="d39e2442-false-d15876e0">
+         id="d39e2813-false-d26446e0">
       <extends rule="ED"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"
@@ -1604,7 +1604,7 @@ Item: (voedingsadvies)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]]/hl7:act[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.9']]/hl7:entryRelationship[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.28']]/hl7:value"
-         id="d39e2448-false-d15889e0">
+         id="d39e2819-false-d26459e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.9-2021-06-08T131433.html"

@@ -155,6 +155,8 @@
    <phase id="AllExceptClosed">
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.126.10.1-2021-05-14T133451"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.1-2021-04-28T151242"/>
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.10-2021-06-08T151407"/>
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.11-2021-06-08T152233"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.4-2021-05-28T171626"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005"/>
@@ -182,9 +184,13 @@
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.0.8-2018-06-11T000000"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.0.9-2018-06-11T000000"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.16-2018-06-11T000000"/>
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.29-2018-06-11T000000"/>
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.31-2018-06-11T000000"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.35-2018-06-11T000000"/>
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.28-2017-10-25T000000"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.3.19-2017-10-25T000000"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.3.20-2017-10-25T000000"/>
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.30-2017-10-25T000000"/>
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008"/>
    </phase>
    <phase id="CDABasisgegevenssetZorg2020">
@@ -195,6 +201,12 @@
    </phase>
    <phase id="alcoholgebruikstatus">
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.1-2021-04-28T151242"/>
+   </phase>
+   <phase id="bloeddruk_organizer">
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.10-2021-06-08T151407"/>
+   </phase>
+   <phase id="VitaleFunctiesCDAOrganizer">
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.11-2021-06-08T152233"/>
    </phase>
    <phase id="alcoholGebruik">
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401"/>
@@ -277,8 +289,17 @@
    <phase id="tabakgebruikstatus">
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.16-2018-06-11T000000"/>
    </phase>
+   <phase id="kleding">
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.29-2018-06-11T000000"/>
+   </phase>
+   <phase id="positie">
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.31-2018-06-11T000000"/>
+   </phase>
    <phase id="contactpersoon-header">
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.3.10.35-2018-06-11T000000"/>
+   </phase>
+   <phase id="lichaamsgewicht">
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.28-2017-10-25T000000"/>
    </phase>
    <phase id="problem_active">
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.3.19-2017-10-25T000000"/>
@@ -286,12 +307,19 @@
    <phase id="problem_status_active">
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.3.20-2017-10-25T000000"/>
    </phase>
+   <phase id="lichaamslengte">
+      <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.30-2017-10-25T000000"/>
+   </phase>
    <phase id="problem_verificationstatus">
       <active pattern="template-2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008"/>
    </phase>
    <!-- Include schematrons from templates with explicit * or ** context (but no representing templates), only those used in scenario template -->
    <!-- alcoholgebruikstatus -->
    <include href="include/2.16.840.1.113883.2.4.3.11.60.121.10.1-2021-04-28T151242.sch"/>
+   <!-- bloeddruk_organizer -->
+   <include href="include/2.16.840.1.113883.2.4.3.11.60.121.10.10-2021-06-08T151407.sch"/>
+   <!-- VitaleFunctiesCDAOrganizer -->
+   <include href="include/2.16.840.1.113883.2.4.3.11.60.121.10.11-2021-06-08T152233.sch"/>
    <!-- alcoholGebruik -->
    <include href="include/2.16.840.1.113883.2.4.3.11.60.121.10.2-2021-04-28T151401.sch"/>
    <!-- drugsgebruikstatus -->
@@ -346,12 +374,20 @@
    <include href="include/2.16.840.1.113883.2.4.3.11.60.3.10.0.9-2018-06-11T000000.sch"/>
    <!-- tabakgebruikstatus -->
    <include href="include/2.16.840.1.113883.2.4.3.11.60.3.10.16-2018-06-11T000000.sch"/>
+   <!-- kleding -->
+   <include href="include/2.16.840.1.113883.2.4.3.11.60.3.10.29-2018-06-11T000000.sch"/>
+   <!-- positie -->
+   <include href="include/2.16.840.1.113883.2.4.3.11.60.3.10.31-2018-06-11T000000.sch"/>
    <!-- contactpersoon-header -->
    <include href="include/2.16.840.1.113883.2.4.3.11.60.3.10.35-2018-06-11T000000.sch"/>
+   <!-- lichaamsgewicht -->
+   <include href="include/2.16.840.1.113883.2.4.3.11.60.7.10.28-2017-10-25T000000.sch"/>
    <!-- problem_active -->
    <include href="include/2.16.840.1.113883.2.4.3.11.60.7.10.3.19-2017-10-25T000000.sch"/>
    <!-- problem_status_active -->
    <include href="include/2.16.840.1.113883.2.4.3.11.60.7.10.3.20-2017-10-25T000000.sch"/>
+   <!-- lichaamslengte -->
+   <include href="include/2.16.840.1.113883.2.4.3.11.60.7.10.30-2017-10-25T000000.sch"/>
    <!-- problem_verificationstatus -->
    <include href="include/2.16.840.1.113883.2.4.3.11.60.7.10.54-2019-05-31T125008.sch"/>
 </schema>

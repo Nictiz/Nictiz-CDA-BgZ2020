@@ -16,7 +16,7 @@ Item: (informant)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]"
-         id="d39e4095-false-d67316e0">
+         id="d39e4480-false-d94796e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.30-2018-06-11T000000.html"
               test="count(hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]) &lt;= 1">(informant): element hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']] komt te vaak voor [max 1x].</assert>
@@ -28,7 +28,7 @@ Item: (informant)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]"
-         id="d39e4114-false-d67449e0">
+         id="d39e4499-false-d94929e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.30-2018-06-11T000000.html"
               test="string(@typeCode) = ('INF') or not(@typeCode)">(informant): de waarde van typeCode MOET 'INF' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -55,7 +55,7 @@ Item: (informant)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']"
-         id="d39e4139-false-d67562e0">
+         id="d39e4524-false-d95042e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.30-2018-06-11T000000.html"
@@ -71,7 +71,7 @@ Item: (informant)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:assignedEntity[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]"
-         id="d39e4162-false-d67583e0">
+         id="d39e4547-false-d95063e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.30-2018-06-11T000000.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(informant): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -92,7 +92,7 @@ Item: (informant)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:assignedEntity[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]/hl7:id"
-         id="d39e4169-false-d67623e0">
+         id="d39e4554-false-d95103e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.30-2018-06-11T000000.html"
@@ -105,7 +105,7 @@ Item: (informant)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:assignedEntity[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]/hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]"
-         id="d39e4171-false-d67636e0">
+         id="d39e4556-false-d95116e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.30-2018-06-11T000000.html"
@@ -121,7 +121,7 @@ Item: (informant)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']"
-         id="d39e4180-false-d67679e0">
+         id="d39e4565-false-d95159e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.30-2018-06-11T000000.html"
               test="string(@classCode) = ('ASSIGNED')">(informant): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -142,7 +142,7 @@ Item: (relatedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:code[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1-2017-12-31T000000.xml')//valueSet[1]/conceptList/exception/@code]"
-         id="d67745e38-false-d67755e0">
+         id="d95225e38-false-d95235e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.15-2018-06-11T000000.html"
@@ -166,7 +166,7 @@ Item: (relatedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr"
-         id="d67745e44-false-d67793e0">
+         id="d95225e44-false-d95273e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -214,7 +214,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:streetName"
-         id="d67909e83-false-d67917e0">
+         id="d95389e83-false-d95397e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -227,7 +227,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:houseNumber"
-         id="d67909e97-false-d67930e0">
+         id="d95389e97-false-d95410e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -240,7 +240,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:buildingNumberSuffix"
-         id="d67909e114-false-d67943e0">
+         id="d95389e114-false-d95423e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -253,7 +253,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:additionalLocator"
-         id="d67909e186-false-d67956e0">
+         id="d95389e186-false-d95436e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -269,7 +269,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:postalCode"
-         id="d67909e199-false-d67977e0">
+         id="d95389e199-false-d95457e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -282,7 +282,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:county"
-         id="d67909e230-false-d67992e0">
+         id="d95389e230-false-d95472e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -295,7 +295,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:city"
-         id="d67909e239-false-d68005e0">
+         id="d95389e239-false-d95485e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -308,7 +308,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:country"
-         id="d67909e248-false-d68018e0">
+         id="d95389e248-false-d95498e0">
       <extends rule="ADXP"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -321,7 +321,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:unitID"
-         id="d67909e289-false-d68033e0">
+         id="d95389e289-false-d95513e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -334,7 +334,7 @@ Item: (AD.NL)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:addr/hl7:useablePeriod"
-         id="d67909e306-false-d68046e0">
+         id="d95389e306-false-d95526e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.1.101-2018-06-11T000000.html"
@@ -347,7 +347,7 @@ Item: (relatedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:telecom[starts-with(@value,'tel:')]"
-         id="d67745e49-false-d68057e0">
+         id="d95225e49-false-d95537e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -371,7 +371,7 @@ Item: (relatedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:telecom[starts-with(@value,'mailto:')]"
-         id="d67745e54-false-d68109e0">
+         id="d95225e54-false-d95589e0">
       <let name="theAttValue"
            value="distinct-values(tokenize(normalize-space(@use),'\s'))"/>
       <assert role="error"
@@ -395,7 +395,7 @@ Item: (relatedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:effectiveTime"
-         id="d67745e59-false-d68153e0">
+         id="d95225e59-false-d95633e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.15-2018-06-11T000000.html"
@@ -408,7 +408,7 @@ Item: (relatedEntity)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]]/hl7:informant[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.3.10.0.30']]/hl7:relatedEntity[@classCode = 'ASSIGNED']/hl7:relatedPerson"
-         id="d67745e70-false-d68169e0">
+         id="d95225e70-false-d95649e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.3.10.0.15-2018-06-11T000000.html"
               test="string(@classCode) = ('PSN') or not(@classCode)">(relatedEntity): de waarde van classCode MOET 'PSN' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>

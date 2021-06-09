@@ -21,7 +21,7 @@ Item: (BgZ2020Encounters)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]"
-         id="d39e3756-false-d64817e0">
+         id="d39e4142-false-d92297e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.7-2021-05-14T000000.html"
               test="count(hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']) &gt;= 1">(BgZ2020Encounters): element hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7'] is mandatory [min 1x].</assert>
@@ -54,7 +54,7 @@ Item: (BgZ2020Encounters)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']"
-         id="d39e3761-false-d64886e0">
+         id="d39e4147-false-d92366e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.7-2021-05-14T000000.html"
@@ -70,7 +70,7 @@ Item: (BgZ2020Encounters)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]/hl7:code[(@code = '46240-8' and @codeSystem = '2.16.840.1.113883.6.1')]"
-         id="d39e3766-false-d64905e0">
+         id="d39e4152-false-d92385e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.7-2021-05-14T000000.html"
@@ -89,7 +89,7 @@ Item: (BgZ2020Encounters)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]/hl7:title[not(@nullFlavor)]"
-         id="d39e3780-false-d64930e0">
+         id="d39e4166-false-d92410e0">
       <extends rule="ST"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.7-2021-05-14T000000.html"
@@ -102,7 +102,7 @@ Item: (BgZ2020Encounters)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]]/hl7:section[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.126.10.7']]/hl7:text[not(@nullFlavor)]"
-         id="d39e3786-false-d64943e0">
+         id="d39e4172-false-d92423e0">
       <extends rule="SD.TEXT"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.126.10.7-2021-05-14T000000.html"

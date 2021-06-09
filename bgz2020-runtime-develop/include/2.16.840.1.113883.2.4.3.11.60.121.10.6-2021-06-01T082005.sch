@@ -16,7 +16,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]"
-         id="d39e1280-false-d3591e0">
+         id="d39e1652-false-d14161e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
               test="count(hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]) &lt;= 1">(tabakGebruik): element hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']] komt te vaak voor [max 1x].</assert>
@@ -28,7 +28,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]"
-         id="d39e1352-false-d3754e0">
+         id="d39e1724-false-d14324e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
               test="string(@classCode) = ('OBS')">(tabakGebruik): de waarde van classCode MOET 'OBS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -84,7 +84,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']"
-         id="d39e1358-false-d3956e0">
+         id="d39e1730-false-d14526e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -100,7 +100,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:id"
-         id="d39e1363-false-d3975e0">
+         id="d39e1735-false-d14545e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -117,7 +117,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:code[(@code = '11367-0' and @codeSystem = '2.16.840.1.113883.6.1')]"
-         id="d39e1381-false-d3988e0">
+         id="d39e1753-false-d14558e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -136,7 +136,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:effectiveTime"
-         id="d39e1396-false-d4013e0">
+         id="d39e1768-false-d14583e0">
       <extends rule="IVL_TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -149,7 +149,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:value"
-         id="d39e1412-false-d4026e0">
+         id="d39e1784-false-d14596e0">
       <extends rule="PQ"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1316,7 +1316,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]"
-         id="d39e1434-false-d6109e0">
+         id="d39e1806-false-d16679e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
               test="count(hl7:time) &lt;= 1">(tabakGebruik): element hl7:time komt te vaak voor [max 1x].</assert>
@@ -1331,7 +1331,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:time"
-         id="d39e1439-false-d6136e0">
+         id="d39e1811-false-d16706e0">
       <extends rule="TS"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1347,7 +1347,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]"
-         id="d39e1441-false-d6153e0">
+         id="d39e1813-false-d16723e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
               test="string(@classCode) = ('ASSIGNED') or not(@classCode)">(tabakGebruik): de waarde van classCode MOET 'ASSIGNED' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1365,7 +1365,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]/hl7:id"
-         id="d39e1448-false-d6187e0">
+         id="d39e1820-false-d16757e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1378,7 +1378,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:author[hl7:assignedAuthor[hl7:code[@code='ONESELF']]]/hl7:assignedAuthor[hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]]/hl7:code[(@code = 'ONESELF' and @codeSystem = '2.16.840.1.113883.5.111')]"
-         id="d39e1454-false-d6200e0">
+         id="d39e1826-false-d16770e0">
       <extends rule="CE"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1408,7 +1408,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]]"
-         id="d39e1471-false-d6251e0">
+         id="d39e1843-false-d16821e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
               test="string(@typeCode) = ('REFR') or not(@typeCode)">(tabakGebruik): de waarde van typeCode MOET 'REFR' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -1429,7 +1429,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]"
-         id="d39e1480-false-d6287e0">
+         id="d39e1852-false-d16857e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
               test="string(@classCode) = ('OBS')">(tabakGebruik): de waarde van classCode MOET 'OBS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1453,7 +1453,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]/hl7:id"
-         id="d39e1486-false-d6336e0">
+         id="d39e1858-false-d16906e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1470,7 +1470,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]/hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]"
-         id="d39e1504-false-d6349e0">
+         id="d39e1876-false-d16919e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1489,7 +1489,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]]/hl7:observation[hl7:code[(@code = '401201003' and @codeSystem = '2.16.840.1.113883.6.96')]]/hl7:value"
-         id="d39e1518-false-d6374e0">
+         id="d39e1890-false-d16944e0">
       <extends rule="INT"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1506,7 +1506,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]]"
-         id="d39e1527-false-d6391e0">
+         id="d39e1899-false-d16961e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
               test="string(@typeCode) = ('REFR') or not(@typeCode)">(tabakGebruik): de waarde van typeCode MOET 'REFR' zijn. Gevonden: "<value-of select="@typeCode"/>"</assert>
@@ -1527,7 +1527,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]]/hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]"
-         id="d39e1536-false-d6427e0">
+         id="d39e1908-false-d16997e0">
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
               test="string(@classCode) = ('OBS')">(tabakGebruik): de waarde van classCode MOET 'OBS' zijn. Gevonden: "<value-of select="@classCode"/>"</assert>
@@ -1551,7 +1551,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]]/hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]/hl7:id"
-         id="d39e1542-false-d6478e0">
+         id="d39e1914-false-d17048e0">
       <extends rule="II"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1568,7 +1568,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]]/hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]/hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]"
-         id="d39e1560-false-d6491e0">
+         id="d39e1932-false-d17061e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
@@ -1584,7 +1584,7 @@ Item: (tabakGebruik)
 -->
    <rule fpi="RULC-1"
          context="*[hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]]/hl7:observation[hl7:templateId[@root = '2.16.840.1.113883.2.4.3.11.60.121.10.6']]/hl7:entryRelationship[hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]]/hl7:observation[hl7:code[(@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4')]]/hl7:value[concat(@code, @codeSystem) = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.7.2.3-2020-09-01T000000.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor = doc('include/voc-2.16.840.1.113883.2.4.3.11.60.40.2.7.2.3-2020-09-01T000000.xml')//valueSet[1]/conceptList/exception/@code]"
-         id="d39e1565-false-d6513e0">
+         id="d39e1937-false-d17083e0">
       <extends rule="CD"/>
       <assert role="error"
               see="http://decor.nictiz.nl/pub/bgz2020/bgz2020-html-develop/tmp-2.16.840.1.113883.2.4.3.11.60.121.10.6-2021-06-01T082005.html"
