@@ -386,6 +386,107 @@
                             </entryRelationship>
                         </observation>
                     </entry>
+                    <!-- Voedingadvies -->
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="PRP">
+                            <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.9"/>
+                            <code code="11816003" codeSystem="2.16.840.1.113883.6.96" displayName="voorlichten over dieet (verrichting)"/>
+                            <text>Aanvullende tekstuele informatie</text>
+                            <effectiveTime value="20210101"/>
+                            <!-- auteur van de gegevens -->
+                            <author typeCode="AUT">
+                                <time value="20171023"/>
+                                <assignedAuthor>
+                                    <id extension="129854656" root="2.16.528.1.1007.3.1"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given qualifier="BR">Maria</given>
+                                            <prefix qualifier="VV">de </prefix>
+                                            <family qualifier="BR">Winter</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                            <!-- bron van gegevens -->
+                            <informant typeCode="INF">
+                                <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.30"/>
+                                <assignedEntity classCode="ASSIGNED">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.26"/>
+                                    <id extension="06020806" root="2.16.840.1.113883.2.4.6.1"/>
+                                    <code code="0303" codeSystem="2.16.840.1.113883.2.4.6.7" codeSystemName="Vektis AGB-medische specialismen" displayName="Chirurg"/>
+                                </assignedEntity>
+                            </informant>
+                            <!-- omschrijving van het type dieet -->
+                            <entryRelationship typeCode="REFR">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <id extension="1234H" root="2.16.840.1.113883.2.9.9.9.9.36"/>
+                                    <code code="41829006" codeSystem="2.16.840.1.113883.6.96" displayName="bevinding betreffende dieet (bevinding)"/>
+                                    <value xsi:type="ST">De omschrijving van het type dieet</value>
+                                </observation>
+                            </entryRelationship>
+                            <!-- omschrijving van consistentie van de voeding -->
+                            <entryRelationship typeCode="REFR">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.28"/>
+                                    <id extension="06020806" root="2.16.840.1.113883.2.4.6.1"/>
+                                    <code code="229961002" codeSystem="2.16.840.1.113883.6.96" displayName="consistentie van voeding (substantie)"/>
+                                    <value xsi:type="ST">De omschrijving van consistentie van de voeding</value>
+                                </observation>
+                            </entryRelationship>
+                            <!-- reden voor het voedingsadvies -->
+                            <entryRelationship typeCode="RSON">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.7.10.3.19"/>
+                                    <code code="282291009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diagnosis"/>
+                                    <text>Bevat aanvullende tekstuele informatie</text>
+                                    <effectiveTime>
+                                        <low value="20210101"/>
+                                        <high value="20210102"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="23583003" codeSystem="2.16.840.1.113883.6.96" displayName="Inflammation"/>
+                                    <!-- auteur van de gegevens -->
+                                    <author typeCode="AUT">
+                                        <time value="20171023"/>
+                                        <assignedAuthor>
+                                            <id extension="129854656" root="2.16.528.1.1007.3.1"/>
+                                            <assignedPerson>
+                                                <name>
+                                                    <given qualifier="BR">Maria</given>
+                                                    <prefix qualifier="VV">de </prefix>
+                                                    <family qualifier="BR">Winter</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                    <!-- bron van gegevens -->
+                                    <informant typeCode="INF">
+                                        <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.30"/>
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.26"/>
+                                            <id extension="06020806" root="2.16.840.1.113883.2.4.6.1"/>
+                                            <code code="0303" codeSystem="2.16.840.1.113883.2.4.6.7" codeSystemName="Vektis AGB-medische specialismen" displayName="Chirurg"/>
+                                        </assignedEntity>
+                                    </informant>
+                                    <entryRelationship typeCode="REFR" inversionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.2.4.3.11.60.7.10.3.20"/>
+                                            <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                                            <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Active"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                            <!-- toelichting -->
+                            <entryRelationship typeCode="REFR">
+                                <act classCode="ACT" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.32"/>
+                                    <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                                    <!-- Toelichting -->
+                                    <text>Toelichting</text>
+                                </act>
+                            </entryRelationship>
+                        </act>
+                    </entry>
                 </section>
             </component>
             <!-- **************************************************** -->
