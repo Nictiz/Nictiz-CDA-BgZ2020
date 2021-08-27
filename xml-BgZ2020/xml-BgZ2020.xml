@@ -275,7 +275,7 @@
                         <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.7"/>
                             <id root="1.2.3.999" extension="--example only--"/>
-                            <code code="42831-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Drug abuse [CCC]"/>
+                            <code code="228366006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Finding relating to drug misuse behavior (finding)"/>
                             <effectiveTime>
                                 <low value="20171218152638"/>
                             </effectiveTime>
