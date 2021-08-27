@@ -180,36 +180,116 @@
     <component typeCode="COMP" contextConductionInd="true">
         <structuredBody>
             <!-- **************************************************** -->
-            <!--    Sociale anamnese                      -->
+            <!--    Functionele of mentale status -->
             <!-- **************************************************** -->
             <component>
                 <section>
-                    <templateId root="2.16.840.1.113883.2.4.3.11.60.126.10.12"/>
-                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history Narrative"/>
-                    <title>Sociale anamnese</title>
+                    <templateId root="2.16.840.1.113883.2.4.3.11.60.126.10.8"/>
+                    <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" displayName="Functional status assessment note"/>
+                    <title>Functionele of mentale status</title>
                     <text>Tekstuele informatie</text>
-                    <!-- Alcoholgebruik -->
                     <entry typeCode="DRIV">
+                        <!-- template 2.16.840.1.113883.2.4.3.11.60.121.10.12 'functionele of mentale status' -->
                         <observation classCode="OBS" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.2"/>
-                            <code code="160573003" codeSystem="2.16.840.1.113883.6.96" displayName="Alcohol intake"/>
-                            <effectiveTime>
-                                <low value="20170803143122"/>
-                            </effectiveTime>
-                            <value xsi:type="PQ" value="1" unit="L/d"/>
-                            <entryRelationship typeCode="REFR" inversionInd="true">
-                                <!-- template 'alcoholgebruik status' 1..1 -->
-                                <observation classCode="OBS" moodCode="EVN">
-                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.1"/>
-                                    <code code="228273003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Finding related to alcohol drinking behavior (finding)"/>
-                                    <value xsi:type="CD" code="783261004" displayName="Lifetime non-drinker of alcohol" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                                </observation>
+                            <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.12"/>
+                            <id root="1.2.3.999" extension="--example only--"/>
+                            <!-- StatusNaam -->
+                            <code code="233917008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Atrioventricular block"/>
+                            <text>Tekstuele informatie</text>
+                            <!-- StatusDatum -->
+                            <effectiveTime value="20210130171909"/>
+                            <!-- StatusWaarde -->
+                            <value xsi:type="CE" code="54016002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="mobitz-type-I-blok"/>
+                            <!-- choice: 0..1 
+                        include template '2.16.840.1.113883.2.4.3.11.60.3.10.3.17' 0..1 O
+                        element hl7:author-->
+                            <!-- include template 2.16.840.1.113883.2.4.3.11.60.3.10.0.30 'informant' 0..* O -->
+                            <!--<entryRelationship>
+                            <!-\- template 2.16.840.1.113883.2.4.3.11.60.3.10.0.32 'toelichting' -\->
+                        </entryRelationship>-->
+                            <!--<entryRelationship>
+                            <!-\- template 2.16.840.1.113883.2.4.3.11.60.7.10.3.85 'medisch hulpmiddel organizer' -\->
+                        </entryRelationship>-->
+                            <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                <organizer classCode="CLUSTER" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.7.10.3.85"/>
+                                    <id root="1.2.3.999" extension="--example only--"/>
+                                    <statusCode code="completed"/>
+                                    <component typeCode="COMP" contextConductionInd="true">
+                                        <!-- MedischHulpmiddel -->
+                                        <supply classCode="SPLY" moodCode="EVN">
+                                            <!-- BeginDatum -->
+                                            <effectiveTime value="20120222"/>
+                                            <!-- Product -->
+                                            <participant typeCode="PRD">
+                                                <participantRole classCode="MANU">
+                                                    <!-- ProductID -->
+                                                    <id extension="(01)08712345000004(17)160131(10)200652" root="1.3.160"/>
+                                                    <playingDevice classCode="DEV">
+                                                        <!-- template 2.16.840.1.113883.2.4.3.11.60.3.10.3.22 'device' -->
+                                                        <!-- ProductType -->
+                                                        <code code="424448008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Fused bifocal glasses"/>
+                                                    </playingDevice>
+                                                </participantRole>
+                                            </participant>
+                                        </supply>
+                                    </component>
+                                </organizer>
                             </entryRelationship>
-                        </observation>                        
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- template 2.16.840.1.113883.2.4.3.11.60.121.10.12 'functionele of mentale status' -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.12"/>
+                            <id root="1.2.3.999" extension="--example only--"/>
+                            <!-- StatusNaam -->
+                            <code code="233917008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Atrioventricular block"/>
+                            <text>Tekstuele informatie</text>
+                            <!-- StatusDatum -->
+                            <effectiveTime value="20210130171909"/>
+                            <!-- StatusWaarde -->
+                            <value xsi:type="CE" code="54016002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="mobitz-type-I-blok"/>
+                            <!-- choice: 0..1 
+                        include template '2.16.840.1.113883.2.4.3.11.60.3.10.3.17' 0..1 O
+                        element hl7:author-->
+                            <!-- include template 2.16.840.1.113883.2.4.3.11.60.3.10.0.30 'informant' 0..* O -->
+                            <!--<entryRelationship>
+                            <!-\- template 2.16.840.1.113883.2.4.3.11.60.3.10.0.32 'toelichting' -\->
+                        </entryRelationship>-->
+                            <!--<entryRelationship>
+                            <!-\- template 2.16.840.1.113883.2.4.3.11.60.7.10.3.85 'medisch hulpmiddel organizer' -\->
+                        </entryRelationship>-->
+                            <entryRelationship typeCode="REFR" contextConductionInd="true">
+                                <organizer classCode="CLUSTER" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.7.10.3.85"/>
+                                    <id root="1.2.3.999" extension="--example only--"/>
+                                    <statusCode code="completed"/>
+                                    <component typeCode="COMP" contextConductionInd="true">
+                                        <!-- MedischHulpmiddel -->
+                                        <supply classCode="SPLY" moodCode="EVN">
+                                            <!-- BeginDatum -->
+                                            <effectiveTime value="20120222"/>
+                                            <!-- Product -->
+                                            <participant typeCode="PRD">
+                                                <participantRole classCode="MANU">
+                                                    <!-- ProductID -->
+                                                    <id extension="(01)08712345000004(17)160131(10)200652" root="1.3.160"/>
+                                                    <playingDevice classCode="DEV">
+                                                        <!-- template 2.16.840.1.113883.2.4.3.11.60.3.10.3.22 'device' -->
+                                                        <!-- ProductType -->
+                                                        <code code="424448008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Fused bifocal glasses"/>
+                                                    </playingDevice>
+                                                </participantRole>
+                                            </participant>
+                                        </supply>
+                                    </component>
+                                </organizer>
+                            </entryRelationship>
+                        </observation>
                     </entry>
                 </section>
             </component>
-
         </structuredBody>
     </component>
 </ClinicalDocument>
