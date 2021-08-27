@@ -319,6 +319,73 @@
                             </entryRelationship>
                         </observation>
                     </entry>
+                    <!-- tabakgebruik -->
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.6"/>
+                            <id root="1.2.3.999" extension="--example only--"/>
+                            <code code="11367-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Tobacco use"/>
+                            <effectiveTime>
+                                <low value="20171218174309"/>
+                            </effectiveTime>
+                            <value xsi:type="PQ" value="1" unit="d"/>
+                            <!-- auteur van de gegevens -->
+                            <author typeCode="AUT">
+                                <time value="20171023"/>
+                                <assignedAuthor>
+                                    <id extension="129854656" root="2.16.528.1.1007.3.1"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given qualifier="BR">Maria</given>
+                                            <prefix qualifier="VV">de </prefix>
+                                            <family qualifier="BR">Winter</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                            <!-- bron van gegevens -->
+                            <informant typeCode="INF">
+                                <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.30"/>
+                                <assignedEntity classCode="ASSIGNED">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.26"/>
+                                    <id extension="06020806" root="2.16.840.1.113883.2.4.6.1"/>
+                                    <code code="0303" codeSystem="2.16.840.1.113883.2.4.6.7" codeSystemName="Vektis AGB-medische specialismen" displayName="Chirurg"/>
+                                </assignedEntity>
+                            </informant>
+                            <!-- tabak gebruik status -->
+                            <entryRelationship typeCode="REFR">
+                                <!-- template 2.16.840.1.113883.2.4.3.11.60.3.10.16 "tabak gebruik status" 1..1 -->
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.5"/> <!-- 2.16.840.1.113883.2.4.3.11.60.121.10.5 -->
+                                    <code code="365980008" codeSystem="2.16.840.1.113883.6.96" displayName="Bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (bevinding)"></code>
+                                    <value xsi:type="CD" code="405746006" codeSystem="2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2"/>
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="REFR">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <id root="1.2.3.999" extension="--example only--"/>
+                                    <code code="401201003" codeSystem="2.16.840.1.113883.6.96" displayName="Cigarette pack-years"/>
+                                    <value xsi:type="INT" value="1"/>
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="REFR">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <id root="1.2.3.999" extension="--example only--"/>
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                                    <value xsi:type="CD" code="65568007" codeSystem="2.16.840.1.113883.6.96" displayName="Cigarette smoker (finding)"/>
+                                </observation>
+                            </entryRelationship>
+                            <!-- TODO:check template 2.16.840.1.113883.2.4.3.11.60.3.10.0.32 'toelichting' --> 
+                            <entryRelationship typeCode="REFR" inversionInd="true">                                
+                                <act classCode="ACT" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.32"/>
+                                    <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                                    <!-- Toelichting -->
+                                    <text>Toelichting</text>
+                                </act>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
                 </section>
             </component>
             <!-- **************************************************** -->
