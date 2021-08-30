@@ -293,7 +293,7 @@
                             <entryRelationship typeCode="REFR">
                                 <!-- template 2.16.840.1.113883.2.4.3.11.60.3.10.16 "tabak gebruik status" 1..1 -->
                                 <observation classCode="OBS" moodCode="EVN">
-                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.5"/> <!-- 2.16.840.1.113883.2.4.3.11.60.121.10.5 -->
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.5"/>
                                     <code code="365980008" codeSystem="2.16.840.1.113883.6.96" displayName="Bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (bevinding)"></code>
                                     <value xsi:type="CD" code="405746006" codeSystem="2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2"/>
                                 </observation>
