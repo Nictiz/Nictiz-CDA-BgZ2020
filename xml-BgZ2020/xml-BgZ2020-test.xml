@@ -282,9 +282,9 @@
                             </author>
                             <!-- bron van gegevens -->
                             <informant typeCode="INF">
-                                <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.30"/>
+                                <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.38"/>
                                 <assignedEntity classCode="ASSIGNED">
-                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.26"/>
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.1.34"/>
                                     <id extension="06020806" root="2.16.840.1.113883.2.4.6.1"/>
                                     <code code="0303" codeSystem="2.16.840.1.113883.2.4.6.7" codeSystemName="Vektis AGB-medische specialismen" displayName="Chirurg"/>
                                 </assignedEntity>
@@ -346,9 +346,9 @@
                             </author>
                             <!-- bron van gegevens -->
                             <informant typeCode="INF">
-                                <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.30"/>
+                                <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.38"/>
                                 <assignedEntity classCode="ASSIGNED">
-                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.26"/>
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.1.34"/>
                                     <id extension="06020806" root="2.16.840.1.113883.2.4.6.1"/>
                                     <code code="0303" codeSystem="2.16.840.1.113883.2.4.6.7" codeSystemName="Vektis AGB-medische specialismen" displayName="Chirurg"/>
                                 </assignedEntity>
@@ -401,9 +401,9 @@
                             </author>
                             <!-- bron van gegevens -->
                             <informant typeCode="INF">
-                                <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.30"/>
+                                <templateId root="2.16.840.1.113883.2.4.3.11.60.121.10.38"/>
                                 <assignedEntity classCode="ASSIGNED">
-                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.0.26"/>
+                                    <templateId root="2.16.840.1.113883.2.4.3.11.60.3.10.1.34"/>
                                     <id extension="06020806" root="2.16.840.1.113883.2.4.6.1"/>
                                     <code code="0303" codeSystem="2.16.840.1.113883.2.4.6.7" codeSystemName="Vektis AGB-medische specialismen" displayName="Chirurg"/>
                                 </assignedEntity>
