@@ -357,14 +357,14 @@
                             <entryRelationship typeCode="REFR">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <code code="118871000146108" codeSystem="2.16.840.1.113883.6.96" displayName="type woningaanpassing (waarneembare entiteit)"/>
-                                    <value xsi:type="CD" code="465302005" codesystem="2.16.840.1.113883.2.4.3.11.60.40.2.7.8.2" displayname="aangepast toilet"/>
+                                    <value xsi:type="CD" code="465302005" codeSystem="2.16.840.1.113883.2.4.3.11.60.40.2.7.8.2" displayName="aangepast toilet"/>
                                 </observation>
                             </entryRelationship>
                             <!-- woonomstandigheid -->
                             <entryRelationship typeCode="REFR">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <code code="224249004" codeSystem="2.16.840.1.113883.6.96" displayName="kenmerk van thuisomgeving (waarneembare entiteit)"/>
-                                    <value xsi:type="CD" code="423527000" codesystem="2.16.840.1.113883.2.4.3.11.60.40.2.7.8.3" displayname="vloerbedekking onveilig"/>
+                                    <value xsi:type="CD" code="423527000" codeSystem="2.16.840.1.113883.2.4.3.11.60.40.2.7.8.3" displayName="vloerbedekking onveilig"/>
                                 </observation>
                             </entryRelationship>
                             <!-- toelichting -->
